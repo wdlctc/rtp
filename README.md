@@ -19,7 +19,7 @@ RTP stands out with its strategic focus on memory deduplication in distributed t
 Below is a chart representing the benchmark that was done on 8 A100 server.
 ![RTP](./docs/img/model_capacity.svg)
 
-RTP Horovod achieves 99% memory scaling efficiency for different llm, with 85% memory save compared with DP and 75% memory save compared with FSDP.
+RTP achieves 99% memory scaling efficiency for different llm, with 85% memory save compared with DP and 75% memory save compared with FSDP.
 
 Installing RTP
 ====================
