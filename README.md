@@ -41,6 +41,7 @@ Installing from source
     git clone https://github.com/wdlctc/rtp
     cd rtp
     pip install -r requirements.txt
+    pip install -e .
 
 ~~~~~~~~~~~~~~~~~~~~~~
 ## Benchmark
