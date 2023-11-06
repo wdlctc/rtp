@@ -11,9 +11,7 @@ import torch.nn as nn
 from fairscale.nn.moe.moe_layer import MOELayer
 from fairscale.nn.moe.top2gate import Top2Gate
 
-from rtp.module.embedding import ParallelEmbedding
-from rtp.module.linear import ColumnParallelLinear
-from rtp.module.attention import ParallelMultiheadAttention
+from rtp.module.layers import ColumnParallelLinear, ParallelEmbedding, ParallelMultiheadAttention
 
 
 # TODO(anj-s): Identify if we need this initialization logic for the below wrapped layers.

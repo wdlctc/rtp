@@ -192,81 +192,8 @@ class ParallelMultiheadAttention(torch.nn.Module):
 
     def __init__(self, embed_dim, num_heads, world_size, rank, dropout=0., bias=True, add_bias_kv=False, add_zero_attn=False,
                  kdim=None, vdim=None, batch_first=False, device=None, dtype=None, MultiheadAttention_layer=None) -> None:
-        if embed_dim <= 0 or num_heads <= 0:
-            raise ValueError(
-                f"embed_dim and num_heads must be greater than 0,"
-                f" got embed_dim={embed_dim} and num_heads={num_heads} instead"
-            )
-    
-        factory_kwargs = {'device': device, 'dtype': dtype}
+        
         super(ParallelMultiheadAttention, self).__init__()
-        self.embed_dim = embed_dim
-        self.kdim = kdim if kdim is not None else embed_dim
-        self.vdim = vdim if vdim is not None else embed_dim
-        self._qkv_same_embed_dim = self.kdim == embed_dim and self.vdim == embed_dim
-
-        self.num_heads = num_heads
-        self.dropout = dropout
-        self.batch_first = batch_first
-        self.head_dim = embed_dim // num_heads
-        assert self.head_dim * num_heads == self.embed_dim, "embed_dim must be divisible by num_heads"
-
-        self.world_size = world_size
-        self.rank = rank
-        self.num_heads_per_partition = divide_and_check_no_remainder(self.num_heads, self.world_size)
-        self.embed_dim_per_partition = divide_and_check_no_remainder(self.embed_dim, self.world_size)
-
-        self.MultiheadAttention = SubParallelMultiheadAttention(embed_dim,
-                                                                num_heads,
-                                                                world_size,
-                                                                rank,
-                                                                dropout,
-                                                                bias,
-                                                                add_bias_kv,
-                                                                add_zero_attn,
-                                                                kdim,
-                                                                vdim,
-                                                                batch_first,
-                                                                device,
-                                                                dtype)
-
-        self.MultiheadAttention.affine_weight(MultiheadAttention_layer)
-
-    def forward(
-        self,
-        query: Tensor,
-        key: Tensor,
-        value: Tensor,
-        key_padding_mask: Optional[Tensor] = None,
-        need_weights: bool = True,
-        attn_mask: Optional[Tensor] = None,
-        average_attn_weights: bool = True,
-        is_causal : bool = False
-    ) -> Tuple[Tensor, Optional[Tensor]]:
-
-        query = copy_to_model_parallel_region(query)
-        key = copy_to_model_parallel_region(query)
-        value = copy_to_model_parallel_region(query)
-        
-        attn_output, attn_output_weights = self.MultiheadAttention(query, key, value, key_padding_mask, need_weights, attn_mask, average_attn_weights, is_causal)
-
-        attn_output = reduce_from_model_parallel_region(attn_output)
-
-        if self.batch_first and is_batched:
-            return attn_output.transpose(1, 0), attn_output_weights
-        else:
-            return attn_output, attn_output_weights
-
-class WeightParallelMultiheadAttention(torch.nn.Module):
-    
-    __constants__ = ['batch_first']
-    bias_k: Optional[torch.Tensor]
-    bias_v: Optional[torch.Tensor]
-
-    def __init__(self, embed_dim, num_heads, world_size, rank, dropout=0., bias=True, add_bias_kv=False, add_zero_attn=False,
-                 kdim=None, vdim=None, batch_first=False, device=None, dtype=None, MultiheadAttention_layer=None) -> None:
-        
-        super(WeightParallelMultiheadAttention, self).__init__()
 
         self.world_size = world_size
         self.rank = rank

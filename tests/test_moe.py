@@ -179,8 +179,6 @@ class TestIdenticalOutputs(unittest.TestCase):
                 [FeedForwardLayer(d_model, dim_feedforward, activation, dropout).cuda() for _ in range(num_local_experts)]
             )
         Weight_moe = WeightMOELayer(Weight_gate, Weight_experts, device=device, original_experts=experts).cuda()
-        Weight_gate._setup_streams()
-        Weight_moe._setup_streams()
         Weight_moe_output = Weight_moe(data)
 
         assert(torch.max(torch.abs(moe_output - Weight_moe_output)) < 1e-6)

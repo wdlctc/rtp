@@ -13,9 +13,9 @@ from rtp.module.top2gate import Top2Gate
 from rtp.module.moe import WeightMOELayer
 from rtp.module.top2gate import WeightTop2Gate
 
-from rtp.module.embedding import WeightParallelEmbedding
-from rtp.module.linear import WeightParallelLinear
-from rtp.module.attention import WeightParallelMultiheadAttention
+from rtp.module.embedding import ParallelEmbedding 
+from rtp.module.linear import ColumnParallelLinear
+from rtp.module.attention import ParallelMultiheadAttention
 
 # TODO(anj-s): Identify if we need this initialization logic for the below wrapped layers.
 class EmbeddingLayer(nn.Module):
@@ -23,7 +23,7 @@ class EmbeddingLayer(nn.Module):
 
     def __init__(self, ntoken, ninp, initrange, world_size, rank, device=None):
         super(EmbeddingLayer, self).__init__()
-        self.embedding = WeightParallelEmbedding(ntoken, ninp, world_size=world_size, rank=rank, device=device)
+        self.embedding = ParallelEmbedding(ntoken, ninp, world_size=world_size, rank=rank, device=device)
         self.embedding.embedding.weight.data.uniform_(-initrange, initrange)
         self.ninp_sqrt = math.sqrt(ninp)
 
@@ -81,10 +81,10 @@ class FeedForwardLayer(nn.Module):
 
     def __init__(self, d_model, dim_feedforward, activation, dropout, world_size, rank, device=None) -> None:
         super(FeedForwardLayer, self).__init__()
-        self.linear1 = WeightParallelLinear(d_model, dim_feedforward, world_size=world_size, rank=rank, device=device)
+        self.linear1 = ColumnParallelLinear(d_model, dim_feedforward, device=device)
         self.activation = activation
         self.dropout1 = nn.Dropout(dropout)
-        self.linear2 = WeightParallelLinear(dim_feedforward, d_model, world_size=world_size, rank=rank, device=device)
+        self.linear2 = ColumnParallelLinear(dim_feedforward, d_model, device=device)
         self.dropout2 = nn.Dropout(dropout)
 
     def forward(self, x):
@@ -138,7 +138,7 @@ class TransformerEncoderLayer(nn.Module):
         device=None
     ):
         super(TransformerEncoderLayer, self).__init__()
-        self.self_attn = WeightParallelMultiheadAttention(d_model, nhead, dropout=dropout, world_size=world_size, rank=rank, device=device)
+        self.self_attn = ParallelMultiheadAttention(d_model, nhead, dropout=dropout, world_size=world_size, rank=rank, device=device)
         self.norm_first = norm_first
         self.norm1 = nn.LayerNorm(d_model, eps=layer_norm_eps, device=device)
         self.norm2 = nn.LayerNorm(d_model, eps=layer_norm_eps, device=device)
@@ -222,7 +222,7 @@ class LinearLayer(nn.Module):
 
     def __init__(self, ninp, ntoken, initrange, world_size, rank, device=None):
         super(LinearLayer, self).__init__()
-        self.linear = WeightParallelLinear(ninp, ntoken, world_size=world_size, rank=rank, device=device)
+        self.linear = ColumnParallelLinear(ninp, ntoken, device=device)
         self.linear.linear.bias.data.zero_()
         self.linear.linear.weight.data.uniform_(-initrange, initrange)
     

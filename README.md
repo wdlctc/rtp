@@ -1,7 +1,7 @@
 Description
 ====================
 RTP is a PyTorch extension library for memory-efficient and large scale training.
-This library is build based on [fairscale](https://github.com/facebookresearch/fairscale). 
+This library is open-source code for [RTP paper](https://arxiv.org/abs/2311.01635), which is build based on [fairscale](https://github.com/facebookresearch/fairscale). 
 while adding our proposed innovational Rotation Tensor Parallelism in scaling techniques.
 
 RTP was designed with the following values in mind:
@@ -112,6 +112,19 @@ If you use RTP in your publication, please cite it by using the following BibTeX
   title =        {RTP: Rethinking Tensor Parallelism with Memory Deduplication },
   howpublished = {\url{https://github.com/wdlctc/rtp}},
   year =         {2023}
+}
+```
+
+Or you can cite our paper.
+
+```BibTeX
+@misc{luo2023rtp,
+      title={RTP: Rethinking Tensor Parallelism with Memory Deduplication}, 
+      author={Cheng Luo and Tianle Zhong and Geoffrey Fox},
+      year={2023},
+      eprint={2311.01635},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC}
 }
 ```
 

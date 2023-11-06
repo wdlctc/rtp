@@ -24,10 +24,15 @@ def set_full_param(module, device, dtype):
         total_numel += param.data.numel()
         param._numel = param.data.numel()
         param._shape = param.shape
-        param.data.storage().resize_(0)
     
     module.total_numel = total_numel
     module._full_param = torch.zeros(total_numel, **factory_kwargs)
+    
+    cur_numel = 0
+    for param_name, param in module.named_parameters():
+        module._full_param[cur_numel: cur_numel + param._numel].copy_(param.data.view(-1))
+        param.data.storage().resize_(0)
+        cur_numel += param._numel
 
 
 
@@ -192,8 +197,7 @@ def hook_fn(p, layer, module, *unused: Any):
     layer.count -= 1
 
     if layer.count == 0:
-        # module.reqs = _left_shift_buffer(layer._full_param.data, layer._buffer)
-        module.grad_reqs = _left_shift_buffer(layer._full_grad.data, layer._grad_buffer)
+        module.grad_reqs = _right_shift_buffer(layer._full_grad.data, layer._grad_buffer)
 
 def _right_shift_buffer(input_, buffer):
 
@@ -239,12 +243,17 @@ class _WeightParallelRegion_before(torch.autograd.Function):
     @staticmethod
     def forward(ctx, input_, module, itr, m):  # type: ignore
         if itr == 0:
+            for param in module.parameters():
+                if param.device != module._full_param.device:
+                    m.set_full_param(param.device, module.weight.dtype)
             module._buffer = torch.zeros_like(module._full_param)
-            m.reqs = _right_shift_buffer(module._full_param.data, module._buffer)
+            m.reqs = _left_shift_buffer(module._full_param.data, module._buffer)
         else:
             for req in m.reqs:
                 req.wait()
             module._full_param.data.copy_(module._buffer)
+            if itr != torch.distributed.get_world_size() - 1:
+                m.reqs = _left_shift_buffer(module._full_param.data, module._buffer)
         return input_
 
     @staticmethod
@@ -290,9 +299,12 @@ class _WeightParallelRegion_after(torch.autograd.Function):
             if itr != 0:
                 module._grad_buffer = next_module._grad_buffer
                 module._buffer = next_module._buffer
+                m.reqs = _right_shift_buffer(module._full_param.data, module._buffer)
+
             next_module._full_grad = None
             next_module._grad_buffer = None
             next_module._buffer = None
+            
 
 
         else:
@@ -300,7 +312,7 @@ class _WeightParallelRegion_after(torch.autograd.Function):
             module._grad_buffer = torch.zeros_like(module._full_param)
             module._buffer = torch.zeros_like(module._full_param)
             allign_grad(module)
-            m.reqs = _left_shift_buffer(module._full_param.data, module._buffer)
+            m.reqs = _right_shift_buffer(module._full_param.data, module._buffer)
 
         return grad_output, None, None, None, None
 

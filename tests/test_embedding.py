@@ -13,7 +13,7 @@ from fairscale.internal import torch_version
 from typing import TYPE_CHECKING, Any, Callable, Dict, Generator, List, Optional, Tuple, Union
 
 RPC_PORT = 29501
-from rtp.module.embedding import ParallelEmbedding, WeightParallelEmbedding
+from rtp.module.embedding import ParallelEmbedding
 
 def get_ColumnParallelLinear_model(args, device, config):
     """Get language model(based on GPT-2) used for sequence prediction."""
@@ -143,30 +143,16 @@ class TestIdenticalOutputs(unittest.TestCase):
         loss.backward()
         ref_grads = [p.grad.clone() for p in Embedding.parameters()]
 
-        Model_Embedding = ParallelEmbedding(num_embeddings, embedding_dim, world_size=world_size, rank=rank, Embedding_layer=Embedding).cuda()
-        Model_Embedding_output = Model_Embedding(data)
-
-        assert objects_are_equal(Embedding_output, Model_Embedding_output)
-
-        Model_loss = Model_Embedding_output.sum()
-        Model_loss.backward()
-        Model_grads = [p.grad.detach().clone() for p in Model_Embedding.parameters()]
-
-        for grad1, grad2 in zip(ref_grads, Model_grads):
-            grad = _gather(grad2, dim=1)
-            assert objects_are_equal(grad, grad1)
-
         sub_sample = num_samples // world_size
         data_list = torch.split(data, sub_sample, dim=0)
         data = data_list[rank]
         output_list = torch.split(Embedding_output, sub_sample, dim=0)
         Embedding_output = output_list[rank]
 
-        Weight_Embedding = WeightParallelEmbedding(num_embeddings, embedding_dim, 
+        Weight_Embedding = ParallelEmbedding(num_embeddings, embedding_dim, 
                                                    world_size=world_size, rank=rank, 
                                                    device = device,
                                                    Embedding_layer=Embedding)
-        Weight_Embedding._setup_streams()
         Weight_Embedding_output = Weight_Embedding(data)
         
         assert objects_are_equal(Embedding_output, Weight_Embedding_output)

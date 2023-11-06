@@ -13,7 +13,7 @@ from fairscale.internal import torch_version
 from typing import TYPE_CHECKING, Any, Callable, Dict, Generator, List, Optional, Tuple, Union
 
 RPC_PORT = 29501
-from rtp.module.linear import ColumnParallelLinear, RowParallelLinear
+from rtp.module.conv import ColumnParallelConv2d
 
 def get_ColumnParallelLinear_model(args, device, config):
     """Get language model(based on GPT-2) used for sequence prediction."""
@@ -129,72 +129,53 @@ class TestIdenticalOutputs(unittest.TestCase):
         # Example input for the models
         num_samples = 8
         input_size = 8
-        in_features = 8
-        out_features = 8
+        in_channels = 8
+        out_channels = 8
+        kernel_size = 3
+        padding = 1
         
         rank = torch.distributed.get_rank()
         world_size = torch.distributed.get_world_size()
         torch.cuda.set_device(args.local_rank)
         device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
-
+        
         init_random_seed(0)
 
-        data = torch.randn(num_samples, input_size).cuda()
-        labels = torch.randint(0, 2, (num_samples,)).cuda()
+        data = torch.randn(num_samples, in_channels, input_size, input_size).cuda()
 
-        linear = nn.Linear(in_features, out_features).cuda()
-        linear_output = linear(data)
-        
-        criterion = nn.CrossEntropyLoss().cuda()
-        loss = criterion(linear_output, labels)
+        Conv = nn.Conv2d(in_channels, out_channels, kernel_size=kernel_size, padding=padding).cuda()
+        Conv_output = Conv(data)
+
+        loss = Conv_output.sum()
         loss.backward()
-        ref_grads = [p.grad.detach().clone() for p in linear.parameters()]
+        ref_grads = [p.grad.detach().clone() for p in Conv.parameters()]
 
         sub_sample = num_samples // world_size
         data_list = torch.split(data, sub_sample, dim=0)
         cur_data = data_list[rank]
-        output_list = torch.split(linear_output, sub_sample, dim=0)
+        output_list = torch.split(Conv_output, sub_sample, dim=0)
         cur_output = output_list[rank]
-        label_list = torch.split(labels, sub_sample, dim=0)
-        cur_label = label_list[rank]
 
-        Weight_linear = ColumnParallelLinear(in_features, out_features, linear_layer=linear)
-        # Weight_linear.cuda()
-        Weight_linear.to(device)
-        Weight_linear_output = Weight_linear(cur_data)
-        assert objects_are_equal(cur_output, Weight_linear_output)
+        Weight_conv = ColumnParallelConv2d(in_channels, out_channels,
+                                           kernel_size=kernel_size, padding=padding,
+                                           Conv2d_layer = Conv)
+        # Weight_conv.cuda()
+        Weight_conv.to(device)
+        Weight_conv_output = Weight_conv(cur_data)
 
-        Weight_loss = criterion(Weight_linear_output, cur_label) / world_size
+        assert objects_are_equal(cur_output, Weight_conv_output)
+
+        Weight_loss = Weight_conv_output.sum()
+        torch.distributed.all_reduce(Weight_loss, op=torch.distributed.ReduceOp.SUM)
         Weight_loss.backward()
-        
-        Weight_grads = [p.grad.detach().clone() for p in Weight_linear.parameters()]
 
-        assert(len(ref_grads) == len(Weight_grads))
+        Weight_grads = [p.grad.detach().clone() for p in Weight_conv.parameters()]
         
+        assert(len(ref_grads) == len(Weight_grads))
         for grad1, grad2 in zip(ref_grads, Weight_grads):
             grad = _gather(grad2, dim=0)
             assert objects_are_equal(grad, grad1)
 
-
-        Input_linear = RowParallelLinear(in_features, out_features, linear_layer=linear)
-        # Weight_linear.cuda()
-        Input_linear.to(device)
-        Input_linear_output = Input_linear(cur_data)
-        assert objects_are_equal(cur_output, Input_linear_output)
-
-        Input_loss = criterion(Input_linear_output, cur_label) / world_size
-        Input_loss.backward()
-        
-        Input_grads = [p.grad.detach().clone() for p in Input_linear.parameters()]
-
-        assert(len(ref_grads) == len(Input_grads))
-        
-        for grad1, grad2 in zip(ref_grads, Input_grads):
-            if grad1.shape != grad2.shape:
-                grad = _gather(grad2, dim=1)
-            else:
-                grad = grad2
-            assert objects_are_equal(grad, grad1)
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--local-rank', type=int, default=0)

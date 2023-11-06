@@ -110,64 +110,6 @@ class ParallelEmbedding(torch.nn.Module):
         self.scale_grad_by_freq = scale_grad_by_freq
         self.sparse = sparse
         self._weight = None
-        # Divide the weight matrix along the embedding dimension.
-        self.embedding_dim_per_partition = divide_and_check_no_remainder(self.embedding_dim, world_size)
-
-        self.world_size = world_size
-        self.rank = rank
-
-        # Allocate weights.
-        self.Embedding = ModelParallelEmbedding(num_embeddings, embedding_dim, world_size, rank, padding_idx, max_norm, norm_type, scale_grad_by_freq, sparse, init_method, keep_master_weight_for_test, 
-                                                **factory_kwargs)
-
-        self.Embedding.affine_weight(Embedding_layer)
-
-    def forward(self, input_: torch.Tensor) -> torch.Tensor:  # type: ignore
-        input_parallel = input_
-        output_parallel = self.Embedding(input_parallel)
-        output = gather_from_model_parallel_region(output_parallel)
-        return output
-
-
-class WeightParallelEmbedding(torch.nn.Module):
-    """Embedding parallelized in the embedding dimension.
-
-    This is mainly adapted from torch.nn.Embedding and all the default
-    values are kept.
-    Arguments:
-        num_embeddings: vocabulary size.
-        embedding_dim: size of hidden state.
-        init_method: method to initialize weights.
-    """
-
-    def __init__(
-        self,
-        num_embeddings: int,
-        embedding_dim: int,
-        world_size: int,
-        rank: int,
-        padding_idx: Optional[int] = None,
-        max_norm: Optional[float] = None,
-        norm_type: float = 2.0,
-        scale_grad_by_freq: bool = False,
-        sparse: bool = False,
-        init_method: Callable[[torch.Tensor], torch.Tensor] = init.xavier_normal_,
-        keep_master_weight_for_test: bool = False,
-        Embedding_layer = None,
-        device=None,
-        dtype=None,
-    ) -> None:
-        factory_kwargs = {'device': device, 'dtype': dtype}
-        super(WeightParallelEmbedding, self).__init__()
-        # Keep the input dimensions.
-        self.num_embeddings = num_embeddings
-        self.embedding_dim = embedding_dim
-        self.padding_idx = padding_idx
-        self.max_norm = max_norm
-        self.norm_type = scale_grad_by_freq
-        self.scale_grad_by_freq = scale_grad_by_freq
-        self.sparse = sparse
-        self._weight = None
         self.world_size = world_size
         self.rank = rank
         # Divide the weight matrix along the embedding dimension.

@@ -13,7 +13,7 @@ from fairscale.internal import torch_version
 from typing import TYPE_CHECKING, Any, Callable, Dict, Generator, List, Optional, Tuple, Union
 
 RPC_PORT = 29501
-from rtp.module.attention import ParallelMultiheadAttention, WeightParallelMultiheadAttention
+from rtp.module.attention import ParallelMultiheadAttention
 
 def get_ColumnParallelLinear_model(args, device, config):
     """Get language model(based on GPT-2) used for sequence prediction."""
@@ -153,37 +153,9 @@ class TestIdenticalOutputs(unittest.TestCase):
             param_names.append(param_name)
             ref_grads.append(param.grad.clone())
 
-        Model_MultiheadAttention = ParallelMultiheadAttention(embedding_dim, num_heads, bias=True, world_size=world_size, rank=rank, MultiheadAttention_layer=MultiheadAttention).cuda()
-        Model_MultiheadAttention_output = Model_MultiheadAttention(data, data, data)[0]
-
-        assert objects_are_equal(MultiheadAttention_output, Model_MultiheadAttention_output)
-        
-        Model_loss = Model_MultiheadAttention_output.sum()
-        Model_loss.backward()
-        Model_grads = []
-
         orders = []
         for i in range(3):
             orders += [j * 3 + i for j in range(world_size)]
-
-        for param_name, param in Model_MultiheadAttention.named_parameters():
-            if 'in_proj' in param_name:
-                grad = param.grad.clone()
-                grad = _gather(grad, dim=0)
-                grad_list = torch.split(grad, sub_embedding_dim, dim=0)
-                grad_list = [grad_list[i] for i in orders]
-                grad = torch.cat(grad_list, dim=0).contiguous()
-                Model_grads.append(grad)
-            elif 'out_proj' in param_name and 'weight' in param_name:
-                grad = param.grad.clone()
-                grad = _gather(grad, dim=1)
-                Model_grads.append(grad)
-            elif 'out_proj' in param_name and 'bias' in param_name:
-                grad = param.grad.clone()
-                Model_grads.append(grad)
-
-        for grad1, grad2 in zip(ref_grads, Model_grads):
-            assert objects_are_equal(grad1, grad2)
 
         sub_sample = num_samples // world_size
         data_list = torch.split(data, sub_sample, dim=1)
@@ -193,11 +165,10 @@ class TestIdenticalOutputs(unittest.TestCase):
         MultiheadAttention_output = MultiheadAttention(data, data, data)[0]
         assert objects_are_equal(output_list[rank], MultiheadAttention_output)
 
-        Weight_MultiheadAttention = WeightParallelMultiheadAttention(embedding_dim, num_heads, bias=True, 
+        Weight_MultiheadAttention = ParallelMultiheadAttention(embedding_dim, num_heads, bias=True, 
                                                                      world_size=world_size, rank=rank, 
                                                                      device = device, 
                                                                      MultiheadAttention_layer=MultiheadAttention)
-        Weight_MultiheadAttention._setup_streams()
         Weight_MultiheadAttention_output = Weight_MultiheadAttention(data, data, data)[0]
 
         assert objects_are_equal(MultiheadAttention_output, Weight_MultiheadAttention_output)
