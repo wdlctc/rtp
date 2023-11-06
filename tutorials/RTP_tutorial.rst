@@ -95,8 +95,8 @@ We add the following code snippets to a python script “FSDP_mnist.py”.
         enable_wrap,
         wrap,
     )
-    from rtp.module.conv import WeightParallelConv2d
-    from rtp.module.linear import WeightParallelLinear
+    from rtp.module.conv import ColumnParallelConv2d
+    from rtp.module.linear import ColumnParallelLinear, RowParallelLinear
 
 1.3 Distributed training setup. As we mentioned RTP is a type of data parallelism which requires a distributed training environment, so here we use two helper functions to initialize the processes for distributed training and clean up.
 
