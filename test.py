@@ -11,6 +11,8 @@ import numpy as np
 from typing import Any, Optional
 from fairscale.internal import torch_version
 
+from fairscale.optim import GradScaler
+
 RPC_PORT = 29503
 
 def init_random_seed(seed: int):
@@ -82,31 +84,20 @@ def objects_are_equal(
     else:
         return a == b
 
-class Net(nn.Module):
-    def __init__(self):
-        super(Net, self).__init__()
-        self.conv1 = nn.Conv2d(1, 32, 3, 1)
-        self.conv2 = nn.Conv2d(32, 64, 3, 1)
-        self.dropout1 = nn.Dropout(0.25)
-        self.dropout2 = nn.Dropout(0.5)
-        self.fc1 = nn.Linear(9216, 128)
-        self.fc2 = nn.Linear(128, 10)
+config = {
+            "vocab_size": 10000,
+            "ninp": 2048,  # embedding dimension
+            "nhid": 2048,  # the dimension of the feedforward network model in nn.TransformerEncoder
+            "nhead": 32,  # the number of heads in the multiheadattention models
+            "dropout": 0,
+            "initrange": 0.1,
+            "scaler": GradScaler(),
+            "clip_value": 0.05,
+            "num_decoder_layers": 10,
+            "seq_len": 32,
+        }
 
-    def forward(self, x):
-
-        x = self.conv1(x)
-        x = F.relu(x)
-        x = self.conv2(x)
-        x = F.relu(x)
-        x = F.max_pool2d(x, 2)
-        x = self.dropout1(x)
-        x = torch.flatten(x, 1)
-        x = self.fc1(x)
-        x = F.relu(x)
-        x = self.dropout2(x)
-        x = self.fc2(x)
-        output = F.log_softmax(x, dim=1)
-        return output
+from rtp.models import transformer_lm_fsdp as transformer_lm
 
 def split_tensor(
     tensor: torch.Tensor, num_partitions: int, contiguous_split_chunks: bool = False, dim: int = -1
@@ -140,15 +131,35 @@ def benchmark_fsdp(rank, world_size, args):
     )
     torch.cuda.set_device(rank)
     init_random_seed(0)
-    model = Net()
+    
+    num_samples = 32
+    num_embeddings = 32
+    embedding_dim = 32
+    learning_rate = 0.001
+
+    example = torch.randint(low=0, high=7, size=(num_embeddings, num_samples), dtype=torch.long).cuda()
+    labels = torch.randint(low=0, high=7, size=(num_embeddings, num_samples), dtype=torch.long).cuda()
+
+    ninp = config["ninp"]
+    nhead = config["nhead"]
+    initrange = config["initrange"]
+    dropout = config["dropout"]
+    vocab_size = config["vocab_size"]
+    nhid = config["nhid"]
+    ndecoder = config["num_decoder_layers"] - 2
+    dropout = 0
+
+    
+    sub_embedding_dim = ninp // world_size
+
+    model = transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder)
+
     ref = copy.deepcopy(model)
 
     model = RotatedTensorParallel(model)
     model.cuda()
 
     model.eval()
-    example = torch.randn(1, 1, 28, 28).cuda()
-    labels = torch.tensor([1]).cuda()
 
     output = model(example)
 
@@ -157,23 +168,23 @@ def benchmark_fsdp(rank, world_size, args):
     output2 = ref(example)
     assert objects_are_equal(output, output2)
     
-    loss = F.nll_loss(output2, labels, reduction='sum') #criterion(outputs, labels)
-    loss.backward()
+    # loss = F.nll_loss(output2, labels, reduction='sum') #criterion(outputs, labels)
+    # loss.backward()
 
-    loss = F.nll_loss(output, labels, reduction='sum').div_(world_size) #criterion(outputs, labels)
-    loss.backward()
+    # loss = F.nll_loss(output, labels, reduction='sum').div_(world_size) #criterion(outputs, labels)
+    # loss.backward()
 
-    for param1, param2 in zip(model.parameters(), ref.parameters()):
-        grad1 = param1.grad
-        grad2 = param2.grad
-        if rank == 0:
-            if grad1.shape[0] * world_size == grad2.shape[0]:
-                grad2 = split_tensor(grad2, num_partitions=world_size, dim=0)[rank]
-                # print(grad1.shape, grad2.shape)
-                # print(torch.max(torch.abs(grad1 - grad2)))
-                # print(grad1, grad2)
-                assert objects_are_equal(grad1, grad2)
-        # print(grad1.shape, grad2.shape)
+    # for param1, param2 in zip(model.parameters(), ref.parameters()):
+    #     grad1 = param1.grad
+    #     grad2 = param2.grad
+    #     if rank == 0:
+    #         if grad1.shape[0] * world_size == grad2.shape[0]:
+    #             grad2 = split_tensor(grad2, num_partitions=world_size, dim=0)[rank]
+    #             # print(grad1.shape, grad2.shape)
+    #             # print(torch.max(torch.abs(grad1 - grad2)))
+    #             # print(grad1, grad2)
+    #             assert objects_are_equal(grad1, grad2)
+    #     # print(grad1.shape, grad2.shape)
         # assert objects_are_equal(param1.grad, param2.grad)
 
 parser = argparse.ArgumentParser(description='PyTorch MNIST Example')

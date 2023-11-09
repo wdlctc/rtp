@@ -4,6 +4,8 @@ import torch.distributed as dist
 import typing
 import copy
 from functools import partial
+from torch.nn.parallel import DistributedDataParallel as DDP
+
 from typing import (
     TYPE_CHECKING,
     Any,
@@ -265,7 +267,7 @@ class FlyweightWarpper(nn.Module):
             input_list = split_tensor(args[0], self.world_size, dim=self.input_partition_dim)
             
             for i in range(self.world_size):
-                index = (self.rank +i) % self.world_size
+                index = (self.rank -i +self.world_size) % self.world_size
                 input_parallel = input_list[index]
                 ParallelRegion_before.apply(input_parallel, self, i)
                 output = self.module_list[index](input_parallel)
@@ -279,7 +281,7 @@ class FlyweightWarpper(nn.Module):
             output_list = [None for _ in range(self.world_size)]
             
             for i in range(self.world_size):
-                index = (self.rank +i) % self.world_size
+                index = (self.rank -i +self.world_size) % self.world_size
                 ParallelRegion_before.apply(args[0], self, i)
                 output = self.module_list[index](*args, **kwargs)
                 output = ParallelRegion_after.apply(output, self, i)
@@ -330,7 +332,7 @@ class RotatedTensorParallel(nn.Module):
                     elif module.in_features % self.world_size == 0:
                         module.weight = nn.Parameter(split_tensor(module.weight, self.world_size, dim=-1)[self.rank])
                         if module.bias is not None:
-                            module.bias = module.bias.div_(self.world_size)
+                            module.bias.data.div_(self.world_size)
                         module = FlyweightWarpper(module, self.group, row_partition=True, input_partition_dim=-1)
                     else:
                         raise ValueError("The input or output features of the linear layer must be divisible by the world size.")
@@ -339,7 +341,7 @@ class RotatedTensorParallel(nn.Module):
 
                     self.FlyweightModule_list.append(module)
 
-                if isinstance(module, nn.Conv2d):
+                elif isinstance(module, nn.Conv2d):
                     if module.out_channels % self.world_size == 0:
                         module.weight = nn.Parameter(split_tensor(module.weight, self.world_size, dim=0)[self.rank])
                         if module.bias is not None:
@@ -351,6 +353,17 @@ class RotatedTensorParallel(nn.Module):
                     setattr(upper_module, name, module)
 
                     self.FlyweightModule_list.append(module)
+                elif isinstance(module, nn.Embedding):
+                    if module.embedding_dim % self.world_size == 0:
+                        module.weight = nn.Parameter(split_tensor(module.weight, self.world_size, dim=1)[self.rank])
+                        module = FlyweightWarpper(module, self.group)
+                    else:
+                        raise ValueError("The embedding_dim of the embedding layer must be divisible by the world size.")
+                elif isinstance(module, nn.LayerNorm):
+                    pass
+                else:
+                    print(module)
+                    raise ValueError("The layer must be nn.Linear, nn.Conv2d or nn.Embedding.")
         
     def forward(self, *args: Any, **kwargs: Any) -> torch.Tensor:
         outputs = self.module(*args, **kwargs)
