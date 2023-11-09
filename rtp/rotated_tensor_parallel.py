@@ -208,6 +208,8 @@ class FlyweightWarpper(nn.Module):
         flat_param_names: Optional[List[str]] = None,
         partition_dim: int = None, 
         output_partition_dim: int = None,
+        row_partition: bool = False,
+        input_partition_dim: int = None,
     ):
         super().__init__()
         self.module = module
@@ -217,7 +219,11 @@ class FlyweightWarpper(nn.Module):
         self.partition_dim = partition_dim
         if output_partition_dim is None:
             output_partition_dim = -1
+        if input_partition_dim is None:
+            input_partition_dim = -1
         self.output_partition_dim = output_partition_dim
+        self.input_partition_dim = input_partition_dim
+        self.row_partition = row_partition  
         self.FlyweightList = []
 
         self.group = group if group is not None else dist.group.WORLD
@@ -255,16 +261,31 @@ class FlyweightWarpper(nn.Module):
 
     def forward(self, *args: Any, **kwargs: Any) -> torch.Tensor:
 
-        output_list = [None for _ in range(self.world_size)]
-        
-        for i in range(self.world_size):
-            index = (self.rank +i) % self.world_size
-            ParallelRegion_before.apply(args[0], self, i)
-            output = self.module_list[index](*args, **kwargs)
-            output = ParallelRegion_after.apply(output, self, i)
-            output_list[index] = output
+        if self.row_partition:
+            input_list = split_tensor(args[0], self.world_size, dim=self.input_partition_dim)
+            
+            for i in range(self.world_size):
+                index = (self.rank +i) % self.world_size
+                input_parallel = input_list[index]
+                ParallelRegion_before.apply(input_parallel, self, i)
+                output = self.module_list[index](input_parallel)
+                output = ParallelRegion_after.apply(output, self, i)
+                
+                if i == 0:
+                    output_parallel = output
+                else:
+                    output_parallel = output + output_parallel
+        else:
+            output_list = [None for _ in range(self.world_size)]
+            
+            for i in range(self.world_size):
+                index = (self.rank +i) % self.world_size
+                ParallelRegion_before.apply(args[0], self, i)
+                output = self.module_list[index](*args, **kwargs)
+                output = ParallelRegion_after.apply(output, self, i)
+                output_list[index] = output
 
-        output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+            output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
         
         return output_parallel
 
@@ -305,13 +326,14 @@ class RotatedTensorParallel(nn.Module):
                         module.weight = nn.Parameter(split_tensor(module.weight, self.world_size, dim=0)[self.rank])
                         if module.bias is not None:
                             module.bias = nn.Parameter(split_tensor(module.bias, self.world_size, dim=0)[self.rank])
+                        module = FlyweightWarpper(module, self.group)
                     elif module.in_features % self.world_size == 0:
                         module.weight = nn.Parameter(split_tensor(module.weight, self.world_size, dim=-1)[self.rank])
                         if module.bias is not None:
                             module.bias = module.bias.div_(self.world_size)
+                        module = FlyweightWarpper(module, self.group, row_partition=True, input_partition_dim=-1)
                     else:
                         raise ValueError("The input or output features of the linear layer must be divisible by the world size.")
-                    module = FlyweightWarpper(module, self.group)
                     
                     setattr(upper_module, name, module)
 
