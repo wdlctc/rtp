@@ -24,12 +24,10 @@ from functools import partial
 import torch.distributed as dist
 
 from .utils import divide_and_check_no_remainder, affine_weight
-from .collectives import gather_from_model_parallel_region, copy_to_model_parallel_region
-from .collectives import set_full_param, allign_storage, free_storage, set_full_param2
-from .collectives import _WeightParallelRegion_all, _WeightParallelRegion_test
+from .collectives import set_full_param, allign_storage, set_full_param2
 
 from .collectives import _WeightParallelRegion_before, _WeightParallelRegion_after, hook_fn
-from .utils import divide_and_check_no_remainder, divide, split_tensor_along_last_dim
+from .utils import divide_and_check_no_remainder, split_tensor_along_last_dim
 
 class ModelParallelLinear(torch.nn.Linear):
     """Linear layer with column parallelism.

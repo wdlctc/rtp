@@ -8,8 +8,6 @@ import math
 import torch
 import torch.nn as nn
 
-from rtp.module.moe import MOELayer
-from rtp.module.top2gate import Top2Gate
 from rtp.module.moe import WeightMOELayer
 from rtp.module.top2gate import WeightTop2Gate
 

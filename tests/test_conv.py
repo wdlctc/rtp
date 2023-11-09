@@ -10,20 +10,10 @@ import torch.distributed as dist
 import torch.multiprocessing as mp
 from fairscale.internal import torch_version
 
-from typing import TYPE_CHECKING, Any, Callable, Dict, Generator, List, Optional, Tuple, Union
+from typing import Any, Optional
 
 RPC_PORT = 29501
 from rtp.module.conv import ColumnParallelConv2d
-
-def get_ColumnParallelLinear_model(args, device, config):
-    """Get language model(based on GPT-2) used for sequence prediction."""
-
-    in_features = config["in_features"]
-    out_features = config["out_features"]
-    rank = torch.distributed.get_rank()
-    world_size = torch.distributed.get_world_size()
-
-    return ColumnParallelLinear(in_features, out_features, world_size=world_size, rank=rank).to(device)
 
 
 def init_random_seed(seed: int):
