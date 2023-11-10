@@ -5,6 +5,7 @@ import typing
 import copy
 from functools import partial
 from torch.nn.parallel import DistributedDataParallel as DDP
+from .attention import ParallelMultiheadAttention
 
 from typing import (
     TYPE_CHECKING,
@@ -124,6 +125,7 @@ class ParallelRegion_before(torch.autograd.Function):
             for req in module.reqs:
                 req.wait()
             module.flat_param.data.copy_(module._buffer)
+            module.reqs = _clock_rotation_buffer(module.flat_param.data, module._buffer)
 
         return input_
 
@@ -212,6 +214,7 @@ class FlyweightWarpper(nn.Module):
         output_partition_dim: int = None,
         row_partition: bool = False,
         input_partition_dim: int = None,
+        cat_output: bool = True,
     ):
         super().__init__()
         self.module = module
@@ -226,6 +229,7 @@ class FlyweightWarpper(nn.Module):
         self.output_partition_dim = output_partition_dim
         self.input_partition_dim = input_partition_dim
         self.row_partition = row_partition  
+        self.cat_output = cat_output
         self.FlyweightList = []
 
         self.group = group if group is not None else dist.group.WORLD
@@ -285,9 +289,16 @@ class FlyweightWarpper(nn.Module):
                 ParallelRegion_before.apply(args[0], self, i)
                 output = self.module_list[index](*args, **kwargs)
                 output = ParallelRegion_after.apply(output, self, i)
-                output_list[index] = output
+                if self.cat_output:
+                    output_list[index] = output
+                else:
+                    if i == 0:
+                        output_parallel = output
+                    else:
+                        output_parallel = output + output_parallel
 
-            output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+            if self.cat_output:
+                output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
         
         return output_parallel
 
@@ -316,13 +327,14 @@ class RotatedTensorParallel(nn.Module):
             
         has_parameters = any(isinstance(param, nn.Parameter) for param in module.parameters())
         has_child = any(isinstance(child, nn.Module) for child in module.children())
+        is_MultiheadAttention = isinstance(module, nn.MultiheadAttention)
 
-        if has_child:
+        if has_child and not is_MultiheadAttention:
             for name, child in module.named_children():
                 self.RecursiveVisit(name, child, module)
         else:
             if has_parameters:
-
+                pass
                 if isinstance(module, nn.Linear):
                     if module.out_features % self.world_size == 0:
                         module.weight = nn.Parameter(split_tensor(module.weight, self.world_size, dim=0)[self.rank])
@@ -357,13 +369,53 @@ class RotatedTensorParallel(nn.Module):
                     if module.embedding_dim % self.world_size == 0:
                         module.weight = nn.Parameter(split_tensor(module.weight, self.world_size, dim=1)[self.rank])
                         module = FlyweightWarpper(module, self.group)
+                        setattr(upper_module, name, module)
+                        self.FlyweightModule_list.append(module)
                     else:
                         raise ValueError("The embedding_dim of the embedding layer must be divisible by the world size.")
-                elif isinstance(module, nn.LayerNorm):
-                    pass
-                else:
-                    print(module)
-                    raise ValueError("The layer must be nn.Linear, nn.Conv2d or nn.Embedding.")
+                elif isinstance(module, nn.MultiheadAttention):
+
+                    embed_dim=module.embed_dim
+                    num_heads=module.num_heads
+                    dropout=module.dropout
+                    bias=module.in_proj_bias is not None
+                    add_bias_kv=module.bias_k is not None
+                    add_zero_attn=module.add_zero_attn
+                    kdim=module.kdim
+                    vdim=module.vdim
+
+                    device = module.in_proj_weight.device
+                    dtype = module.in_proj_weight.dtype
+
+                    r = ParallelMultiheadAttention(embed_dim, num_heads, dropout=dropout, bias=bias,
+                                    add_bias_kv=add_bias_kv, add_zero_attn=add_zero_attn,
+                                    kdim=kdim, vdim=vdim,
+                                    device=device, dtype=dtype)
+
+                    index = [self.rank, self.rank+self.world_size, self.rank+self.world_size*2]
+                    for n, param in module.named_parameters():
+                        if n == 'in_proj_weight':
+                            weight_list = split_tensor(param, self.world_size*3, dim=0)
+                            weight_list = [weight_list[i] for i in index]
+                            weight = nn.Parameter(torch.cat(weight_list, dim=0).contiguous())
+                            setattr(r, n, weight)
+                        if n == 'in_proj_bias':
+                            bias_list = split_tensor(param, self.world_size*3, dim=0)
+                            bias_list = [bias_list[i] for i in index]
+                            bias = nn.Parameter(torch.cat(bias_list, dim=0).contiguous())
+                            setattr(r, n, bias)
+                        if n == 'out_proj.weight':
+                            r.out_proj.weight = nn.Parameter(split_tensor(module.out_proj.weight, self.world_size, dim=1)[self.rank])
+                        if n == 'out_proj.bias':
+                            r.out_proj.bias.data.div_(self.world_size)
+                    setattr(upper_module, name, r)
+                    r = FlyweightWarpper(r, self.group, cat_output=False)
+                    self.FlyweightModule_list.append(r)
+                # elif isinstance(module, nn.LayerNorm):
+                #     pass
+                # else:
+                #     print(module)
+                #     raise ValueError("The layer must be nn.Linear, nn.Conv2d or nn.Embedding.")
         
     def forward(self, *args: Any, **kwargs: Any) -> torch.Tensor:
         outputs = self.module(*args, **kwargs)
