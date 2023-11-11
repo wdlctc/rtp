@@ -302,7 +302,7 @@ def _in_projection_packed(
         if q is k:
             # self-attention
             # print("------------------------")
-            # print(q.shape, w.shape, b.shape)
+            print(q.shape, w.shape, b.shape)
             proj = torch._C._nn.linear(q, w, b)
             
             # print(q.shape, w.shape, b.shape, proj.shape)

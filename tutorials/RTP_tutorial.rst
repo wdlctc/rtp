@@ -45,7 +45,7 @@ At a high level RTP works as follow:
 
 How to use RTP
 --------------
-For demonstration purposes, we'll use a foundational transform model. 
+For demonstration purposes, we'll use a simple mnist model(see the `examples <https://github.com/wdlctc/rtp/blob/main/benchmarks/rtp_mnist.py>`_ for full training example):. 
 RTP requires modifying the model definition. auto_wrap_policy is a developing feature in RTP currently.
 
 *Setup*
@@ -95,8 +95,8 @@ We add the following code snippets to a python script “FSDP_mnist.py”.
         enable_wrap,
         wrap,
     )
-    from rtp.module.conv import ColumnParallelConv2d
-    from rtp.module.linear import ColumnParallelLinear, RowParallelLinear
+
+    from rtp.rotated_tensor_parallel import RotatedTensorParallel
 
 1.3 Distributed training setup. As we mentioned RTP is a type of data parallelism which requires a distributed training environment, so here we use two helper functions to initialize the processes for distributed training and clean up.
 
@@ -113,19 +113,18 @@ We add the following code snippets to a python script “FSDP_mnist.py”.
         dist.destroy_process_group()
 
 2.1  Define our toy model for handwritten digit classification. 
-**Note: to define RTP model, we need to use WeightParallelConv2d instead of nn.Conv2d,  WeightParallelLinear and InputParallelLinear instead of nn.Linear.**
 
 .. code-block:: python
 
     class Net(nn.Module):
         def __init__(self):
             super(Net, self).__init__()
-            self.conv1 = ColumnParallelConv2d(1, 32, 3, 1)
-            self.conv2 = ColumnParallelConv2d(32, 64, 3, 1)
+            self.conv1 = nn.Conv2d(1, 32, 3, 1)
+            self.conv2 = nn.Conv2d(32, 64, 3, 1)
             self.dropout1 = nn.Dropout(0.25)
             self.dropout2 = nn.Dropout(0.5)
-            self.fc1 = ColumnParallelLinear(9216, 128)
-            self.fc2 = RowParallelLinear(128, 10)
+            self.fc1 = nn.Linear(9216, 128)
+            self.fc2 = nn.Linear(128, 10)
 
         def forward(self, x):
 
@@ -191,7 +190,7 @@ We add the following code snippets to a python script “FSDP_mnist.py”.
                 test_loss, int(ddp_loss[1]), int(ddp_loss[2]),
                 100. * ddp_loss[1] / ddp_loss[2]))
 
-2.4 Define a distributed train function 
+2.4 Define a distributed train function, note we recommand to warp model on cpu then transform it into GPU in order to save memory.
 
 .. code-block:: python
 
@@ -230,7 +229,9 @@ We add the following code snippets to a python script “FSDP_mnist.py”.
         init_start_event = torch.cuda.Event(enable_timing=True)
         init_end_event = torch.cuda.Event(enable_timing=True)
 
-        model = Net().to(rank)
+        model = Net()
+        model = RotatedTensorParallel(model)
+        model.cuda()
 
         optimizer = optim.Adadelta(model.parameters(), lr=args.lr)
 
@@ -303,21 +304,22 @@ We have recorded cuda events to measure the time of RTP model specifics. The CUD
 Using the model with rtp, the model will look as follows, we can see the model has use RTP unit.
 
 .. code-block:: bash
-
-    Net(
-        (conv1): ColumnParallelConv2d(
-            (conv): ModelParallelConv2d(1, 8, kernel_size=(3, 3), stride=(1, 1))
-        )
-        (conv2): ColumnParallelConv2d(
-            (conv): ModelParallelConv2d(32, 16, kernel_size=(3, 3), stride=(1, 1))
-        )
-        (dropout1): Dropout(p=0.25, inplace=False)
-        (dropout2): Dropout(p=0.5, inplace=False)
-        (fc1): ColumnParallelLinear(
-            (linear): ModelParallelLinear(in_features=9216, out_features=32, bias=True)
-        )
-        (fc2): RowParallelLinear(
-            (linear): ModelParallelLinear2(in_features=32, out_features=10, bias=True)
+    RotatedTensorParallel(
+        (module): Net(
+            (conv1): FlyweightWarpper(
+                (module): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1))
+            )
+            (conv2): FlyweightWarpper(
+                (module): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+            )
+            (dropout1): Dropout(p=0.25, inplace=False)
+            (dropout2): Dropout(p=0.5, inplace=False)
+            (fc1): FlyweightWarpper(
+                (module): Linear(in_features=9216, out_features=128, bias=True)
+            )
+            (fc2): FlyweightWarpper(
+                (module): Linear(in_features=128, out_features=10, bias=True)
+            )
         )
     )
 
@@ -335,32 +337,6 @@ The following is the peak memory usage from RTP MNIST training on 4 V100 GPUs ca
 Compare it with DDP, if in 2.4 we need to use original and  wrap the model in DPP, saving the changes in "dp_mnist.py”.
 
 .. code-block:: python
-
-    class Net(nn.Module):
-        def __init__(self):
-            super(Net, self).__init__()
-            self.conv1 = nn.Conv2d(1, 32, 3, 1)
-            self.conv2 = nn.Conv2d(32, 64, 3, 1)
-            self.dropout1 = nn.Dropout(0.25)
-            self.dropout2 = nn.Dropout(0.5)
-            self.fc1 = nn.Linear(9216, 128)
-            self.fc2 = nn.Linear(128, 10)
-
-        def forward(self, x):
-
-            x = self.conv1(x)
-            x = F.relu(x)
-            x = self.conv2(x)
-            x = F.relu(x)
-            x = F.max_pool2d(x, 2)
-            x = self.dropout1(x)
-            x = torch.flatten(x, 1)
-            x = self.fc1(x)
-            x = F.relu(x)
-            x = self.dropout2(x)
-            x = self.fc2(x)
-            output = F.log_softmax(x, dim=1)
-            return output
 
     model = Net().to(rank)
     model = DDP(model)

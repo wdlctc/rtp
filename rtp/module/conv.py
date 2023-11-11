@@ -10,8 +10,7 @@ from functools import partial
 import torch.distributed as dist
 
 from .utils import divide_and_check_no_remainder, affine_weight
-from .collectives import gather_from_conv_parallel_region, copy_to_model_parallel_region
-from .collectives import set_full_param, set_full_param2, allign_storage, free_storage, _WeightParallelRegion_all, _WeightParallelRegion_test
+from .collectives import set_full_param, set_full_param2, allign_storage
 from .collectives import _WeightParallelRegion_before, _WeightParallelRegion_after, hook_fn
 
 

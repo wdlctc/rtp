@@ -8,21 +8,18 @@ import math
 import torch
 import torch.nn as nn
 
-from rtp.module.moe import WeightMOELayer
-from rtp.module.top2gate import WeightTop2Gate
+from fairscale.nn.moe.moe_layer import MOELayer
+from fairscale.nn.moe.top2gate import Top2Gate
 
-from rtp.module.embedding import ParallelEmbedding 
-from rtp.module.linear import ColumnParallelLinear
-from rtp.module.attention import ParallelMultiheadAttention
 
 # TODO(anj-s): Identify if we need this initialization logic for the below wrapped layers.
 class EmbeddingLayer(nn.Module):
     """Wrapped nn.Embedding layer to allow for weight initialization."""
 
-    def __init__(self, ntoken, ninp, initrange, world_size, rank, device=None):
+    def __init__(self, ntoken, ninp, initrange):
         super(EmbeddingLayer, self).__init__()
-        self.embedding = ParallelEmbedding(ntoken, ninp, world_size=world_size, rank=rank, device=device)
-        self.embedding.embedding.weight.data.uniform_(-initrange, initrange)
+        self.embedding = nn.Embedding(ntoken, ninp)
+        self.embedding.weight.data.uniform_(-initrange, initrange)
         self.ninp_sqrt = math.sqrt(ninp)
 
     def forward(self, src):
@@ -60,29 +57,15 @@ class PositionalEncodingLayer(nn.Module):
         return self.dropout(x)
 
 
-class FeedForwardLayer_expert(nn.Module):
+class FeedForwardLayer(nn.Module):
     """FeedForward layer for a given Transformer model."""
 
     def __init__(self, d_model, dim_feedforward, activation, dropout) -> None:
-        super(FeedForwardLayer_expert, self).__init__()
+        super(FeedForwardLayer, self).__init__()
         self.linear1 = nn.Linear(d_model, dim_feedforward)
         self.activation = activation
         self.dropout1 = nn.Dropout(dropout)
         self.linear2 = nn.Linear(dim_feedforward, d_model)
-        self.dropout2 = nn.Dropout(dropout)
-
-    def forward(self, x):
-        return self.dropout2(self.linear2(self.dropout1(self.activation(self.linear1(x)))))
-
-class FeedForwardLayer(nn.Module):
-    """FeedForward layer for a given Transformer model."""
-
-    def __init__(self, d_model, dim_feedforward, activation, dropout, world_size, rank, device=None) -> None:
-        super(FeedForwardLayer, self).__init__()
-        self.linear1 = ColumnParallelLinear(d_model, dim_feedforward, device=device)
-        self.activation = activation
-        self.dropout1 = nn.Dropout(dropout)
-        self.linear2 = ColumnParallelLinear(dim_feedforward, d_model, device=device)
         self.dropout2 = nn.Dropout(dropout)
 
     def forward(self, x):
@@ -131,28 +114,25 @@ class TransformerEncoderLayer(nn.Module):
         norm_first=False,
         is_moe=False,
         num_local_experts=1,
-        world_size=1,
-        rank=0,
-        device=None
     ):
         super(TransformerEncoderLayer, self).__init__()
-        self.self_attn = ParallelMultiheadAttention(d_model, nhead, dropout=dropout, world_size=world_size, rank=rank, device=device)
+        self.self_attn = nn.MultiheadAttention(d_model, nhead, dropout=dropout)
         self.norm_first = norm_first
-        self.norm1 = nn.LayerNorm(d_model, eps=layer_norm_eps, device=device)
-        self.norm2 = nn.LayerNorm(d_model, eps=layer_norm_eps, device=device)
+        self.norm1 = nn.LayerNorm(d_model, eps=layer_norm_eps)
+        self.norm2 = nn.LayerNorm(d_model, eps=layer_norm_eps)
         self.dropout = nn.Dropout(dropout)
 
         self.is_moe = is_moe
         if is_moe:
             world_size = 1 if not torch.distributed.is_initialized() else torch.distributed.get_world_size()
             num_global_experts = num_local_experts * world_size
-            self.gate = WeightTop2Gate(d_model, num_global_experts, device=device)
+            self.gate = Top2Gate(d_model, num_global_experts)
             experts = nn.ModuleList(
-                [FeedForwardLayer_expert(d_model, dim_feedforward, activation, dropout).to(device) for _ in range(num_local_experts)]
+                [FeedForwardLayer(d_model, dim_feedforward, activation, dropout) for _ in range(num_local_experts)]
             )
-            self.moe_layer = WeightMOELayer(self.gate, experts,device=device)
+            self.moe_layer = MOELayer(self.gate, experts)
         else:
-            self.ff_block = FeedForwardLayer(d_model, dim_feedforward, activation, dropout, world_size=world_size, rank=rank, device=device)
+            self.ff_block = FeedForwardLayer(d_model, dim_feedforward, activation, dropout)
 
     def forward(self, src, src_mask=None, src_key_padding_mask=None):
         r"""Pass the input through the encoder layer.
@@ -194,8 +174,8 @@ class TransformerEncoderLayer(nn.Module):
 class TransformerDecoderLayer(TransformerEncoderLayer):
     """TransformerDecoder layer which inherits from TransformerEncoderLayer."""
 
-    def __init__(self, ninp, nhead, nhid, dropout, is_moe=False, num_local_experts=1, world_size=1, rank=0, device=None):
-        super().__init__(ninp, nhead, nhid, dropout, is_moe=is_moe, num_local_experts=num_local_experts, world_size=world_size, rank=rank, device=device)
+    def __init__(self, ninp, nhead, nhid, dropout, is_moe=False, num_local_experts=1):
+        super().__init__(ninp, nhead, nhid, dropout, is_moe=is_moe, num_local_experts=num_local_experts)
         self.src_mask = None
 
     def _generate_square_subsequent_mask(self, sz):
@@ -215,28 +195,25 @@ class TransformerDecoderLayer(TransformerEncoderLayer):
         return super().forward(src, self.src_mask)
 
 
-class LinearLayer(nn.Module):
+class LinearLayer(nn.Linear):
     """Wrapped nn.Linear layer to allow for weight initialization."""
 
-    def __init__(self, ninp, ntoken, initrange, world_size, rank, device=None):
-        super(LinearLayer, self).__init__()
-        self.linear = ColumnParallelLinear(ninp, ntoken, device=device)
-        self.linear.linear.bias.data.zero_()
-        self.linear.linear.weight.data.uniform_(-initrange, initrange)
-    
-    def forward(self, src):
-        return self.linear(src)
+    def __init__(self, ninp, ntoken, initrange):
+        super().__init__(ninp, ntoken)
+        self.bias.data.zero_()
+        self.weight.data.uniform_(-initrange, initrange)
+
 
 class TransformerLM(nn.Sequential):
     """A GPT-2 based nn.Sequential language model."""
 
-    def __init__(self, ntokens, ninp, nhead, nhid, dropout, initrange, ndecoder, world_size, rank, is_moe=False, num_local_experts=1,device=None,dtype=None):
+    def __init__(self, ntokens, ninp, nhead, nhid, dropout, initrange, ndecoder, is_moe=False, num_local_experts=1):
         layers = [
-            EmbeddingLayer(ntokens, ninp, initrange, world_size, rank, device=device),
+            EmbeddingLayer(ntokens, ninp, initrange),
             PositionalEncodingLayer(ninp, dropout),
         ]
         for _ in range(ndecoder):
-            layers.append(TransformerDecoderLayer(ninp, nhead, nhid, dropout, is_moe, num_local_experts, world_size=world_size, rank=rank, device=device))
+            layers.append(TransformerDecoderLayer(ninp, nhead, nhid, dropout, is_moe, num_local_experts))
 
-        layers.append(LinearLayer(ninp, ntokens, initrange, world_size, rank, device=device))
+        layers.append(LinearLayer(ninp, ntokens, initrange))
         super(TransformerLM, self).__init__(*layers)

@@ -10,10 +10,9 @@ import torch.distributed as dist
 import torch.multiprocessing as mp
 from fairscale.internal import torch_version
 
-from typing import TYPE_CHECKING, Any, Callable, Dict, Generator, List, Optional, Tuple, Union
+from typing import Any, Optional
 
 RPC_PORT = 29501
-from rtp.module.linear import ColumnParallelLinear, WeightParallelLinear
 
 from rtp.module.moe import MOELayer
 from rtp.module.top2gate import Top2Gate

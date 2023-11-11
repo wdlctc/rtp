@@ -94,7 +94,7 @@ class MOELayer(Base):
         return combined_output.reshape(input[0].shape)
 
 from .collectives import set_full_param, set_full_param2, allign_storage
-from .collectives import affine_module_weight, _WeightParallelRegion_test, _WeightParallelRegion_moe
+from .collectives import affine_module_weight
 from .collectives import _WeightParallelRegion_before, _WeightParallelRegion_after, hook_fn
 from functools import partial
 
