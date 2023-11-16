@@ -9,8 +9,7 @@ import time
 
 from datasets.wikitext2_data import get_real_dataloaders as get_real_wikitext2_dataloaders
 from datasets.wikitext2_data import get_synthetic_dataloaders as get_synthetic_wikitext2_dataloaders
-# from models import transformer_lm
-from rtp.models import transformer_lm_rtp as transformer_lm
+import transformer_lm_dp as transformer_lm
 import numpy as np
 import torch
 import torch.distributed as dist
@@ -21,14 +20,13 @@ import torch.nn as nn
 
 from fairscale.optim import GradScaler
 
-from rtp.module.collectives import zero_full_grads
-
 RPC_PORT = 29501
 
 from config import FSDP
+from rtp.rotated_tensor_parallel import RotatedTensorParallel
 
-import os
-os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:64"
+# import os
+# os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:64"
 
 def get_model_and_optimizer(args, device, benchmark_config, model_config):
     """Return instantiated model and optimizer function."""
@@ -55,11 +53,8 @@ def get_lm_model(args, device, config):
     vocab_size = config["vocab_size"]
     nhid = config["nhid"]
     ndecoder = config["num_decoder_layers"]
-    world_size = torch.distributed.get_world_size()
-    rank = torch.distributed.get_rank()
 
-    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder, 
-                                        world_size=world_size, rank=rank, device=device).to(device)
+    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder)
 
 def get_synthetic_dataloaders(args, device, benchmark_config, model_specs):
     """Returns dataloader for synthetic data."""
@@ -170,11 +165,9 @@ def train(model_config, model, benchmark_config, model_specs, args):
             input = source.cuda()
             target = target.cuda()
             output = model(input)
-            print(f"output.dtype {output.dtype}, target.dtype {target.dtype}")
             loss = torch.nn.CrossEntropyLoss()(output.view(-1, vocab_size), target.view(-1))
         else:
             optimizer.zero_grad()
-            zero_full_grads(model)
             input = source.cuda()
             target = target.cuda()
             output = model(input)
@@ -236,7 +229,6 @@ def benchmark_language_model(model_config, model, benchmark_config, model_specs,
         )
     )
 
-
 def benchmark_fsdp(rank, args, world_size):
     """Benchmark a given model using a single process and multiple devices."""
     init_method_pgroup = "tcp://localhost:{}".format(RPC_PORT)
@@ -257,6 +249,8 @@ def benchmark_fsdp(rank, args, world_size):
         config["compute_dtype"] = torch.float16
         config["mixed_precision"] = False
 
+    model = RotatedTensorParallel(model)
+    model.cuda()
 
     benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
 
