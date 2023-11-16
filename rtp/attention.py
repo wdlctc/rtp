@@ -109,8 +109,6 @@ class ParallelMultiheadAttention(torch.nn.Module):
         num_heads_per_partition = embed_dim_per_partition // self.head_dim
         E_div = self.embed_dim // embed_dim_per_partition
 
-        print(embed_dim_per_partition, num_heads_per_partition, E_div)
-
         if not self._qkv_same_embed_dim:
             attn_output, attn_output_weights = multi_head_attention_forward(
                 query, key, value, embed_dim_per_partition, num_heads_per_partition,

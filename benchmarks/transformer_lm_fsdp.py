@@ -215,5 +215,7 @@ class TransformerLM(nn.Sequential):
         for _ in range(ndecoder):
             layers.append(TransformerDecoderLayer(ninp, nhead, nhid, dropout, is_moe, num_local_experts))
 
+        # norm = nn.LayerNorm(ninp, eps=1e-5)
+
         layers.append(LinearLayer(ninp, ntokens, initrange))
         super(TransformerLM, self).__init__(*layers)

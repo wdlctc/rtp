@@ -241,7 +241,7 @@ def benchmark_fsdp(rank, args, world_size):
     init_random_seed(0)
 
     benchmark_config = FSDP.get_benchmark_config(args)
-    benchmark_config["batch_size"] = benchmark_config["batch_size"]*world_size
+    benchmark_config["batch_size"] = benchmark_config["batch_size"]
     model_specs = FSDP.get_model_config(args)
     model_config = create_model_config(args, benchmark_config=benchmark_config, model_specs=model_specs)
     model = model_config["model"]

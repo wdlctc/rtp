@@ -23,6 +23,10 @@ from fairscale.optim import GradScaler
 RPC_PORT = 29501
 
 from config import FSDP
+from rtp.rotated_tensor_parallel import RotatedTensorParallel
+
+# import os
+# os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:64"
 
 def get_model_and_optimizer(args, device, benchmark_config, model_config):
     """Return instantiated model and optimizer function."""
@@ -50,7 +54,7 @@ def get_lm_model(args, device, config):
     nhid = config["nhid"]
     ndecoder = config["num_decoder_layers"]
 
-    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder).to(device)
+    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder)
 
 def get_synthetic_dataloaders(args, device, benchmark_config, model_specs):
     """Returns dataloader for synthetic data."""
@@ -161,7 +165,6 @@ def train(model_config, model, benchmark_config, model_specs, args):
             input = source.cuda()
             target = target.cuda()
             output = model(input)
-            # print(f"output.dtype {output.dtype}, target.dtype {target.dtype}")
             loss = torch.nn.CrossEntropyLoss()(output.view(-1, vocab_size), target.view(-1))
         else:
             optimizer.zero_grad()
@@ -246,19 +249,18 @@ def benchmark_fsdp(rank, args, world_size):
         config["compute_dtype"] = torch.float16
         config["mixed_precision"] = False
 
-    rfsdp_model = DDP(model)
+    model = RotatedTensorParallel(model)
+    model.cuda()
 
-    if args.full_fp16:
-        rfsdp_model = rfsdp_model.half()
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
 
-    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
 
 
 from config import parse_args
 
 if __name__ == "__main__":
     args = parse_args()
-    print(f"Running DP benchmark with args: {args}")
+    print(f"Running RTP-out-of-place benchmark with args: {args}")
     num_devices = torch.cuda.device_count() if torch.cuda.is_available() else 1
     print(torch.cuda.device_count())
     mp.spawn(

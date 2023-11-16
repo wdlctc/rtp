@@ -246,10 +246,17 @@ def benchmark_fsdp(rank, args, world_size):
         config["compute_dtype"] = torch.float16
         config["mixed_precision"] = False
 
-    rfsdp_model = DDP(model)
+    rfsdp_model = model
 
     if args.full_fp16:
         rfsdp_model = rfsdp_model.half()
+
+    cur_numel = 0
+    if rank == 0:
+        for name, param in rfsdp_model.named_parameters():
+            print(name, param.numel())
+            cur_numel += param.numel()
+        print(cur_numel)
 
     benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
 
