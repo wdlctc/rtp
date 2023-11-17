@@ -209,7 +209,6 @@ class ParallelRegion_after(torch.autograd.Function):
             for req in module.grad_reqs:
                 req.wait()
             module.flat_param.data.copy_(module._buffer)
-            
             module._full_grad.data.copy_(module._grad_buffer)
 
             if itr == 0:
@@ -223,21 +222,9 @@ class ParallelRegion_after(torch.autograd.Function):
             module._grad_buffer = torch.zeros_like(module.flat_param)
             module._buffer = torch.zeros_like(module.flat_param)
 
-            
-            cur_numel = 0
-            for param in module.module.parameters():
-                if hasattr(param, '_reduce'):
-                    param.grad = torch.zeros_like(param.data)
-                    continue
-            
-            for sub_module in module.module_list:
-                for name, param in sub_module.named_parameters():
-                    if hasattr(param, '_reduce'):
-                        param.grad = getattr(module.module, name).grad
-
             for sub_module in module.module_list:
                 cur_numel = 0
-                for param in sub_module.param_list:
+                for param in sub_module.parameters():
                     param.grad = module._full_grad[cur_numel: cur_numel + param.numel()].view(param.shape)
                     cur_numel += param.numel()
 
@@ -352,9 +339,7 @@ class FlyweightWarpper(nn.Module):
         
         # Handle param_list being None.
         if param_list is None:
-            param_list = [param for param in module.parameters() if not hasattr(param, '_reduce')]
-        self.param_list = param_list
-        self.module.param_list = [param for param in self.module.parameters() if not hasattr(param, '_reduce')]
+            param_list = list(module.parameters())
 
         self._param_numels = [p.numel() for p in param_list]
 
@@ -373,13 +358,9 @@ class FlyweightWarpper(nn.Module):
                 self.module_list.append(sub_module)
                 continue
             sub_module = copy.deepcopy(self.module)
-            for param1, param2 in zip(self.module.parameters() , sub_module.parameters()):
-                if hasattr(param1, '_reduce'):
-                    param2._reduce = param1._reduce
-            sub_module.param_list = [param for param in sub_module.parameters() if not hasattr(param, '_reduce')]
 
             cur_numel = 0
-            for param in sub_module.param_list:
+            for param in sub_module.parameters():
                 param.data = self.flat_param[cur_numel: cur_numel + param.numel()].view(param.shape)
                 cur_numel += param.numel()
 
@@ -488,7 +469,6 @@ class RotatedTensorParallel(nn.Module):
                         module.weight = nn.Parameter(split_tensor(module.weight, self.world_size, dim=-1)[self.rank])
                         if module.bias is not None:
                             module.bias.data.div_(self.world_size)
-                            module.bias._reduce = True
                         module = FlyweightWarpper(module, self.group, row_partition=True, input_partition_dim=-1, inplace=self.inplace)
                     else:
                         raise ValueError("The input or output features of the linear layer must be divisible by the world size.")
@@ -585,19 +565,8 @@ class RotatedTensorParallel(nn.Module):
         for module in self.FlyweightModule_list:
             module.cuda(device)
             module.flat_param = module.flat_param.cuda(device)
-            for param in module.parameters():
-                cur_numel = 0
-                if not hasattr(param, '_reduce'):
-                    param.data = module.flat_param[cur_numel: cur_numel + param.numel()].view(param.shape)
-                    cur_numel += param.numel()
-                else:
-                    param.cuda(device)
-
             for sub_module in module.module_list:
                 cur_numel = 0
-                for name, param in sub_module.named_parameters():
-                    if not hasattr(param, '_reduce'):
-                        param.data = module.flat_param[cur_numel: cur_numel + param.numel()].view(param.shape)
-                        cur_numel += param.numel()
-                    else:
-                        param.data = getattr(module.module, name).data
+                for param in sub_module.parameters():
+                    param.data = module.flat_param[cur_numel: cur_numel + param.numel()].view(param.shape)
+                    cur_numel += param.numel()
