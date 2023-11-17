@@ -21,7 +21,7 @@ def parse_args():
     parser.add_argument("--vocab_size", type=int, default=50256)
     parser.add_argument("--ninp", type=int, default=1280)
     parser.add_argument("--nhid", type=int, default=5120)
-    parser.add_argument("--nhead", type=int, default=20)
+    parser.add_argument("--nhead", type=int, default=32)
     parser.add_argument("--dropout", type=float, default=0)
     parser.add_argument("--initrange", type=float, default=0.1)
     parser.add_argument("--clip_value", type=float, default=0.05)
@@ -31,7 +31,7 @@ def parse_args():
     # Benchmark Config arguments
     parser.add_argument("--epochs", type=int, default=1)
     parser.add_argument("--lr", type=float, default=0.001)
-    parser.add_argument("--batch_size", type=int, default=4)
+    parser.add_argument("--batch_size", type=int, default=1)
     return parser.parse_args()
 
 class FSDP:
