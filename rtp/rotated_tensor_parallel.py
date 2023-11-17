@@ -209,6 +209,15 @@ class ParallelRegion_after(torch.autograd.Function):
             for req in module.grad_reqs:
                 req.wait()
             module.flat_param.data.copy_(module._buffer)
+            
+            # cur_numel = 0
+            # for name, param in module.module_list[0].named_parameters():
+            #     if hasattr(param, '_reduce'):
+            #         print(module._grad_buffer[cur_numel: cur_numel + param.numel()])
+            #         module._grad_buffer[cur_numel: cur_numel + param.numel()].add_(param.grad.data)
+            #         print(module._grad_buffer[cur_numel: cur_numel + param.numel()])
+            #     cur_numel += param.numel()
+
             module._full_grad.data.copy_(module._grad_buffer)
 
             if itr == 0:
@@ -469,6 +478,7 @@ class RotatedTensorParallel(nn.Module):
                         module.weight = nn.Parameter(split_tensor(module.weight, self.world_size, dim=-1)[self.rank])
                         if module.bias is not None:
                             module.bias.data.div_(self.world_size)
+                            module.bias._reduce = True
                         module = FlyweightWarpper(module, self.group, row_partition=True, input_partition_dim=-1, inplace=self.inplace)
                     else:
                         raise ValueError("The input or output features of the linear layer must be divisible by the world size.")
