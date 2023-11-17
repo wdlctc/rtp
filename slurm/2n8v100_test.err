@@ -1,0 +1,248 @@
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 5: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 6: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 7: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 4: did you call init?
+srun: error: udc-aj40-35: tasks 4-6: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55097392.0
+slurmstepd: error: *** STEP 55097392.0 ON udc-aj38-35 CANCELLED AT 2023-11-17T17:41:57 ***
+srun: error: udc-aj38-35: tasks 1-3: Terminated
+srun: error: udc-aj40-35: task 7: Exited with exit code 1
+srun: error: udc-aj38-35: task 0: Terminated
+srun: Force Terminated StepId=55097392.0
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 251, in benchmark_fsdp
+    rfsdp_model = RFSDP(model, **config)
+NameError: name 'RFSDP' is not defined
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 251, in benchmark_fsdp
+    rfsdp_model = RFSDP(model, **config)
+NameError: name 'RFSDP' is not defined
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 251, in benchmark_fsdp
+    rfsdp_model = RFSDP(model, **config)
+NameError: name 'RFSDP' is not defined
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 251, in benchmark_fsdp
+    rfsdp_model = RFSDP(model, **config)
+NameError: name 'RFSDP' is not defined
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 251, in benchmark_fsdp
+    rfsdp_model = RFSDP(model, **config)
+NameError: name 'RFSDP' is not defined
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 251, in benchmark_fsdp
+    rfsdp_model = RFSDP(model, **config)
+NameError: name 'RFSDP' is not defined
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 251, in benchmark_fsdp
+    rfsdp_model = RFSDP(model, **config)
+NameError: name 'RFSDP' is not defined
+srun: error: udc-aj40-35: task 4: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55097392.1
+slurmstepd: error: *** STEP 55097392.1 ON udc-aj38-35 CANCELLED AT 2023-11-17T17:42:13 ***
+srun: error: udc-aj40-35: tasks 5,7: Exited with exit code 1
+srun: error: udc-aj38-35: tasks 1-3: Terminated
+srun: error: udc-aj40-35: task 6: Exited with exit code 1
+srun: error: udc-aj38-35: task 0: Terminated
+srun: Force Terminated StepId=55097392.1
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 225, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 4: did you call init?
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 225, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 5: did you call init?
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 225, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 6: did you call init?
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 225, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 7: did you call init?
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+srun: error: udc-aj40-35: tasks 4-6: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55097392.2
+slurmstepd: error: *** STEP 55097392.2 ON udc-aj38-35 CANCELLED AT 2023-11-17T17:42:50 ***
+srun: error: udc-aj38-35: tasks 0-1,3: Terminated
+srun: error: udc-aj40-35: task 7: Exited with exit code 1
+srun: error: udc-aj38-35: task 2: Terminated
+srun: Force Terminated StepId=55097392.2
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 252, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 4: did you call init?
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 252, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 5: did you call init?
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 252, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 6: did you call init?
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 252, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 7: did you call init?
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+srun: error: udc-aj40-35: tasks 4-5: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55097392.3
+slurmstepd: error: *** STEP 55097392.3 ON udc-aj38-35 CANCELLED AT 2023-11-17T17:43:30 ***
+srun: error: udc-aj40-35: task 6: Exited with exit code 1
+srun: error: udc-aj38-35: tasks 1-3: Terminated
+srun: error: udc-aj40-35: task 7: Exited with exit code 1
+srun: error: udc-aj38-35: task 0: Terminated
+srun: Force Terminated StepId=55097392.3
