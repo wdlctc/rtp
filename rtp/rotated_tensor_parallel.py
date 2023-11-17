@@ -392,12 +392,17 @@ class FlyweightWarpper(nn.Module):
                     output_parallel = output + output_parallel
         else:
             output_list = [None for _ in range(self.world_size)]
-            
             for i in range(self.world_size):
                 index = (self.rank -i +self.world_size) % self.world_size
                 if not self.inplace:
                     ParallelRegion_before.apply(args[0], self, i)
-                output = self.module_list[index](*args, **kwargs)
+
+                outputs = self.module_list[index](*args, **kwargs)
+                if isinstance(outputs, tuple):
+                    output, *unused = outputs
+                else:
+                    output = outputs
+
                 if not self.inplace:
                     output = ParallelRegion_after.apply(output, self, i)
                 else:
@@ -414,7 +419,10 @@ class FlyweightWarpper(nn.Module):
             if self.cat_output:
                 output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
         
-        return output_parallel
+        if 'unused' in locals():
+            return output_parallel, *unused
+        else:
+            return output_parallel
 
 class RotatedTensorParallel(nn.Module):
     def __init__(
@@ -506,7 +514,8 @@ class RotatedTensorParallel(nn.Module):
                     r = ParallelMultiheadAttention(embed_dim, num_heads, dropout=dropout, bias=bias,
                                     add_bias_kv=add_bias_kv, add_zero_attn=add_zero_attn,
                                     kdim=kdim, vdim=vdim,
-                                    device=device, dtype=dtype)
+                                    device=device, dtype=dtype,
+                                    group=self.group)
 
                     index = [self.rank, self.rank+self.world_size, self.rank+self.world_size*2]
                     for n, param in module.named_parameters():
@@ -523,9 +532,10 @@ class RotatedTensorParallel(nn.Module):
                         if n == 'out_proj.weight':
                             r.out_proj.weight = nn.Parameter(split_tensor(module.out_proj.weight, self.world_size, dim=1)[self.rank])
                         if n == 'out_proj.bias':
+                            r.out_proj.bias.data.copy_(param.data)
                             r.out_proj.bias.data.div_(self.world_size)
-                    setattr(upper_module, name, r)
                     r = FlyweightWarpper(r, self.group, cat_output=False, inplace=self.inplace)
+                    setattr(upper_module, name, r)
                     self.FlyweightModule_list.append(r)
         
     def forward(self, *args: Any, **kwargs: Any) -> torch.Tensor:

@@ -4,6 +4,7 @@ from .module.functional import multi_head_attention_forward
 import torch.nn.functional as F
 from torch.nn.parameter import Parameter
 from torch import Tensor
+import torch.distributed as dist
 
 from .module.utils import divide_and_check_no_remainder
 from torch.nn.modules.linear import NonDynamicallyQuantizableLinear
@@ -15,7 +16,8 @@ class ParallelMultiheadAttention(torch.nn.Module):
     bias_v: Optional[torch.Tensor]
 
     def __init__(self, embed_dim, num_heads, dropout=0., bias=True, add_bias_kv=False, add_zero_attn=False,
-                 kdim=None, vdim=None, batch_first=False, device=None, dtype=None, MultiheadAttention=None, empty_init=False) -> None:
+                 kdim=None, vdim=None, batch_first=False, device=None, dtype=None, MultiheadAttention=None, empty_init=False,
+                 group = None) -> None:
         if embed_dim <= 0 or num_heads <= 0:
             raise ValueError(
                 f"embed_dim and num_heads must be greater than 0,"
@@ -35,22 +37,27 @@ class ParallelMultiheadAttention(torch.nn.Module):
         self.head_dim = embed_dim // num_heads
         assert self.head_dim * num_heads == self.embed_dim, "embed_dim must be divisible by num_heads"
 
+        self.world_size = dist.get_world_size(group)
+        self.rank = dist.get_rank(group)
+        self.num_heads_per_partition = divide_and_check_no_remainder(self.num_heads, self.world_size)
+        self.embed_dim_per_partition = divide_and_check_no_remainder(self.embed_dim, self.world_size)
+
         if not self._qkv_same_embed_dim:
-            self.q_proj_weight = Parameter(torch.empty((embed_dim, embed_dim), **factory_kwargs))
-            self.k_proj_weight = Parameter(torch.empty((embed_dim, self.kdim), **factory_kwargs))
-            self.v_proj_weight = Parameter(torch.empty((embed_dim, self.vdim), **factory_kwargs))
+            self.q_proj_weight = Parameter(torch.empty((self.embed_dim_per_partition, embed_dim), **factory_kwargs))
+            self.k_proj_weight = Parameter(torch.empty((self.embed_dim_per_partition, self.kdim), **factory_kwargs))
+            self.v_proj_weight = Parameter(torch.empty((self.embed_dim_per_partition, self.vdim), **factory_kwargs))
             self.register_parameter('in_proj_weight', None)
         else:
-            self.in_proj_weight = Parameter(torch.empty((3 * embed_dim, embed_dim), **factory_kwargs))
+            self.in_proj_weight = Parameter(torch.empty((3 * self.embed_dim_per_partition, embed_dim), **factory_kwargs))
             self.register_parameter('q_proj_weight', None)
             self.register_parameter('k_proj_weight', None)
             self.register_parameter('v_proj_weight', None)
 
         if bias:
-            self.in_proj_bias = Parameter(torch.empty(3 * embed_dim, **factory_kwargs))
+            self.in_proj_bias = Parameter(torch.empty(3 * self.embed_dim_per_partition, **factory_kwargs))
         else:
             self.register_parameter('in_proj_bias', None)
-        self.out_proj = NonDynamicallyQuantizableLinear(embed_dim, embed_dim, bias=bias, **factory_kwargs)
+        self.out_proj = NonDynamicallyQuantizableLinear(self.embed_dim_per_partition, embed_dim, bias=bias, **factory_kwargs)
 
         if add_bias_kv:
             self.bias_k = Parameter(torch.empty((1, 1, embed_dim), **factory_kwargs))
@@ -105,13 +112,9 @@ class ParallelMultiheadAttention(torch.nn.Module):
             else:
                 query, key, value = [x.transpose(1, 0) for x in (query, key, value)]
 
-        embed_dim_per_partition = self.out_proj.weight.shape[1] 
-        num_heads_per_partition = embed_dim_per_partition // self.head_dim
-        E_div = self.embed_dim // embed_dim_per_partition
-
         if not self._qkv_same_embed_dim:
             attn_output, attn_output_weights = multi_head_attention_forward(
-                query, key, value, embed_dim_per_partition, num_heads_per_partition,
+                query, key, value, self.embed_dim_per_partition, self.num_heads_per_partition,
                 self.in_proj_weight, self.in_proj_bias,
                 self.bias_k, self.bias_v, self.add_zero_attn,
                 self.dropout, self.out_proj.weight, self.out_proj.bias,
@@ -123,10 +126,10 @@ class ParallelMultiheadAttention(torch.nn.Module):
                 v_proj_weight=self.v_proj_weight,
                 average_attn_weights=average_attn_weights,
                 is_causal=is_causal,
-                E_div=E_div)
+                E_div=self.world_size)
         else:
             attn_output, attn_output_weights = multi_head_attention_forward(
-                query, key, value, embed_dim_per_partition, num_heads_per_partition,
+                query, key, value, self.embed_dim_per_partition, self.num_heads_per_partition,
                 self.in_proj_weight, self.in_proj_bias,
                 self.bias_k, self.bias_v, self.add_zero_attn,
                 self.dropout, self.out_proj.weight, self.out_proj.bias,
@@ -136,7 +139,7 @@ class ParallelMultiheadAttention(torch.nn.Module):
                 attn_mask=attn_mask,
                 average_attn_weights=average_attn_weights,
                 is_causal=is_causal,
-                E_div=E_div)
+                E_div=self.world_size)
 
         if self.batch_first and is_batched:
             return attn_output.transpose(1, 0), attn_output_weights

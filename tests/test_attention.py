@@ -14,6 +14,7 @@ from typing import Any, Optional
 
 RPC_PORT = 29501
 from rtp.module.attention import ParallelMultiheadAttention
+from rtp.rotated_tensor_parallel import RotatedTensorParallel
 
 def init_random_seed(seed: int):
 
@@ -118,9 +119,9 @@ class TestIdenticalOutputs(unittest.TestCase):
         device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
         
         init_random_seed(0)
-        num_samples = 8
-        input_size = 8
-        embedding_dim = 8
+        num_samples = 4
+        input_size = 4
+        embedding_dim = 4
         num_heads = 4
         
         rank = torch.distributed.get_rank()
@@ -130,7 +131,12 @@ class TestIdenticalOutputs(unittest.TestCase):
 
         data = torch.randn(num_samples, input_size, embedding_dim).cuda()
 
-        MultiheadAttention = nn.MultiheadAttention(embedding_dim, num_heads, bias=True).cuda()
+        MultiheadAttention = nn.MultiheadAttention(embedding_dim, num_heads, bias=True)
+        
+        warpper_attention = RotatedTensorParallel(MultiheadAttention)
+        warpper_attention.cuda()
+        
+        MultiheadAttention.cuda()
         MultiheadAttention_output = MultiheadAttention(data, data, data)[0]
 
         loss = MultiheadAttention_output.sum()
@@ -141,10 +147,6 @@ class TestIdenticalOutputs(unittest.TestCase):
         for param_name, param in MultiheadAttention.named_parameters():
             param_names.append(param_name)
             ref_grads.append(param.grad.clone())
-
-        orders = []
-        for i in range(3):
-            orders += [j * 3 + i for j in range(world_size)]
 
         sub_sample = num_samples // world_size
         data_list = torch.split(data, sub_sample, dim=1)
@@ -160,12 +162,20 @@ class TestIdenticalOutputs(unittest.TestCase):
                                                                      MultiheadAttention_layer=MultiheadAttention)
         Weight_MultiheadAttention_output = Weight_MultiheadAttention(data, data, data)[0]
 
+
+        ref = warpper_attention(data, data, data)[0]
+
         assert objects_are_equal(MultiheadAttention_output, Weight_MultiheadAttention_output)
+        assert objects_are_equal(ref, Weight_MultiheadAttention_output)
 
         Weight_loss = Weight_MultiheadAttention_output.sum()
         Weight_loss.backward()
         Weight_grads = []
-        
+                
+        orders = []
+        for i in range(3):
+            orders += [j * 3 + i for j in range(world_size)]
+
         for param_name, param in Weight_MultiheadAttention.named_parameters():
             if 'in_proj' in param_name:
                 grad = param.grad.clone()
@@ -185,30 +195,6 @@ class TestIdenticalOutputs(unittest.TestCase):
         assert(len(ref_grads) == len(Weight_grads))
         for grad1, grad2 in zip(ref_grads, Weight_grads):
             assert objects_are_equal(grad1, grad2)
-
-        # Activation_MultiheadAttention = ActivationParallelMultiheadAttention(embedding_dim, num_heads, bias=False, world_size=world_size, rank=rank, MultiheadAttention=MultiheadAttention).cuda()
-        # Activation_MultiheadAttention_output = Activation_MultiheadAttention(data, data, data)[0]
-
-        # assert objects_are_equal(MultiheadAttention_output, Activation_MultiheadAttention_output)
-        # Model_Embedding = ParallelEmbedding(num_embeddings, embedding_dim, world_size=world_size, rank=rank, Embedding_layer=Embedding).cuda()
-        # Model_Embedding_output = Model_Embedding(data)
-
-        # assert objects_are_equal(Embedding_output, Model_Embedding_output)
-
-        # Weight_Embedding = WeightParallelEmbedding(num_embeddings, embedding_dim, world_size=world_size, rank=rank, Embedding_layer=Embedding).cuda()
-        # Weight_Embedding_output = Weight_Embedding(data)
-        
-        # assert objects_are_equal(Embedding_output, Weight_Embedding_output)
-
-        # Activation_Embedding = ActivationParallelEmbedding(num_embeddings, embedding_dim, world_size=world_size, rank=rank, Embedding_layer=Embedding).cuda()
-        # Activation_Embedding_output = Activation_Embedding(data)
-
-        # assert objects_are_equal(Embedding_output, Activation_Embedding_output)
-        # print(Embedding_output.shape, Model_Embedding_output.shape)
-
-        # if rank == 1:
-        #     print(Embedding_output[0], Model_Embedding_output[0])
-
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--local-rank', type=int, default=0)

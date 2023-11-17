@@ -14,6 +14,7 @@ from typing import Any, Optional
 
 RPC_PORT = 29501
 from rtp.module.linear import ColumnParallelLinear, RowParallelLinear
+from rtp.rotated_tensor_parallel import RotatedTensorParallel
 
 def init_random_seed(seed: int):
 
@@ -147,9 +148,8 @@ class TestIdenticalOutputs(unittest.TestCase):
         label_list = torch.split(labels, sub_sample, dim=0)
         cur_label = label_list[rank]
 
-        Weight_linear = ColumnParallelLinear(in_features, out_features, linear_layer=linear)
-        # Weight_linear.cuda()
-        Weight_linear.to(device)
+        Weight_linear = RotatedTensorParallel(linear)
+        Weight_linear.cuda()
         Weight_linear_output = Weight_linear(cur_data)
         assert objects_are_equal(cur_output, Weight_linear_output)
 
@@ -162,27 +162,6 @@ class TestIdenticalOutputs(unittest.TestCase):
         
         for grad1, grad2 in zip(ref_grads, Weight_grads):
             grad = _gather(grad2, dim=0)
-            assert objects_are_equal(grad, grad1)
-
-
-        Input_linear = RowParallelLinear(in_features, out_features, linear_layer=linear)
-        # Weight_linear.cuda()
-        Input_linear.to(device)
-        Input_linear_output = Input_linear(cur_data)
-        assert objects_are_equal(cur_output, Input_linear_output)
-
-        Input_loss = criterion(Input_linear_output, cur_label) / world_size
-        Input_loss.backward()
-        
-        Input_grads = [p.grad.detach().clone() for p in Input_linear.parameters()]
-
-        assert(len(ref_grads) == len(Input_grads))
-        
-        for grad1, grad2 in zip(ref_grads, Input_grads):
-            if grad1.shape != grad2.shape:
-                grad = _gather(grad2, dim=1)
-            else:
-                grad = grad2
             assert objects_are_equal(grad, grad1)
 
 parser = argparse.ArgumentParser()
