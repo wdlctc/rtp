@@ -90,7 +90,7 @@ class Net(nn.Module):
         self.dropout1 = nn.Dropout(0.25)
         self.dropout2 = nn.Dropout(0.5)
         self.fc1 = nn.Linear(9216, 128)
-        self.fc2 = nn.Linear(128, 12)
+        self.fc2 = nn.Linear(128, 10)
 
     def forward(self, x):
 
@@ -191,6 +191,8 @@ def benchmark_fsdp(rank, world_size, args):
             if rank == 0:
                 if grad1.shape[0] * world_size == grad2.shape[0]:
                     grad2 = split_tensor(grad2, num_partitions=world_size, dim=0)[rank]
+                    assert objects_are_equal(grad1, grad2)
+                elif grad1.shape == grad2.shape:
                     assert objects_are_equal(grad1, grad2)
 
         optimizer1.step()
