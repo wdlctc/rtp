@@ -1,0 +1,657 @@
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 21: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 22: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 5: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 18: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 23: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 20: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 19: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 17: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 16: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 14: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 7: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 6: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 10: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 15: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 12: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 9: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 8: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 4: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 13: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 251, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 226, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 11: did you call init?
+srun: error: udc-aj40-36: tasks 21-22: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55124442.0
+slurmstepd: error: *** STEP 55124442.0 ON udc-aj33-9 CANCELLED AT 2023-11-19T14:42:59 ***
+srun: error: udc-aj38-36: tasks 16,18: Exited with exit code 1
+srun: error: udc-aj36-35: task 14: Exited with exit code 1
+srun: error: udc-aj40-36: task 23: Exited with exit code 1
+srun: error: udc-aj38-36: task 19: Exited with exit code 1
+srun: error: udc-aj34-35: tasks 9-10: Exited with exit code 1
+srun: error: udc-aj33-10: tasks 5-6: Exited with exit code 1
+srun: error: udc-aj36-35: tasks 12,15: Exited with exit code 1
+srun: error: udc-aj33-10: task 7: Exited with exit code 1
+srun: error: udc-aj34-35: task 11: Exited with exit code 1
+srun: error: udc-aj33-9: tasks 0-1: Terminated
+srun: error: udc-aj33-9: task 3: Terminated
+srun: error: udc-aj38-36: task 17: Exited with exit code 1
+srun: error: udc-aj40-36: task 20: Exited with exit code 1
+srun: error: udc-aj33-9: task 2: Terminated
+srun: error: udc-aj33-10: task 4: Exited with exit code 1
+srun: error: udc-aj34-35: task 8: Exited with exit code 1
+srun: error: udc-aj36-35: task 13: Exited with exit code 1
+srun: Force Terminated StepId=55124442.0
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 22: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 23: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 14: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 21: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 16: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 18: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 19: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 6: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 8: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 5: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 7: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 9: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 10: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 20: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 11: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 13: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 15: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 17: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 4: did you call init?
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 273, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 253, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 228, in benchmark_language_model
+    dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 256, in memory_stats
+    stats = memory_stats_as_nested_dict(device=device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/cuda/memory.py", line 268, in memory_stats_as_nested_dict
+    return torch._C._cuda_memoryStats(device)
+RuntimeError: Invalid device argument 12: did you call init?
+srun: error: udc-aj40-36: tasks 21-23: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55124442.1
+slurmstepd: error: *** STEP 55124442.1 ON udc-aj33-9 CANCELLED AT 2023-11-19T14:43:43 ***
+srun: error: udc-aj38-36: tasks 17-19: Exited with exit code 1
+srun: error: udc-aj36-35: tasks 13-15: Exited with exit code 1
+srun: error: udc-aj34-35: tasks 9-11: Exited with exit code 1
+srun: error: udc-aj33-10: tasks 5-7: Exited with exit code 1
+srun: error: udc-aj40-36: task 20: Exited with exit code 1
+srun: error: udc-aj38-36: task 16: Exited with exit code 1
+srun: error: udc-aj36-35: task 12: Exited with exit code 1
+srun: error: udc-aj33-10: task 4: Exited with exit code 1
+srun: error: udc-aj34-35: task 8: Exited with exit code 1
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 248, in benchmark_fsdp
+    model = RotatedTensorParallel(model)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 499, in RecursiveVisit
+    raise ValueError("The embedding_dim of the embedding layer must be divisible by the world size.")
+ValueError: The embedding_dim of the embedding layer must be divisible by the world size.
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 248, in benchmark_fsdp
+    model = RotatedTensorParallel(model)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 499, in RecursiveVisit
+    raise ValueError("The embedding_dim of the embedding layer must be divisible by the world size.")
+ValueError: The embedding_dim of the embedding layer must be divisible by the world size.
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 248, in benchmark_fsdp
+    model = RotatedTensorParallel(model)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 499, in RecursiveVisit
+    raise ValueError("The embedding_dim of the embedding layer must be divisible by the world size.")
+ValueError: The embedding_dim of the embedding layer must be divisible by the world size.
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 248, in benchmark_fsdp
+    model = RotatedTensorParallel(model)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 499, in RecursiveVisit
+    raise ValueError("The embedding_dim of the embedding layer must be divisible by the world size.")
+ValueError: The embedding_dim of the embedding layer must be divisible by the world size.
+srun: error: udc-aj38-36: task 16: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55124442.2
+slurmstepd: error: *** STEP 55124442.2 ON udc-aj33-9 CANCELLED AT 2023-11-19T14:43:56 ***
+srun: error: udc-aj38-36: tasks 18-19: Terminated
+srun: error: udc-aj40-36: tasks 20-21,23: Terminated
+srun: error: udc-aj36-35: tasks 12-14: Terminated
+srun: error: udc-aj33-9: tasks 0-2: Terminated
+srun: error: udc-aj34-35: tasks 8-9,11: Terminated
+srun: error: udc-aj33-10: tasks 4-6: Terminated
+srun: error: udc-aj38-36: task 17: Terminated
+srun: error: udc-aj40-36: task 22: Terminated
+srun: error: udc-aj36-35: task 15: Terminated
+srun: error: udc-aj34-35: task 10: Terminated
+srun: error: udc-aj33-9: task 3: Terminated
+srun: error: udc-aj33-10: task 7: Terminated
+srun: Force Terminated StepId=55124442.2
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 249, in benchmark_fsdp
+    model = RotatedTensorParallel(model, inplace=True)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 499, in RecursiveVisit
+    raise ValueError("The embedding_dim of the embedding layer must be divisible by the world size.")
+ValueError: The embedding_dim of the embedding layer must be divisible by the world size.
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 249, in benchmark_fsdp
+    model = RotatedTensorParallel(model, inplace=True)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 499, in RecursiveVisit
+    raise ValueError("The embedding_dim of the embedding layer must be divisible by the world size.")
+ValueError: The embedding_dim of the embedding layer must be divisible by the world size.
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 249, in benchmark_fsdp
+    model = RotatedTensorParallel(model, inplace=True)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 499, in RecursiveVisit
+    raise ValueError("The embedding_dim of the embedding layer must be divisible by the world size.")
+ValueError: The embedding_dim of the embedding layer must be divisible by the world size.
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 272, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 249, in benchmark_fsdp
+    model = RotatedTensorParallel(model, inplace=True)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 499, in RecursiveVisit
+    raise ValueError("The embedding_dim of the embedding layer must be divisible by the world size.")
+ValueError: The embedding_dim of the embedding layer must be divisible by the world size.
+srun: error: udc-aj40-36: task 20: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55124442.3
+slurmstepd: error: *** STEP 55124442.3 ON udc-aj33-9 CANCELLED AT 2023-11-19T14:44:08 ***
+srun: error: udc-aj40-36: tasks 21,23: Terminated
+srun: error: udc-aj38-36: tasks 16-17,19: Terminated
+srun: error: udc-aj36-35: tasks 12-14: Terminated
+srun: error: udc-aj33-9: tasks 0-1,3: Terminated
+srun: error: udc-aj34-35: tasks 8-9,11: Terminated
+srun: error: udc-aj33-10: tasks 4-6: Terminated
+srun: error: udc-aj40-36: task 22: Terminated
+srun: error: udc-aj38-36: task 18: Terminated
+srun: error: udc-aj36-35: task 15: Terminated
+srun: error: udc-aj33-9: task 2: Terminated
+srun: error: udc-aj34-35: task 10: Terminated
+srun: error: udc-aj33-10: task 7: Terminated
+srun: Force Terminated StepId=55124442.3
