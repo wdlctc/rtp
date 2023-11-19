@@ -98,8 +98,7 @@ class FSDP:
             default_config['vocab_size'] = model_config_json["vocab_size"]
             default_config['seq_len'] = model_config_json["max_seq_len"] + 1
             default_config['nhid'] = model_config_json["ffn_embed_dim"]
-
-        print(default_config)
+            
         return default_config
 
     def get_benchmark_config(args):
