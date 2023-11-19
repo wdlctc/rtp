@@ -248,7 +248,7 @@ def benchmark_fsdp(rank, local_rank, args, world_size):
         config["compute_dtype"] = torch.float16
         config["mixed_precision"] = False
 
-    rfsdp_model = FullyShardedDataParallel(model, **config)
+    rfsdp_model = RFSDP(model, **config)
 
     benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
 
