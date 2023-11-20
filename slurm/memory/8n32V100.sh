@@ -30,7 +30,6 @@ cd /scratch/fad3ew/rtp
 SCRIPTS=(
 multi_dp_benchmark.py
 multi_fsdp_benchmark.py
-multi_tp_benchmark.py
 multi_rtp_benchmark.py
 multi_rtp_benchmark_inplace.py
 )
@@ -41,9 +40,6 @@ gpt2-xl
 EleutherAI_gpt-neo-1.3B
 EleutherAI_gpt-neo-2.7B
 Llama-2-7b
-Llama-2-13b
-Llama-2-30b
-Llama-2-70b
 )
 
 for config in "${CONFIGS[@]}"; do

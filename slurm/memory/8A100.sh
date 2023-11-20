@@ -1,16 +1,16 @@
 #!/bin/bash
 
-#SBATCH --job-name=4n16v100_memory
-#SBATCH --nodes=4
-#SBATCH --ntasks-per-node=4
-#SBATCH --gres=gpu:v100:4
-#SBATCH --mem=384000M
-#SBATCH --cpus-per-task=1
+#SBATCH --job-name=8A100_memory
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=8
+#SBATCH --gres=gpu:a100:8
+#SBATCH --mem=200000M
 #SBATCH --partition=bii-gpu
 #SBATCH -A bii_dsc_community
 #SBATCH --time=02:00:00          # total run time limit (HH:MM:SS)
-#SBATCH --error="slurm/memory/4n16v100_memory.err"
-#SBATCH --output="slurm/memory/4n16v100_memory.output"
+#SBATCH --reservation=bi_fox_dgx
+#SBATCH --error="slurm/memory/2n8v100_memory.err"
+#SBATCH --output="slurm/memory/2n8v100_memory.output"
 
 export MASTER_PORT=$(expr 10000 + $(echo -n $SLURM_JOBID | tail -c 4))
 export WORLD_SIZE=$(($SLURM_NNODES * $SLURM_NTASKS_PER_NODE))
@@ -41,6 +41,7 @@ EleutherAI_gpt-neo-1.3B
 EleutherAI_gpt-neo-2.7B
 Llama-2-7b
 )
+
 
 for config in "${CONFIGS[@]}"; do
     for script in "${SCRIPTS[@]}"; do

@@ -1,11 +1,11 @@
 #!/bin/bash
 
 #SBATCH --job-name=8n32v100_throughput
-#SBATCH --nodes=8
+#SBATCH --nodes=4
 #SBATCH --ntasks-per-node=4
 #SBATCH --gres=gpu:v100:4
 #SBATCH --mem=384000M
-#SBATCH --cpus-per-task=1
+#SBATCH --cpus-per-task=8
 #SBATCH --partition=bii-gpu
 #SBATCH -A bii_dsc_community
 #SBATCH --time=04:00:00          # total run time limit (HH:MM:SS)
@@ -30,19 +30,17 @@ cd /scratch/fad3ew/rtp
 SCRIPTS=(
 multi_dp_benchmark.py
 multi_fsdp_benchmark.py
-multi_tp_benchmark.py
 multi_rtp_benchmark.py
-multi_rtp_benchmark_inplace.py
 )
 
 CONFIGS=(
-gpt2-large
+gpt2
 )
 
 
 for config in "${CONFIGS[@]}"; do
     for script in "${SCRIPTS[@]}"; do
-        for i in {1..16}; do
+        for i in {1..6}; do
             srun --export=ALL /scratch/fad3ew/rtp/.venv/bin/python \
             benchmarks/$script \
             --use_synthetic_data \
