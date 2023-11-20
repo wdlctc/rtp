@@ -220,11 +220,11 @@ def benchmark_language_model(model_config, model, benchmark_config, model_specs,
         print("-" * 110)
         print("Throughput(wps) is {:.2f}.".format(wps))
         print("Elapsed_time(s) is {:.2f}.".format(elapsed_time))
-    print(
-        "Peak allocated bytes on cuda:{}: {:4f}GB".format(
-            dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+        print(
+            "Peak allocated bytes on cuda:{}: {:4f}GB".format(
+                dist.get_rank(), torch.cuda.memory_stats(dist.get_rank())["allocated_bytes.all.peak"] / 2**30
+            )
         )
-    )
 
 def benchmark_fsdp(rank, local_rank, args, world_size):
     """Benchmark a given model using a single process and multiple devices."""
