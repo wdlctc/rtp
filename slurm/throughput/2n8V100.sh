@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#SBATCH --job-name=8n32v100_throughput
-#SBATCH --nodes=8
+#SBATCH --job-name=2n8v100_throughput
+#SBATCH --nodes=2
 #SBATCH --ntasks-per-node=4
 #SBATCH --gres=gpu:v100:4
 #SBATCH --mem=384000M
@@ -9,8 +9,8 @@
 #SBATCH --cpus-per-task=8
 #SBATCH -A bii_dsc_community
 #SBATCH --time=04:00:00          # total run time limit (HH:MM:SS)
-#SBATCH --error="slurm/throughput/8n32v100_throughput.err"
-#SBATCH --output="slurm/throughput/8n32v100_throughput.output"
+#SBATCH --error="slurm/throughput/2n8v100_throughput.err"
+#SBATCH --output="slurm/throughput/2n8v100_throughput.output"
 
 export MASTER_PORT=$(expr 10000 + $(echo -n $SLURM_JOBID | tail -c 4))
 export WORLD_SIZE=$(($SLURM_NNODES * $SLURM_NTASKS_PER_NODE))
@@ -47,4 +47,4 @@ for config in "${CONFIGS[@]}"; do
             --batch_size $i
         done
     done
-done
+dones
