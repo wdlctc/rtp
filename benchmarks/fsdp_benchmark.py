@@ -59,7 +59,7 @@ def get_lm_model(args, device, config):
     nhid = config["nhid"]
     ndecoder = config["num_decoder_layers"]
 
-    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder).to(device)
+    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder, half=args.full_fp16).to(device)
 
 def get_synthetic_dataloaders(args, device, benchmark_config, model_specs):
     """Returns dataloader for synthetic data."""
@@ -252,6 +252,7 @@ def benchmark_fsdp(rank, args, world_size):
     if args.full_fp16:
         model.half()
     config = {}
+
 
     fsdp_model = FullyShardedDataParallel(model, **config)
 
