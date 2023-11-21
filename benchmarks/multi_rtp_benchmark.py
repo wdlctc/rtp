@@ -149,9 +149,9 @@ def train(model_config, model, benchmark_config, model_specs, args):
             epoch_start_time = time.time()
 
         source, target = get_batch(batch)
-        if args.full_fp16:
+        # if args.full_fp16:
             # source = source.half()
-            target = target.half()
+            # target = target.half()
         if args.max_batch and i > args.max_batch:
             break
 
@@ -242,8 +242,7 @@ def benchmark_fsdp(rank, local_rank, args, world_size):
     config = {}
 
     if args.full_fp16:
-        config["compute_dtype"] = torch.float16
-        config["mixed_precision"] = False
+        model.half()
 
     model = RotatedTensorParallel(model)
     model.cuda()

@@ -10,7 +10,6 @@ import time
 from datasets.wikitext2_data import get_real_dataloaders as get_real_wikitext2_dataloaders
 from datasets.wikitext2_data import get_synthetic_dataloaders as get_synthetic_wikitext2_dataloaders
 import transformer_lm_fsdp as transformer_lm
-from transformers import GPT2Model, GPT2Config
 import numpy as np
 import torch
 import torch.distributed as dist
