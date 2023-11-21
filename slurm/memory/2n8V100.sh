@@ -5,11 +5,10 @@
 #SBATCH --ntasks-per-node=4
 #SBATCH --gres=gpu:v100:4
 #SBATCH --mem=384000M
-#SBATCH --cpus-per-task=1
+#SBATCH --cpus-per-task=8
 #SBATCH --partition=bii-gpu
 #SBATCH -A bii_dsc_community
 #SBATCH --time=04:00:00          # total run time limit (HH:MM:SS)
-#SBATCH --reservation=bi_fox_dgx
 #SBATCH --error="slurm/memory/8v100_memory.err"
 #SBATCH --output="slurm/memory/8v100_memory.output"
 
@@ -36,18 +35,20 @@ multi_rtp_benchmark_inplace.py
 )
 
 CONFIGS=(
+gpt2-large
+gpt2-xl
+EleutherAI_gpt-neo-1.3B
 EleutherAI_gpt-neo-2.7B
 Llama-2-7b
 Llama-2-13b
-Llama-2-30b
 )
-
 
 for config in "${CONFIGS[@]}"; do
     for script in "${SCRIPTS[@]}"; do
         srun --export=ALL /scratch/fad3ew/rtp/.venv/bin/python \
         benchmarks/$script \
         --use_synthetic_data \
+        --full_fp16 \
         --model_config=$config
     done
 done

@@ -44,6 +44,7 @@ for config in "${CONFIGS[@]}"; do
             benchmarks/$script \
             --use_synthetic_data \
             --model_config=$config \
+            --full_fp16 \
             --batch_size $i
         done
     done
