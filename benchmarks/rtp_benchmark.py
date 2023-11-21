@@ -25,6 +25,13 @@ RPC_PORT = 29501
 from config import FSDP
 from rtp.rotated_tensor_parallel import RotatedTensorParallel
 
+from torch.distributed.algorithms._checkpoint.checkpoint_wrapper import (
+   checkpoint_wrapper,
+   CheckpointImpl,
+   apply_activation_checkpointing
+)
+import functools 
+
 # import os
 # os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:64"
 
@@ -248,6 +255,16 @@ def benchmark_fsdp(rank, args, world_size):
 
     model = RotatedTensorParallel(model)
     model.cuda()
+    
+    if args.checkpoint:
+        non_reentrant_wrapper = functools.partial(
+            checkpoint_wrapper,
+            checkpoint_impl=CheckpointImpl.NO_REENTRANT,
+        )
+        check_fn = lambda submodule: isinstance(submodule, nn.Sequential)
+        apply_activation_checkpointing(
+            fsdp_model, checkpoint_wrapper_fn=non_reentrant_wrapper, check_fn=check_fn
+        )
 
     benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
 

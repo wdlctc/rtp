@@ -20,6 +20,7 @@ def parse_args():
     parser.add_argument("--enable_auto_wrap", action="store_true", default=False, help="Use auto_wrap with FSDP")
     parser.add_argument("--benchmark_eval", action="store_true", default=False, help="Benchmark evaluation workflow.")
     parser.add_argument("--full_fp16", action="store_true", default=False, help="Benchmark in full fp16 mode.")
+    parser.add_argument("--checkpoint", action="store_true", default=False, help="Benchmark in activation checkpoint mode.")
     # Model Config arguments
     parser.add_argument("--vocab_size", type=int, default=50256)
     parser.add_argument("--ninp", type=int, default=1280)

@@ -22,6 +22,13 @@ from fairscale.optim import GradScaler
 
 from torch.distributed.fsdp import FullyShardedDataParallel
 
+from torch.distributed.algorithms._checkpoint.checkpoint_wrapper import (
+   checkpoint_wrapper,
+   CheckpointImpl,
+   apply_activation_checkpointing
+)
+import functools 
+
 RPC_PORT = 29501
 
 from config import FSDP
@@ -247,6 +254,16 @@ def benchmark_fsdp(rank, args, world_size):
     config = {}
 
     fsdp_model = FullyShardedDataParallel(model, **config)
+
+    if args.checkpoint:
+        non_reentrant_wrapper = functools.partial(
+            checkpoint_wrapper,
+            checkpoint_impl=CheckpointImpl.NO_REENTRANT,
+        )
+        check_fn = lambda submodule: isinstance(submodule, nn.Sequential)
+        apply_activation_checkpointing(
+            fsdp_model, checkpoint_wrapper_fn=non_reentrant_wrapper, check_fn=check_fn
+        )
 
     benchmark_language_model(model_config, fsdp_model, benchmark_config, model_specs, args)
 
