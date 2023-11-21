@@ -1,0 +1,726 @@
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 2 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.49 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 1 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.49 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 1 has a total capacty of 31.74 GiB of which 5.27 GiB is free. Including non-PyTorch memory, this process has 26.47 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 420.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 2 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.49 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 2 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.49 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 3 has a total capacty of 31.74 GiB of which 5.27 GiB is free. Including non-PyTorch memory, this process has 26.46 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 0 has a total capacty of 31.74 GiB of which 5.27 GiB is free. Including non-PyTorch memory, this process has 26.46 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 2 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.49 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 3 has a total capacty of 31.74 GiB of which 5.27 GiB is free. Including non-PyTorch memory, this process has 26.46 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 2 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.49 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 0 has a total capacty of 31.74 GiB of which 5.27 GiB is free. Including non-PyTorch memory, this process has 26.47 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 1 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.49 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 1 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.49 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 3 has a total capacty of 31.74 GiB of which 5.27 GiB is free. Including non-PyTorch memory, this process has 26.46 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 1 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.49 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 3 has a total capacty of 31.74 GiB of which 5.27 GiB is free. Including non-PyTorch memory, this process has 26.46 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 0 has a total capacty of 31.74 GiB of which 5.27 GiB is free. Including non-PyTorch memory, this process has 26.46 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 2 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.49 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 0 has a total capacty of 31.74 GiB of which 5.27 GiB is free. Including non-PyTorch memory, this process has 26.47 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 0 has a total capacty of 31.74 GiB of which 5.28 GiB is free. Including non-PyTorch memory, this process has 26.45 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 420.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 0 has a total capacty of 31.74 GiB of which 5.27 GiB is free. Including non-PyTorch memory, this process has 26.46 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 3 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.48 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 0 has a total capacty of 31.74 GiB of which 5.27 GiB is free. Including non-PyTorch memory, this process has 26.46 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 3 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.48 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 3 has a total capacty of 31.74 GiB of which 5.27 GiB is free. Including non-PyTorch memory, this process has 26.46 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 3 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.48 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 2 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.49 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 1 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.49 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 0 has a total capacty of 31.74 GiB of which 5.27 GiB is free. Including non-PyTorch memory, this process has 26.46 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 1 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.49 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 2 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.49 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.49 GiB. GPU 1 has a total capacty of 31.74 GiB of which 5.25 GiB is free. Including non-PyTorch memory, this process has 26.49 GiB memory in use. Of the allocated memory 25.55 GiB is allocated by PyTorch, and 436.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: udc-aj37-36: task 21: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55205667.2
+slurmstepd: error: *** STEP 55205667.2 ON udc-aj33-9 CANCELLED AT 2023-11-21T01:26:13 ***
+srun: error: udc-aj40-35: task 29: Exited with exit code 1
+srun: error: udc-aj37-36: tasks 20,22: Exited with exit code 1
+srun: error: udc-aj37-35: tasks 18-19: Exited with exit code 1
+srun: error: udc-aj34-35: task 9: Terminated
+srun: error: udc-aj34-35: task 10: Exited with exit code 1
+srun: error: udc-aj33-9: tasks 1,3: Exited with exit code 1
+srun: error: udc-aj40-35: task 28: Terminated
+srun: error: udc-aj40-35: task 31: Exited with exit code 1
+srun: error: udc-aj33-10: task 5: Terminated
+srun: error: udc-aj33-10: task 7: Exited with exit code 1
+srun: error: udc-aj36-35: task 13: Terminated
+srun: error: udc-aj36-35: task 14: Exited with exit code 1
+srun: error: udc-aj38-35: tasks 25-26: Exited with exit code 1
+srun: error: udc-aj37-35: task 17: Terminated
+srun: error: udc-aj34-35: task 8: Terminated
+srun: error: udc-aj33-9: task 0: Terminated
+srun: error: udc-aj38-35: task 24: Exited with exit code 1
+srun: error: udc-aj33-10: task 4: Exited with exit code 1
+srun: error: udc-aj36-35: task 12: Terminated
+srun: error: udc-aj37-36: task 23: Terminated
+srun: error: udc-aj40-35: task 30: Terminated
+srun: error: udc-aj33-9: task 2: Terminated
+srun: error: udc-aj38-35: task 27: Terminated
+srun: error: udc-aj37-35: task 16: Terminated
+srun: error: udc-aj33-10: task 6: Terminated
+srun: error: udc-aj36-35: task 15: Exited with exit code 1
+srun: error: udc-aj34-35: task 11: Terminated
+srun: Force Terminated StepId=55205667.2
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 250, in benchmark_fsdp
+    model_config = create_model_config(args, benchmark_config=benchmark_config, model_specs=model_specs)
+  File "benchmarks/multi_fsdp_benchmark.py", line 95, in create_model_config
+    model, optimizer = get_model_and_optimizer(args, device, benchmark_config, model_specs)
+  File "benchmarks/multi_fsdp_benchmark.py", line 41, in get_model_and_optimizer
+    model = get_lm_model(args, device, model_config)
+  File "benchmarks/multi_fsdp_benchmark.py", line 63, in get_lm_model
+    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder).to(device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 300.00 MiB. GPU 0 has a total capacty of 31.74 GiB of which 159.62 MiB is free. Including non-PyTorch memory, this process has 31.58 GiB memory in use. Of the allocated memory 31.28 GiB is allocated by PyTorch, and 1.38 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 250, in benchmark_fsdp
+    model_config = create_model_config(args, benchmark_config=benchmark_config, model_specs=model_specs)
+  File "benchmarks/multi_fsdp_benchmark.py", line 95, in create_model_config
+    model, optimizer = get_model_and_optimizer(args, device, benchmark_config, model_specs)
+  File "benchmarks/multi_fsdp_benchmark.py", line 41, in get_model_and_optimizer
+    model = get_lm_model(args, device, model_config)
+  File "benchmarks/multi_fsdp_benchmark.py", line 63, in get_lm_model
+    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder).to(device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 300.00 MiB. GPU 1 has a total capacty of 31.74 GiB of which 159.62 MiB is free. Including non-PyTorch memory, this process has 31.58 GiB memory in use. Of the allocated memory 31.28 GiB is allocated by PyTorch, and 1.38 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 250, in benchmark_fsdp
+    model_config = create_model_config(args, benchmark_config=benchmark_config, model_specs=model_specs)
+  File "benchmarks/multi_fsdp_benchmark.py", line 95, in create_model_config
+    model, optimizer = get_model_and_optimizer(args, device, benchmark_config, model_specs)
+  File "benchmarks/multi_fsdp_benchmark.py", line 41, in get_model_and_optimizer
+    model = get_lm_model(args, device, model_config)
+  File "benchmarks/multi_fsdp_benchmark.py", line 63, in get_lm_model
+    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder).to(device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 300.00 MiB. GPU 0 has a total capacty of 31.74 GiB of which 159.62 MiB is free. Including non-PyTorch memory, this process has 31.58 GiB memory in use. Of the allocated memory 31.28 GiB is allocated by PyTorch, and 1.38 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 250, in benchmark_fsdp
+    model_config = create_model_config(args, benchmark_config=benchmark_config, model_specs=model_specs)
+  File "benchmarks/multi_fsdp_benchmark.py", line 95, in create_model_config
+    model, optimizer = get_model_and_optimizer(args, device, benchmark_config, model_specs)
+  File "benchmarks/multi_fsdp_benchmark.py", line 41, in get_model_and_optimizer
+    model = get_lm_model(args, device, model_config)
+  File "benchmarks/multi_fsdp_benchmark.py", line 63, in get_lm_model
+    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder).to(device)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 300.00 MiB. GPU 1 has a total capacty of 31.74 GiB of which 159.62 MiB is free. Including non-PyTorch memory, this process has 31.58 GiB memory in use. Of the allocated memory 31.28 GiB is allocated by PyTorch, and 1.38 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: udc-aj37-36: task 20: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55205667.4
+slurmstepd: error: *** STEP 55205667.4 ON udc-aj33-9 CANCELLED AT 2023-11-21T01:30:53 ***
+srun: error: udc-aj37-36: task 21: Terminated
+srun: error: udc-aj37-35: tasks 16-17: Terminated
+srun: error: udc-aj40-35: task 31: Terminated
+srun: error: udc-aj38-35: task 27: Terminated
+srun: error: udc-aj38-35: task 26: Terminated
+srun: error: udc-aj37-36: task 23: Terminated
+srun: error: udc-aj36-35: tasks 12-13: Terminated
+srun: error: udc-aj40-35: tasks 28-29: Terminated
+srun: error: udc-aj33-9: tasks 0-1: Terminated
+srun: error: udc-aj33-9: task 2: Terminated
+srun: error: udc-aj33-10: tasks 4-5: Terminated
+srun: error: udc-aj34-35: tasks 8-10: Terminated
+srun: error: udc-aj36-35: task 14: Terminated
+srun: error: udc-aj37-35: task 19: Terminated
+srun: error: udc-aj38-35: task 24: Terminated
+srun: error: udc-aj33-10: task 7: Terminated
+srun: error: udc-aj33-9: task 3: Terminated
+srun: error: udc-aj34-35: task 11: Terminated
+srun: error: udc-aj36-35: task 15: Terminated
+srun: error: udc-aj38-35: task 25: Terminated
+srun: error: udc-aj37-36: task 22: Terminated
+srun: error: udc-aj37-35: task 18: Terminated
+srun: error: udc-aj40-35: task 30: Terminated
+srun: error: udc-aj33-10: task 6: Terminated
+srun: Force Terminated StepId=55205667.4
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 55205667.5 ON udc-aj33-9 CANCELLED AT 2023-11-21T01:31:18 ***
+slurmstepd: error: *** JOB 55205667 ON udc-aj33-9 CANCELLED AT 2023-11-21T01:31:18 ***
