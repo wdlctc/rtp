@@ -218,3 +218,14 @@ class TransformerLM(nn.Sequential):
 
             layers.append(LinearLayer(ninp, ntokens, initrange).half())
             super(TransformerLM, self).__init__(*layers)
+        else:
+            layers = [
+                EmbeddingLayer(ntokens, ninp, initrange),
+                PositionalEncodingLayer(ninp, dropout),
+            ]
+            for _ in range(ndecoder):
+                layers.append(TransformerDecoderLayer(ninp, nhead, nhid, dropout, is_moe, num_local_experts))
+
+            layers.append(LinearLayer(ninp, ntokens, initrange))
+            super(TransformerLM, self).__init__(*layers)
+
