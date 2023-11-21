@@ -9,8 +9,8 @@
 #SBATCH -A bii_dsc_community
 #SBATCH --time=02:00:00          # total run time limit (HH:MM:SS)
 #SBATCH --reservation=bi_fox_dgx
-#SBATCH --error="slurm/memory/2n8v100_memory.err"
-#SBATCH --output="slurm/memory/2n8v100_memory.output"
+#SBATCH --error="slurm/memory/8A100_memory.err"
+#SBATCH --output="slurm/memory/8A100_memory.output"
 
 export MASTER_PORT=$(expr 10000 + $(echo -n $SLURM_JOBID | tail -c 4))
 export WORLD_SIZE=$(($SLURM_NNODES * $SLURM_NTASKS_PER_NODE))

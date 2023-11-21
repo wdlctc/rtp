@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#SBATCH --job-name=8n32v100_throughput
-#SBATCH --nodes=8
+#SBATCH --job-name=4n16v100_throughput
+#SBATCH --nodes=4
 #SBATCH --ntasks-per-node=4
 #SBATCH --gres=gpu:v100:4
 #SBATCH --mem=384000M
@@ -9,8 +9,8 @@
 #SBATCH --cpus-per-task=8
 #SBATCH -A bii_dsc_community
 #SBATCH --time=04:00:00          # total run time limit (HH:MM:SS)
-#SBATCH --error="slurm/throughput/8n32v100_throughput.err"
-#SBATCH --output="slurm/throughput/8n32v100_throughput_only.output"
+#SBATCH --error="slurm/scale/4n16v100_throughput.err"
+#SBATCH --output="slurm/scale/4n16v100_throughput.output"
 
 export MASTER_PORT=$(expr 10000 + $(echo -n $SLURM_JOBID | tail -c 4))
 export WORLD_SIZE=$(($SLURM_NNODES * $SLURM_NTASKS_PER_NODE))
@@ -28,14 +28,12 @@ source /scratch/fad3ew/rtp/.venv/bin/activate
 cd /scratch/fad3ew/rtp
 
 SCRIPTS=(
-multi_dp_benchmark.py
-multi_fsdp_benchmark.py
 multi_rtp_benchmark.py
-multi_rtp_benchmark_inplace.py
 )
 
 CONFIGS=(
 gpt2-xl
+Llama-2-7b
 )
 
 
