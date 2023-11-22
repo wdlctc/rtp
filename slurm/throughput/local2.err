@@ -1,0 +1,102 @@
+Traceback (most recent call last):
+  File "benchmarks/multi_tp_benchmark.py", line 278, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_tp_benchmark.py", line 256, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_tp_benchmark.py", line 229, in benchmark_language_model
+    print("Elapsed_time(s) is {:.2f}.".format(elapsed_timet))
+NameError: name 'elapsed_timet' is not defined
+srun: error: udc-an26-1: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55259169.2
+slurmstepd: error: *** STEP 55259169.2 ON udc-an26-1 CANCELLED AT 2023-11-22T00:04:32 ***
+srun: error: udc-an26-1: task 7: Terminated
+srun: error: udc-an26-1: task 4: Terminated
+srun: error: udc-an26-1: task 1: Terminated
+srun: error: udc-an26-1: task 5: Terminated
+srun: error: udc-an26-1: task 3: Terminated
+srun: error: udc-an26-1: task 6: Terminated
+srun: error: udc-an26-1: task 2: Terminated
+srun: Force Terminated StepId=55259169.2
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_tp_benchmark.py", line 278, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_tp_benchmark.py", line 256, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_tp_benchmark.py", line 229, in benchmark_language_model
+    print("Elapsed_time(s) is {:.2f}.".format(elapsed_timet))
+NameError: name 'elapsed_timet' is not defined
+srun: error: udc-an26-1: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55259169.7
+slurmstepd: error: *** STEP 55259169.7 ON udc-an26-1 CANCELLED AT 2023-11-22T00:08:07 ***
+srun: error: udc-an26-1: task 7: Terminated
+srun: error: udc-an26-1: task 2: Terminated
+srun: error: udc-an26-1: task 1: Terminated
+srun: error: udc-an26-1: task 5: Terminated
+srun: error: udc-an26-1: task 4: Terminated
+srun: error: udc-an26-1: task 3: Terminated
+srun: error: udc-an26-1: task 6: Terminated
+srun: Force Terminated StepId=55259169.7
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]

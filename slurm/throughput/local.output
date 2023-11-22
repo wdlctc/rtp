@@ -1,0 +1,30 @@
+WORLD_SIZE=8
+MASTER_ADDR=udc-an26-1
+Running DP benchmark with args: Namespace(batch_size=8, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=4, model_config='gpt2-large', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 2666.88 | loss 25.90 | ppl 176846529109.25
+| batch     2 | wps 3066.58 | loss 12.46 | ppl 258006.51
+| batch     3 | wps 2981.15 | loss 12.23 | ppl 204744.46
+| batch     4 | wps 3068.65 | loss 12.04 | ppl 169279.04
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 14.58s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 3039.34.
+Elapsed_time(s) is 14.58.
+Peak allocated bytes on cuda:0: 33.958956GB
+Running DP benchmark with args: Namespace(batch_size=8, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=4, model_config='EleutherAI_gpt-neo-1.3B', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 1920.66 | loss 28.05 | ppl 1513709957052.92
+| batch     2 | wps 1975.17 | loss 13.66 | ppl 853114.96
+| batch     3 | wps 1993.64 | loss 13.13 | ppl 501940.53
+| batch     4 | wps 1993.47 | loss 12.76 | ppl 349135.39
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 42.14s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 1987.89.
+Elapsed_time(s) is 42.14.
+Peak allocated bytes on cuda:0: 67.291152GB
