@@ -9,8 +9,8 @@
 #SBATCH -A bii_dsc_community
 #SBATCH --time=04:00:00          # total run time limit (HH:MM:SS)
 #SBATCH --reservation=bi_fox_dgx
-#SBATCH --error="slurm/throughput/8nA100_throughput.err"
-#SBATCH --output="slurm/throughput/8nA100_throughput.output"
+#SBATCH --error="slurm/throughput/8nA100_throughput3.err"
+#SBATCH --output="slurm/throughput/8nA100_throughput3.output"
 
 export MASTER_PORT=$(expr 10000 + $(echo -n $SLURM_JOBID | tail -c 4))
 export WORLD_SIZE=$(($SLURM_NNODES * $SLURM_NTASKS_PER_NODE))
@@ -35,13 +35,13 @@ multi_rtp_benchmark_inplace.py
 )
 
 CONFIGS=(
-gpt2-xl
+gpt2-large
 )
 
 
 for config in "${CONFIGS[@]}"; do
     for script in "${SCRIPTS[@]}"; do
-        for i in {1..10}; do
+        for i in {10..24}; do
             srun --export=ALL /scratch/fad3ew/rtp/.venv/bin/python \
             benchmarks/$script \
             --use_synthetic_data \
