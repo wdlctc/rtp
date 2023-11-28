@@ -8,7 +8,7 @@ from fairscale.optim import GradScaler
 
 def parse_args():
     parser = argparse.ArgumentParser(description="benchmark")
-    parser.add_argument("--max_batch", type=int, default=4, help="Max number of batches")
+    parser.add_argument("--max_batch", type=int, default=2, help="Max number of batches")
     parser.add_argument("--use_synthetic_data", action="store_true", help="Uses synthetic data for running benchmarks.")
     parser.add_argument("--dry_run", action="store_true", help="Run a sample training run without regression testing.")
     parser.add_argument(
@@ -35,7 +35,7 @@ def parse_args():
     # Benchmark Config arguments
     parser.add_argument("--epochs", type=int, default=1)
     parser.add_argument("--lr", type=float, default=0.0001)
-    parser.add_argument("--batch_size", type=int, default=10)
+    parser.add_argument("--batch_size", type=int, default=1)
     
     # load from model name
     parser.add_argument("--model_config", type=str, default='None')
