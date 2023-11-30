@@ -9,7 +9,7 @@ import time
 
 from datasets.wikitext2_data import get_real_dataloaders as get_real_wikitext2_dataloaders
 from datasets.wikitext2_data import get_synthetic_dataloaders as get_synthetic_wikitext2_dataloaders
-import transformer_lm_fsdp as transformer_lm
+import transformer_lm_dp as transformer_lm
 import numpy as np
 import torch
 import torch.distributed as dist
@@ -20,18 +20,10 @@ import torch.nn as nn
 
 from fairscale.optim import GradScaler
 
-from torch.distributed.fsdp import FullyShardedDataParallel
-
-from torch.distributed.algorithms._checkpoint.checkpoint_wrapper import (
-   checkpoint_wrapper,
-   CheckpointImpl,
-   apply_activation_checkpointing
-)
-import functools 
-
 RPC_PORT = 29501
 
 from config import FSDP
+from deepspeed.profiling.flops_profiler import FlopsProfiler
 
 def get_model_and_optimizer(args, device, benchmark_config, model_config):
     """Return instantiated model and optimizer function."""
@@ -59,7 +51,7 @@ def get_lm_model(args, device, config):
     nhid = config["nhid"]
     ndecoder = config["num_decoder_layers"]
 
-    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder, half=args.full_fp16).to(device)
+    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder).to(device)
 
 def get_synthetic_dataloaders(args, device, benchmark_config, model_specs):
     """Returns dataloader for synthetic data."""
@@ -152,14 +144,21 @@ def train(model_config, model, benchmark_config, model_specs, args):
         target = source[1 : 1 + seq_len]
         return data, target
 
+    prof = FlopsProfiler(model)
+    profile_step = 2
+    print_profile= True
+
     for i, batch in enumerate(lm_dataloader):
         if i == 1:
             epoch_start_time = time.time()
 
+        if i == profile_step:
+            prof.start_profile()
+
         source, target = get_batch(batch)
-        # if args.full_fp16:
+        if args.full_fp16:
             # source = source.half()
-            # target = target.half()
+            target = target.half()
         if args.max_batch and i > args.max_batch:
             break
 
@@ -200,6 +199,16 @@ def train(model_config, model, benchmark_config, model_specs, args):
             total_tokens_per_log_interval = 0
             total_loss = 0
             start_time = time.time()
+
+        if i == profile_step: # if using multi nodes, check global_rank == 0 as well
+            prof.stop_profile()
+            flops = prof.get_total_flops()
+            macs = prof.get_total_macs()
+            params = prof.get_total_params()
+            if print_profile:
+                prof.print_model_profile(profile_step=profile_step, detailed=False)
+            prof.end_profile()
+
 
     if epoch_start_time != 0:
         torch.cuda.synchronize()
@@ -249,20 +258,32 @@ def benchmark_fsdp(rank, args, world_size):
     model_specs = FSDP.get_model_config(args)
     model_config = create_model_config(args, benchmark_config=benchmark_config, model_specs=model_specs)
     model = model_config["model"]
-    if args.full_fp16:
-        model.half()
     config = {}
 
+    if args.full_fp16:
+        config["compute_dtype"] = torch.float16
+        config["mixed_precision"] = False
 
-    fsdp_model = FullyShardedDataParallel(model, **config)
+    rfsdp_model = model
 
-    benchmark_language_model(model_config, fsdp_model, benchmark_config, model_specs, args)
+    if args.full_fp16:
+        rfsdp_model = rfsdp_model.half()
+
+    cur_numel = 0
+    if rank == 0:
+        for name, param in rfsdp_model.named_parameters():
+            print(name, param.numel())
+            cur_numel += param.numel()
+        print(cur_numel)
+
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+
 
 from config import parse_args
 
 if __name__ == "__main__":
     args = parse_args()
-    print(f"Running FSDP benchmark with args: {args}")
+    print(f"Running DP benchmark with args: {args}")
     num_devices = torch.cuda.device_count() if torch.cuda.is_available() else 1
     print(torch.cuda.device_count())
     mp.spawn(
