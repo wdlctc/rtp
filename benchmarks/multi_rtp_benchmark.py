@@ -7,6 +7,7 @@ import math
 import operator
 import time
 import os
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:64"
 
 from datasets.wikitext2_data import get_real_dataloaders as get_real_wikitext2_dataloaders
 from datasets.wikitext2_data import get_synthetic_dataloaders as get_synthetic_wikitext2_dataloaders
@@ -263,7 +264,7 @@ def benchmark_fsdp(rank, local_rank, args, world_size):
         )
         check_fn = lambda submodule: isinstance(submodule, nn.Sequential)
         apply_activation_checkpointing(
-            fsdp_model, checkpoint_wrapper_fn=non_reentrant_wrapper, check_fn=check_fn
+            model, checkpoint_wrapper_fn=non_reentrant_wrapper, check_fn=check_fn
         )
 
     benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
