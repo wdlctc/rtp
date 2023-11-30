@@ -4,11 +4,11 @@
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=8
 #SBATCH --gres=gpu:a100:8
+#SBATCH -C gpupod
 #SBATCH --mem=2000000M
-#SBATCH --partition=bii-gpu
+#SBATCH --partition=gpu
 #SBATCH -A bii_dsc_community
 #SBATCH --time=04:00:00          # total run time limit (HH:MM:SS)
-#SBATCH --reservation=bi_fox_dgx
 #SBATCH --error="slurm/A100/16A100.err"
 #SBATCH --output="slurm/A100/16A100.output"
 
