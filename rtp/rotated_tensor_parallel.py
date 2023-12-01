@@ -6,6 +6,7 @@ import copy
 from functools import partial
 from torch.nn.parallel import DistributedDataParallel as DDP
 from .attention import ParallelMultiheadAttention
+from .module.moe import MOELayer, WeightMOELayer
 
 from typing import (
     TYPE_CHECKING,
@@ -157,6 +158,12 @@ def hook_fn(sub_module, module, *unused: Any):
         module.grad_reqs = counter_clock_rotation_buffer(module._full_grad.data, module._grad_buffer)
 
 
+def hook_fn_inplace(sub_module, module, *unused: Any):
+    sub_module.count -= 1
+    if sub_module.count == 0:
+        module.grad_reqs = counter_clock_rotation_buffer(module._full_grad.data, module._full_grad.data)
+
+
 def allign_grad(module):
     cur_numel = 0
     for param_name, param in module.named_parameters():
@@ -239,15 +246,9 @@ class ParallelRegion_inplace(torch.autograd.Function):
     def forward(ctx, input_, module, itr):  # type: ignore
         ctx.module = module
         ctx.itr = itr
-        if itr == 0:
-            module._buffer = torch.zeros_like(module.flat_param)
 
         if itr != torch.distributed.get_world_size() - 1:
-            _clock_rotation_buffer_wait(module.flat_param, module._buffer)
-            module.flat_param.data.copy_(module._buffer)
-
-        if itr == torch.distributed.get_world_size() - 2:
-            module._buffer = None
+            _clock_rotation_buffer_wait(module.flat_param, module.flat_param)
         return input_
 
     @staticmethod
@@ -257,8 +258,6 @@ class ParallelRegion_inplace(torch.autograd.Function):
 
         if itr == torch.distributed.get_world_size() - 1:
             module._full_grad = torch.zeros_like(module.flat_param)
-            module._grad_buffer = torch.zeros_like(module.flat_param)
-            module._buffer = torch.zeros_like(module.flat_param)
 
             for sub_module in module.module_list:
                 cur_numel = 0
@@ -267,15 +266,8 @@ class ParallelRegion_inplace(torch.autograd.Function):
                     cur_numel += param.numel()
 
         else:
-            counter_clock_rotation_buffer_wait(module.flat_param.data, module._buffer)
-            counter_clock_rotation_buffer_wait(module._full_grad.data, module._grad_buffer)
-            module.flat_param.data.copy_(module._buffer)
-            module._full_grad.data.copy_(module._grad_buffer)
-
-            if itr == 0:
-                module._full_grad = None
-                module._grad_buffer = None
-                module._buffer = None
+            counter_clock_rotation_buffer_wait(module.flat_param.data, module.flat_param.data)
+            counter_clock_rotation_buffer_wait(module._full_grad.data, module._full_grad.data)
 
         return grad_output, None, None
 
@@ -452,14 +444,18 @@ class RotatedTensorParallel(nn.Module):
         has_parameters = any(isinstance(param, nn.Parameter) for param in module.parameters())
         has_child = any(isinstance(child, nn.Module) for child in module.children())
         is_MultiheadAttention = isinstance(module, nn.MultiheadAttention)
+        is_MOELayer = isinstance(module, MOELayer)
 
-        if has_child and not is_MultiheadAttention:
+        if has_child and not is_MultiheadAttention and not is_MOELayer:
             for name, child in module.named_children():
                 self.RecursiveVisit(name, child, module)
         else:
             if has_parameters:
-                pass
-                if isinstance(module, nn.Linear):
+                if isinstance(module, MOELayer):
+                    r = WeightMOELayer(module.gate, module.experts)
+                    setattr(upper_module, name, r)
+                    self.FlyweightModule_list.append(r)
+                elif isinstance(module, nn.Linear):
                     if module.out_features % self.world_size == 0:
                         module.weight = nn.Parameter(split_tensor(module.weight, self.world_size, dim=0)[self.rank])
                         if module.bias is not None:
@@ -558,7 +554,11 @@ class RotatedTensorParallel(nn.Module):
                         assert p_tmp.grad_fn is not None
                         grad_acc = p_tmp.grad_fn.next_functions[0][0]  # Gets its GradAccumulation object.
                         sub_module.count += 1
-                        handle = grad_acc.register_hook(partial(hook_fn, sub_module, module))
+
+                        if self.inplace:
+                            handle = grad_acc.register_hook(partial(hook_fn_inplace, sub_module, module))
+                        else:
+                            handle = grad_acc.register_hook(partial(hook_fn, sub_module, module))
 
     def cuda(self, device=None):
         self.module.cuda(device)
