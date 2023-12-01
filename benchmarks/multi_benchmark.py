@@ -10,8 +10,7 @@ import os
 
 from datasets.wikitext2_data import get_real_dataloaders as get_real_wikitext2_dataloaders
 from datasets.wikitext2_data import get_synthetic_dataloaders as get_synthetic_wikitext2_dataloaders
-# from models import transformer_lm
-from rtp.models import transformer_lm_tp as transformer_lm
+import transformer_lm_dp as transformer_lm
 import numpy as np
 import torch
 import torch.distributed as dist
@@ -51,11 +50,8 @@ def get_lm_model(args, device, config):
     vocab_size = config["vocab_size"]
     nhid = config["nhid"]
     ndecoder = config["num_decoder_layers"]
-    world_size = torch.distributed.get_world_size()
-    rank = torch.distributed.get_rank()
 
-    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder, 
-                                        world_size=world_size, rank=rank).to(device)
+    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder, half=args.full_fp16).to(device)
 
 def get_synthetic_dataloaders(args, device, benchmark_config, model_specs):
     """Returns dataloader for synthetic data."""
@@ -125,8 +121,6 @@ def train(model_config, model, benchmark_config, model_specs, args):
     vocab_size = model_specs["vocab_size"]
     optimizer = model_config["optimizer"]
 
-    world_size = torch.distributed.get_world_size()
-
     if not args.benchmark_eval:
         model.train()
     # log_number_of_parameters(model)
@@ -155,20 +149,20 @@ def train(model_config, model, benchmark_config, model_specs, args):
             epoch_start_time = time.time()
 
         source, target = get_batch(batch)
-        if args.full_fp16:
+        # if args.full_fp16:
             # source = source.half()
-            target = target.half()
+            # target = target.half()
         if args.max_batch and i > args.max_batch:
             break
 
         if i > 0:
-            total_tokens += source.numel() / world_size
+            total_tokens += source.numel()
 
         if args.benchmark_eval:
             input = source.cuda()
             target = target.cuda()
             output = model(input)
-            print(f"output.dtype {output.dtype}, target.dtype {target.dtype}")
+            # print(f"output.dtype {output.dtype}, target.dtype {target.dtype}")
             loss = torch.nn.CrossEntropyLoss()(output.view(-1, vocab_size), target.view(-1))
         else:
             optimizer.zero_grad()
@@ -185,7 +179,7 @@ def train(model_config, model, benchmark_config, model_specs, args):
         total_loss += loss.item()
 
         log_interval = 1
-        total_tokens_per_log_interval += source.numel() / world_size
+        total_tokens_per_log_interval += source.numel()
         if i % log_interval == 0 and i > 0:
             cur_loss = total_loss / log_interval
             elapsed = time.time() - start_time
@@ -243,21 +237,19 @@ def benchmark_fsdp(rank, local_rank, args, world_size):
     init_random_seed(0)
 
     benchmark_config = FSDP.get_benchmark_config(args)
-    benchmark_config["batch_size"] = benchmark_config["batch_size"]
     model_specs = FSDP.get_model_config(args)
     model_config = create_model_config(args, benchmark_config=benchmark_config, model_specs=model_specs)
     model = model_config["model"]
     config = {}
 
     if args.full_fp16:
-        config["compute_dtype"] = torch.float16
-        config["mixed_precision"] = False
+        model.half()
 
-    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+    rfsdp_model = model
+    
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
 
     torch.distributed.destroy_process_group()
-
-
 
 from config import parse_args
 
@@ -273,6 +265,6 @@ if __name__ == "__main__":
     local_rank = rank - gpus_per_node * (rank // gpus_per_node)
     args = parse_args()
     if rank == 0:
-        print(f"Running TP benchmark with args: {args}")
+        print(f"Running DP benchmark with args: {args}")
     
     benchmark_fsdp(rank, local_rank, args, world_size)
