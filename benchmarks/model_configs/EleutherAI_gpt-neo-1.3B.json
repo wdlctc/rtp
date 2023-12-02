@@ -1,7 +1,7 @@
 {
     "name": "EleutherAI_gpt-neo-1.3B",
     "num_layers": 24,
-    "n_head": 16,
+    "n_head": 32,
     "hidden_dim": 2048,
     "vocab_size": 50257,
     "max_seq_len": 2048,
