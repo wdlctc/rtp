@@ -1,0 +1,575 @@
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 291, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 270, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 180, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 156, in forward
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 163, in _sa_block
+    x = self.self_attn(x, x, x, attn_mask=attn_mask, key_padding_mask=key_padding_mask, need_weights=False)[0]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 400, in forward
+    outputs = self.module_list[index](*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 131, in forward
+    attn_output, attn_output_weights = multi_head_attention_forward(
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/functional.py", line 830, in multi_head_attention_forward
+    attn_output = torch._C._nn.linear(attn_output, out_proj_weight, out_proj_bias)
+RuntimeError: CUDA error: uncorrectable ECC error encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+srun: error: udc-an36-25: task 15: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55794595.2
+slurmstepd: error: *** STEP 55794595.2 ON udc-an34-31 CANCELLED AT 2023-12-02T02:24:41 ***
+srun: error: udc-an36-25: task 8: Terminated
+srun: error: udc-an36-25: task 14: Terminated
+srun: error: udc-an37-19: task 29: Terminated
+srun: error: udc-an34-31: task 3: Terminated
+srun: error: udc-an36-31: task 18: Terminated
+srun: error: udc-an36-25: task 12: Terminated
+srun: error: udc-an36-31: task 23: Terminated
+srun: error: udc-an37-19: task 30: Terminated
+srun: error: udc-an34-31: task 6: Terminated
+srun: error: udc-an37-19: task 26: Terminated
+srun: error: udc-an36-25: task 9: Terminated
+srun: error: udc-an34-31: task 0: Terminated
+srun: error: udc-an36-31: task 21: Terminated
+srun: error: udc-an37-19: task 24: Terminated
+srun: error: udc-an34-31: task 4: Terminated
+srun: error: udc-an36-31: task 19: Terminated
+srun: error: udc-an36-25: task 10: Terminated
+srun: error: udc-an37-19: task 28: Terminated
+srun: error: udc-an34-31: task 1: Terminated
+srun: error: udc-an36-31: task 16: Terminated
+srun: error: udc-an36-25: task 13: Terminated
+srun: error: udc-an34-31: task 2: Terminated
+srun: error: udc-an37-19: task 31: Terminated
+srun: error: udc-an36-31: task 20: Terminated
+srun: error: udc-an34-31: task 7: Terminated
+srun: error: udc-an37-19: task 25: Terminated
+srun: error: udc-an36-31: task 17: Terminated
+srun: error: udc-an36-25: task 11: Terminated
+srun: error: udc-an34-31: task 5: Terminated
+srun: error: udc-an37-19: task 27: Terminated
+srun: error: udc-an36-31: task 22: Terminated
+srun: Force Terminated StepId=55794595.2
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 291, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 270, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 180, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 156, in forward
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 163, in _sa_block
+    x = self.self_attn(x, x, x, attn_mask=attn_mask, key_padding_mask=key_padding_mask, need_weights=False)[0]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 400, in forward
+    outputs = self.module_list[index](*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 131, in forward
+    attn_output, attn_output_weights = multi_head_attention_forward(
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/functional.py", line 827, in multi_head_attention_forward
+    attn_output = torch._C._nn.scaled_dot_product_attention(q, k, v, attn_mask, dropout_p, is_causal)
+RuntimeError: CUDA error: uncorrectable ECC error encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+srun: error: udc-an36-25: task 15: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55794595.3
+slurmstepd: error: *** STEP 55794595.3 ON udc-an34-31 CANCELLED AT 2023-12-02T02:25:16 ***
+srun: error: udc-an37-19: task 27: Terminated
+srun: error: udc-an34-31: task 2: Terminated
+srun: error: udc-an36-31: task 18: Terminated
+srun: error: udc-an37-19: task 24: Terminated
+srun: error: udc-an36-25: task 14: Terminated
+srun: error: udc-an36-31: task 22: Terminated
+srun: error: udc-an34-31: task 5: Terminated
+srun: error: udc-an36-25: task 9: Terminated
+srun: error: udc-an37-19: task 25: Terminated
+srun: error: udc-an36-31: task 17: Terminated
+srun: error: udc-an34-31: task 6: Terminated
+srun: error: udc-an36-25: task 12: Terminated
+srun: error: udc-an36-31: task 20: Terminated
+srun: error: udc-an34-31: task 7: Terminated
+srun: error: udc-an36-25: task 8: Terminated
+srun: error: udc-an37-19: task 31: Terminated
+srun: error: udc-an36-25: task 13: Terminated
+srun: error: udc-an36-31: task 23: Terminated
+srun: error: udc-an34-31: task 1: Terminated
+srun: error: udc-an37-19: task 26: Terminated
+srun: error: udc-an36-25: task 11: Terminated
+srun: error: udc-an36-31: task 19: Terminated
+srun: error: udc-an34-31: task 4: Terminated
+srun: error: udc-an37-19: task 29: Terminated
+srun: error: udc-an36-31: task 21: Terminated
+srun: error: udc-an34-31: task 0: Terminated
+srun: error: udc-an37-19: task 28: Terminated
+srun: error: udc-an36-25: task 10: Terminated
+srun: error: udc-an34-31: task 3: Terminated
+srun: error: udc-an37-19: task 30: Terminated
+srun: error: udc-an36-31: task 16: Terminated
+srun: Force Terminated StepId=55794595.3
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 291, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 257, in benchmark_fsdp
+    model = RotatedTensorParallel(model)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 514, in RecursiveVisit
+    r = ParallelMultiheadAttention(embed_dim, num_heads, dropout=dropout, bias=bias,
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 42, in __init__
+    self.num_heads_per_partition = divide_and_check_no_remainder(self.num_heads, self.world_size)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 69, in divide_and_check_no_remainder
+    ensure_divisibility(numerator, denominator)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 63, in ensure_divisibility
+    assert numerator % denominator == 0, "{} is not divisible by {}".format(numerator, denominator)
+AssertionError: 16 is not divisible by 32
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 291, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 257, in benchmark_fsdp
+    model = RotatedTensorParallel(model)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 514, in RecursiveVisit
+    r = ParallelMultiheadAttention(embed_dim, num_heads, dropout=dropout, bias=bias,
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 42, in __init__
+    self.num_heads_per_partition = divide_and_check_no_remainder(self.num_heads, self.world_size)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 69, in divide_and_check_no_remainder
+    ensure_divisibility(numerator, denominator)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 63, in ensure_divisibility
+    assert numerator % denominator == 0, "{} is not divisible by {}".format(numerator, denominator)
+AssertionError: 16 is not divisible by 32
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 291, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 257, in benchmark_fsdp
+    model = RotatedTensorParallel(model)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 514, in RecursiveVisit
+    r = ParallelMultiheadAttention(embed_dim, num_heads, dropout=dropout, bias=bias,
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 42, in __init__
+    self.num_heads_per_partition = divide_and_check_no_remainder(self.num_heads, self.world_size)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 69, in divide_and_check_no_remainder
+    ensure_divisibility(numerator, denominator)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 63, in ensure_divisibility
+    assert numerator % denominator == 0, "{} is not divisible by {}".format(numerator, denominator)
+AssertionError: 16 is not divisible by 32
+srun: error: udc-an36-25: task 8: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55794595.4
+slurmstepd: error: *** STEP 55794595.4 ON udc-an34-31 CANCELLED AT 2023-12-02T02:25:33 ***
+srun: error: udc-an36-31: task 16: Terminated
+srun: error: udc-an34-31: task 0: Terminated
+srun: error: udc-an37-19: task 24: Terminated
+srun: error: udc-an36-31: tasks 19,21: Terminated
+srun: error: udc-an36-25: tasks 14-15: Terminated
+srun: error: udc-an34-31: tasks 6-7: Terminated
+srun: error: udc-an37-19: tasks 30-31: Terminated
+srun: error: udc-an36-31: tasks 18,23: Terminated
+srun: error: udc-an36-25: tasks 9-10: Terminated
+srun: error: udc-an37-19: tasks 27-28: Terminated
+srun: error: udc-an34-31: tasks 1,4: Terminated
+srun: error: udc-an36-25: tasks 11-12: Terminated
+srun: error: udc-an36-31: tasks 20,22: Terminated
+srun: error: udc-an37-19: tasks 26,29: Terminated
+srun: error: udc-an34-31: tasks 3,5: Terminated
+srun: error: udc-an34-31: task 2: Terminated
+srun: error: udc-an36-25: task 13: Terminated
+srun: error: udc-an36-31: task 17: Terminated
+srun: error: udc-an37-19: task 25: Terminated
+srun: Force Terminated StepId=55794595.4
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 291, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 257, in benchmark_fsdp
+    model = RotatedTensorParallel(model)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 514, in RecursiveVisit
+    r = ParallelMultiheadAttention(embed_dim, num_heads, dropout=dropout, bias=bias,
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 42, in __init__
+    self.num_heads_per_partition = divide_and_check_no_remainder(self.num_heads, self.world_size)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 69, in divide_and_check_no_remainder
+    ensure_divisibility(numerator, denominator)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 63, in ensure_divisibility
+    assert numerator % denominator == 0, "{} is not divisible by {}".format(numerator, denominator)
+AssertionError: 16 is not divisible by 32
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 291, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 257, in benchmark_fsdp
+    model = RotatedTensorParallel(model)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 514, in RecursiveVisit
+    r = ParallelMultiheadAttention(embed_dim, num_heads, dropout=dropout, bias=bias,
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 42, in __init__
+    self.num_heads_per_partition = divide_and_check_no_remainder(self.num_heads, self.world_size)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 69, in divide_and_check_no_remainder
+    ensure_divisibility(numerator, denominator)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 63, in ensure_divisibility
+    assert numerator % denominator == 0, "{} is not divisible by {}".format(numerator, denominator)
+AssertionError: 16 is not divisible by 32
+srun: error: udc-an36-31: task 16: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55794595.5
+slurmstepd: error: *** STEP 55794595.5 ON udc-an34-31 CANCELLED AT 2023-12-02T02:25:48 ***
+srun: error: udc-an36-25: task 8: Terminated
+srun: error: udc-an34-31: task 0: Terminated
+srun: error: udc-an37-19: task 24: Terminated
+srun: error: udc-an36-25: tasks 14-15: Terminated
+srun: error: udc-an36-31: tasks 22-23: Terminated
+srun: error: udc-an34-31: tasks 6-7: Terminated
+srun: error: udc-an37-19: tasks 30-31: Terminated
+srun: error: udc-an36-31: tasks 18,20: Terminated
+srun: error: udc-an36-25: tasks 10,12: Terminated
+srun: error: udc-an37-19: tasks 26,29: Terminated
+srun: error: udc-an34-31: tasks 2,4: Terminated
+srun: error: udc-an36-31: tasks 17,19: Terminated
+srun: error: udc-an36-25: tasks 9,11: Terminated
+srun: error: udc-an37-19: tasks 27-28: Terminated
+srun: error: udc-an34-31: tasks 1,3: Terminated
+srun: error: udc-an36-31: task 21: Terminated
+srun: error: udc-an34-31: task 5: Terminated
+srun: error: udc-an36-25: task 13: Terminated
+srun: error: udc-an37-19: task 25: Terminated
+srun: Force Terminated StepId=55794595.5
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 291, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 257, in benchmark_fsdp
+    model = RotatedTensorParallel(model)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 514, in RecursiveVisit
+    r = ParallelMultiheadAttention(embed_dim, num_heads, dropout=dropout, bias=bias,
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 42, in __init__
+    self.num_heads_per_partition = divide_and_check_no_remainder(self.num_heads, self.world_size)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 69, in divide_and_check_no_remainder
+    ensure_divisibility(numerator, denominator)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 63, in ensure_divisibility
+    assert numerator % denominator == 0, "{} is not divisible by {}".format(numerator, denominator)
+AssertionError: 16 is not divisible by 32
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 291, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 257, in benchmark_fsdp
+    model = RotatedTensorParallel(model)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 514, in RecursiveVisit
+    r = ParallelMultiheadAttention(embed_dim, num_heads, dropout=dropout, bias=bias,
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 42, in __init__
+    self.num_heads_per_partition = divide_and_check_no_remainder(self.num_heads, self.world_size)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 69, in divide_and_check_no_remainder
+    ensure_divisibility(numerator, denominator)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 63, in ensure_divisibility
+    assert numerator % denominator == 0, "{} is not divisible by {}".format(numerator, denominator)
+AssertionError: 16 is not divisible by 32
+srun: error: udc-an36-31: task 16: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55794595.6
+slurmstepd: error: *** STEP 55794595.6 ON udc-an34-31 CANCELLED AT 2023-12-02T02:26:02 ***
+srun: error: udc-an37-19: task 24: Exited with exit code 1
+srun: error: udc-an34-31: task 0: Terminated
+srun: error: udc-an36-25: task 8: Terminated
+srun: error: udc-an36-25: task 9: Terminated
+srun: error: udc-an36-31: tasks 22-23: Terminated
+srun: error: udc-an37-19: tasks 27-28: Terminated
+srun: error: udc-an34-31: tasks 1,5: Terminated
+srun: error: udc-an36-25: tasks 10,12: Terminated
+srun: error: udc-an36-31: tasks 18,21: Terminated
+srun: error: udc-an37-19: tasks 26,29: Terminated
+srun: error: udc-an34-31: tasks 3,6: Terminated
+srun: error: udc-an36-25: tasks 13,15: Terminated
+srun: error: udc-an36-31: tasks 17,19: Terminated
+srun: error: udc-an37-19: tasks 30-31: Terminated
+srun: error: udc-an34-31: tasks 4,7: Terminated
+srun: error: udc-an36-25: task 14: Terminated
+srun: error: udc-an36-31: task 20: Terminated
+srun: error: udc-an34-31: task 2: Terminated
+srun: error: udc-an37-19: task 25: Terminated
+srun: error: udc-an36-25: task 11: Terminated
+srun: Force Terminated StepId=55794595.6
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 291, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 257, in benchmark_fsdp
+    model = RotatedTensorParallel(model)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 514, in RecursiveVisit
+    r = ParallelMultiheadAttention(embed_dim, num_heads, dropout=dropout, bias=bias,
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 42, in __init__
+    self.num_heads_per_partition = divide_and_check_no_remainder(self.num_heads, self.world_size)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 69, in divide_and_check_no_remainder
+    ensure_divisibility(numerator, denominator)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 63, in ensure_divisibility
+    assert numerator % denominator == 0, "{} is not divisible by {}".format(numerator, denominator)
+AssertionError: 16 is not divisible by 32
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 291, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 257, in benchmark_fsdp
+    model = RotatedTensorParallel(model)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 441, in __init__
+    self.RecursiveVisit('module', self.module, self)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 458, in RecursiveVisit
+    self.RecursiveVisit(name, child, module)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 514, in RecursiveVisit
+    r = ParallelMultiheadAttention(embed_dim, num_heads, dropout=dropout, bias=bias,
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 42, in __init__
+    self.num_heads_per_partition = divide_and_check_no_remainder(self.num_heads, self.world_size)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 69, in divide_and_check_no_remainder
+    ensure_divisibility(numerator, denominator)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/utils.py", line 63, in ensure_divisibility
+    assert numerator % denominator == 0, "{} is not divisible by {}".format(numerator, denominator)
+AssertionError: 16 is not divisible by 32
+srun: error: udc-an36-31: task 16: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55794595.7
+slurmstepd: error: *** STEP 55794595.7 ON udc-an34-31 CANCELLED AT 2023-12-02T02:26:16 ***
+srun: error: udc-an36-25: task 8: Terminated
+srun: error: udc-an37-19: task 24: Terminated
+srun: error: udc-an34-31: tasks 0,7: Terminated
+srun: error: udc-an36-25: tasks 11,14: Terminated
+srun: error: udc-an36-31: tasks 22-23: Terminated
+srun: error: udc-an34-31: tasks 1-2: Terminated
+srun: error: udc-an37-19: tasks 30-31: Terminated
+srun: error: udc-an36-25: tasks 12-13: Terminated
+srun: error: udc-an36-31: tasks 17-18: Terminated
+srun: error: udc-an37-19: tasks 27-28: Terminated
+srun: error: udc-an34-31: tasks 4,6: Terminated
+srun: error: udc-an36-31: tasks 19,21: Terminated
+srun: error: udc-an36-25: tasks 9-10: Terminated
+srun: error: udc-an37-19: tasks 25-26: Terminated
+srun: error: udc-an34-31: task 3: Terminated
+srun: error: udc-an34-31: task 5: Terminated
+srun: error: udc-an36-31: task 20: Terminated
+srun: error: udc-an36-25: task 15: Terminated
+srun: error: udc-an37-19: task 29: Terminated
+srun: Force Terminated StepId=55794595.7
