@@ -34,6 +34,7 @@ multi_rtp_benchmark.py
 CONFIGS=(
 gpt2-xl
 EleutherAI_gpt-neo-1.3B
+EleutherAI_gpt-neo-2.7B
 )
 
 
