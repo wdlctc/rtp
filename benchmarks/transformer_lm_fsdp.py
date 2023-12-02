@@ -8,7 +8,7 @@ import math
 import torch
 import torch.nn as nn
 
-from fairscale.nn.moe.moe_layer import MOELayer
+from rtp.module.moe import MOELayer
 from fairscale.nn.moe.top2gate import Top2Gate
 
 
