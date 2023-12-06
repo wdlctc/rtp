@@ -1,6 +1,6 @@
 {
     "name": "Llama-2-36b-for-llm",
-    "num_layers": 148,
+    "num_layers": 177,
     "n_head": 32,
     "hidden_dim": 4096,
     "vocab_size": 32000,
