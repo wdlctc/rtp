@@ -1,0 +1,138 @@
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 270, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 216, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 176, in train
+    torch.nn.utils.clip_grad_value_(model.parameters(), model_specs["clip_value"])
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/utils/clip_grad.py", line 126, in clip_grad_value_
+    torch._foreach_clamp_min_(cast(List[Tensor], grads), -clip_value)
+RuntimeError: CUDA error: uncorrectable ECC error encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+[W CUDAGuardImpl.h:115] Warning: CUDA warning: uncorrectable ECC error encountered (function destroyEvent)
+terminate called after throwing an instance of 'c10::Error'
+  what():  CUDA error: uncorrectable ECC error encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Exception raised from c10_cuda_check_implementation at ../c10/cuda/CUDAException.cpp:44 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7fcd0d459617 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, std::string const&) + 0x64 (0x7fcd0d41498d in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #2: c10::cuda::c10_cuda_check_implementation(int, char const*, char const*, int, bool) + 0x118 (0x7fcd0d515128 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #3: <unknown function> + 0x16e76 (0x7fcd0d4dde76 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #4: <unknown function> + 0x19bad (0x7fcd0d4e0bad in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #5: <unknown function> + 0x19fcd (0x7fcd0d4e0fcd in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #6: <unknown function> + 0x510c56 (0x7fcd50254c56 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #7: <unknown function> + 0x55ca7 (0x7fcd0d43eca7 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #8: c10::TensorImpl::~TensorImpl() + 0x1e3 (0x7fcd0d436cb3 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #9: c10::TensorImpl::~TensorImpl() + 0x9 (0x7fcd0d436e49 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #10: c10d::Reducer::~Reducer() + 0x5b7 (0x7fcd3e3f0337 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_cpu.so)
+frame #11: std::_Sp_counted_ptr<c10d::Reducer*, (__gnu_cxx::_Lock_policy)2>::_M_dispose() + 0x12 (0x7fcd50952692 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #12: std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release() + 0x48 (0x7fcd501265e8 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #13: <unknown function> + 0xc11181 (0x7fcd50955181 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #14: <unknown function> + 0x3ec17b (0x7fcd5013017b in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #15: <unknown function> + 0x3ed101 (0x7fcd50131101 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #16: /scratch/fad3ew/rtp/.venv/bin/python() [0x4d3ade]
+frame #17: /scratch/fad3ew/rtp/.venv/bin/python() [0x4f9696]
+frame #18: /scratch/fad3ew/rtp/.venv/bin/python() [0x4e09c0]
+frame #19: /scratch/fad3ew/rtp/.venv/bin/python() [0x4f18c8]
+frame #20: /scratch/fad3ew/rtp/.venv/bin/python() [0x4f18b1]
+frame #21: /scratch/fad3ew/rtp/.venv/bin/python() [0x4c93b0]
+frame #22: PyDict_SetItemString + 0x52 (0x582492 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #23: PyImport_Cleanup + 0x93 (0x5a7713 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #24: Py_FinalizeEx + 0x71 (0x5a6831 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #25: Py_RunMain + 0x112 (0x5a2502 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #26: Py_BytesMain + 0x39 (0x57a899 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #27: __libc_start_main + 0xf5 (0x7fcd948e4555 in /lib64/libc.so.6)
+frame #28: /scratch/fad3ew/rtp/.venv/bin/python() [0x57a74d]
+
+srun: error: udc-an36-25: task 7: Aborted (core dumped)
+srun: launch/slurm: _step_signal: Terminating StepId=55794662.0
+slurmstepd: error: *** STEP 55794662.0 ON udc-an36-25 CANCELLED AT 2023-12-02T03:18:30 ***
+srun: error: udc-an36-25: task 2: Terminated
+srun: error: udc-an36-31: tasks 14-15: Terminated
+srun: error: udc-an36-25: tasks 0,3: Terminated
+srun: error: udc-an36-31: tasks 9,13: Terminated
+srun: error: udc-an36-25: task 1: Terminated
+srun: error: udc-an36-25: task 6: Terminated
+srun: error: udc-an36-31: task 11: Terminated
+srun: error: udc-an36-25: task 4: Terminated
+srun: error: udc-an36-31: task 10: Terminated
+srun: error: udc-an36-31: task 12: Terminated
+srun: error: udc-an36-25: task 5: Terminated
+srun: error: udc-an36-31: task 8: Terminated
+srun: Force Terminated StepId=55794662.0
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 270, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 216, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 174, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling `cublasSgemm( handle, opa, opb, m, n, k, &alpha, a, lda, b, ldb, &beta, c, ldc)`
+terminate called after throwing an instance of 'c10::Error'
+  what():  CUDA error: uncorrectable ECC error encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Exception raised from c10_cuda_check_implementation at ../c10/cuda/CUDAException.cpp:44 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7f473aa2a617 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, std::string const&) + 0x64 (0x7f473a9e598d in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #2: c10::cuda::c10_cuda_check_implementation(int, char const*, char const*, int, bool) + 0x118 (0x7f473aae6128 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #3: <unknown function> + 0x16e76 (0x7f473aaaee76 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #4: <unknown function> + 0x19bad (0x7f473aab1bad in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #5: <unknown function> + 0x19fcd (0x7f473aab1fcd in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #6: <unknown function> + 0x510c56 (0x7f477d825c56 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #7: <unknown function> + 0x55ca7 (0x7f473aa0fca7 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #8: c10::TensorImpl::~TensorImpl() + 0x1e3 (0x7f473aa07cb3 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #9: c10::TensorImpl::~TensorImpl() + 0x9 (0x7f473aa07e49 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #10: std::vector<at::Tensor, std::allocator<at::Tensor> >::~vector() + 0x8b (0x7f477d8275cb in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #11: c10d::Reducer::~Reducer() + 0x338 (0x7f476b9c10b8 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_cpu.so)
+frame #12: std::_Sp_counted_ptr<c10d::Reducer*, (__gnu_cxx::_Lock_policy)2>::_M_dispose() + 0x12 (0x7f477df23692 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #13: std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release() + 0x48 (0x7f477d6f75e8 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #14: <unknown function> + 0xc11181 (0x7f477df26181 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #15: <unknown function> + 0x3ec17b (0x7f477d70117b in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #16: <unknown function> + 0x3ed101 (0x7f477d702101 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #17: /scratch/fad3ew/rtp/.venv/bin/python() [0x4d3ade]
+frame #18: /scratch/fad3ew/rtp/.venv/bin/python() [0x4f9696]
+frame #19: /scratch/fad3ew/rtp/.venv/bin/python() [0x4e09c0]
+frame #20: /scratch/fad3ew/rtp/.venv/bin/python() [0x4f18c8]
+frame #21: /scratch/fad3ew/rtp/.venv/bin/python() [0x4f18b1]
+frame #22: /scratch/fad3ew/rtp/.venv/bin/python() [0x4c93b0]
+frame #23: PyDict_SetItemString + 0x52 (0x582492 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #24: PyImport_Cleanup + 0x93 (0x5a7713 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #25: Py_FinalizeEx + 0x71 (0x5a6831 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #26: Py_RunMain + 0x112 (0x5a2502 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #27: Py_BytesMain + 0x39 (0x57a899 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #28: __libc_start_main + 0xf5 (0x7f47c1eb5555 in /lib64/libc.so.6)
+frame #29: /scratch/fad3ew/rtp/.venv/bin/python() [0x57a74d]
+
+srun: error: udc-an36-25: task 7: Aborted (core dumped)
+srun: launch/slurm: _step_signal: Terminating StepId=55794662.1
+slurmstepd: error: *** STEP 55794662.1 ON udc-an36-25 CANCELLED AT 2023-12-02T03:19:08 ***
+srun: error: udc-an36-25: task 6: Terminated
+srun: error: udc-an36-31: tasks 14-15: Terminated
+srun: error: udc-an36-25: task 3: Terminated
+srun: error: udc-an36-31: task 9: Terminated
+srun: error: udc-an36-25: task 2: Terminated
+srun: error: udc-an36-31: tasks 11-12: Terminated
+srun: error: udc-an36-25: tasks 0,4: Terminated
+srun: error: udc-an36-31: task 13: Terminated
+srun: error: udc-an36-25: task 5: Terminated
+srun: error: udc-an36-31: task 8: Terminated
+srun: error: udc-an36-25: task 1: Terminated
+srun: error: udc-an36-31: task 10: Terminated
+srun: Force Terminated StepId=55794662.1

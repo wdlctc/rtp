@@ -1,0 +1,298 @@
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 180, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py", line 839, in forward
+    output = self._fsdp_wrapped_module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_fsdp.py", line 26, in forward
+    return self.embedding(src) * self.ninp_sqrt
+RuntimeError: CUDA error: uncorrectable ECC error encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+srun: error: udc-an36-25: task 7: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55794640.2
+slurmstepd: error: *** STEP 55794640.2 ON udc-an36-25 CANCELLED AT 2023-12-02T03:04:07 ***
+srun: error: udc-an36-25: task 5: Terminated
+srun: error: udc-an36-25: task 0: Terminated
+srun: error: udc-an36-31: tasks 11,14: Terminated
+srun: error: udc-an36-25: task 6: Terminated
+srun: error: udc-an36-31: tasks 13,15: Terminated
+srun: error: udc-an36-25: tasks 1-2: Terminated
+srun: error: udc-an36-31: tasks 8-9: Terminated
+srun: error: udc-an36-25: task 3: Terminated
+srun: error: udc-an36-31: task 12: Terminated
+srun: error: udc-an36-25: task 4: Terminated
+srun: error: udc-an36-31: task 10: Terminated
+srun: Force Terminated StepId=55794640.2
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 180, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py", line 839, in forward
+    output = self._fsdp_wrapped_module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_fsdp.py", line 26, in forward
+    return self.embedding(src) * self.ninp_sqrt
+RuntimeError: CUDA error: uncorrectable ECC error encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+srun: error: udc-an36-25: task 7: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55794640.3
+slurmstepd: error: *** STEP 55794640.3 ON udc-an36-25 CANCELLED AT 2023-12-02T03:04:42 ***
+srun: error: udc-an36-25: tasks 3-4: Terminated
+srun: error: udc-an36-31: tasks 14-15: Terminated
+srun: error: udc-an36-25: task 2: Terminated
+srun: error: udc-an36-31: tasks 10-11: Terminated
+srun: error: udc-an36-25: tasks 0,5: Terminated
+srun: error: udc-an36-31: tasks 12-13: Terminated
+srun: error: udc-an36-25: task 1: Terminated
+srun: error: udc-an36-31: task 8: Terminated
+srun: error: udc-an36-25: task 6: Terminated
+srun: error: udc-an36-31: task 9: Terminated
+srun: Force Terminated StepId=55794640.3
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 270, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 216, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 176, in train
+    torch.nn.utils.clip_grad_value_(model.parameters(), model_specs["clip_value"])
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/utils/clip_grad.py", line 126, in clip_grad_value_
+    torch._foreach_clamp_min_(cast(List[Tensor], grads), -clip_value)
+RuntimeError: CUDA error: uncorrectable ECC error encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+[W CUDAGuardImpl.h:115] Warning: CUDA warning: uncorrectable ECC error encountered (function destroyEvent)
+terminate called after throwing an instance of 'c10::Error'
+  what():  CUDA error: uncorrectable ECC error encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Exception raised from c10_cuda_check_implementation at ../c10/cuda/CUDAException.cpp:44 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7f06a68a5617 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, std::string const&) + 0x64 (0x7f06a686098d in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #2: c10::cuda::c10_cuda_check_implementation(int, char const*, char const*, int, bool) + 0x118 (0x7f06a6961128 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #3: <unknown function> + 0x16e76 (0x7f06a6929e76 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #4: <unknown function> + 0x19bad (0x7f06a692cbad in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #5: <unknown function> + 0x19fcd (0x7f06a692cfcd in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #6: <unknown function> + 0x510c56 (0x7f06e96a0c56 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #7: <unknown function> + 0x55ca7 (0x7f06a688aca7 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #8: c10::TensorImpl::~TensorImpl() + 0x1e3 (0x7f06a6882cb3 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #9: c10::TensorImpl::~TensorImpl() + 0x9 (0x7f06a6882e49 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #10: c10d::Reducer::~Reducer() + 0x5b7 (0x7f06d783c337 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_cpu.so)
+frame #11: std::_Sp_counted_ptr<c10d::Reducer*, (__gnu_cxx::_Lock_policy)2>::_M_dispose() + 0x12 (0x7f06e9d9e692 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #12: std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release() + 0x48 (0x7f06e95725e8 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #13: <unknown function> + 0xc11181 (0x7f06e9da1181 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #14: <unknown function> + 0x3ec17b (0x7f06e957c17b in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #15: <unknown function> + 0x3ed101 (0x7f06e957d101 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #16: /scratch/fad3ew/rtp/.venv/bin/python() [0x4d3ade]
+frame #17: /scratch/fad3ew/rtp/.venv/bin/python() [0x4f9696]
+frame #18: /scratch/fad3ew/rtp/.venv/bin/python() [0x4e09c0]
+frame #19: /scratch/fad3ew/rtp/.venv/bin/python() [0x4f18c8]
+frame #20: /scratch/fad3ew/rtp/.venv/bin/python() [0x4f18b1]
+frame #21: /scratch/fad3ew/rtp/.venv/bin/python() [0x4c93b0]
+frame #22: PyDict_SetItemString + 0x52 (0x582492 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #23: PyImport_Cleanup + 0x93 (0x5a7713 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #24: Py_FinalizeEx + 0x71 (0x5a6831 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #25: Py_RunMain + 0x112 (0x5a2502 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #26: Py_BytesMain + 0x39 (0x57a899 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #27: __libc_start_main + 0xf5 (0x7f072dd30555 in /lib64/libc.so.6)
+frame #28: /scratch/fad3ew/rtp/.venv/bin/python() [0x57a74d]
+
+srun: error: udc-an36-25: task 7: Aborted (core dumped)
+srun: launch/slurm: _step_signal: Terminating StepId=55794640.4
+slurmstepd: error: *** STEP 55794640.4 ON udc-an36-25 CANCELLED AT 2023-12-02T03:05:21 ***
+srun: error: udc-an36-25: tasks 3-4: Terminated
+srun: error: udc-an36-31: tasks 14-15: Terminated
+srun: error: udc-an36-25: task 2: Terminated
+srun: error: udc-an36-31: tasks 8,12: Terminated
+srun: error: udc-an36-25: tasks 0-1: Terminated
+srun: error: udc-an36-31: task 10: Terminated
+srun: error: udc-an36-25: task 6: Terminated
+srun: error: udc-an36-31: task 11: Terminated
+srun: error: udc-an36-31: task 9: Terminated
+srun: error: udc-an36-25: task 5: Terminated
+srun: error: udc-an36-31: task 13: Terminated
+srun: Force Terminated StepId=55794640.4
+Traceback (most recent call last):
+  File "benchmarks/multi_dp_benchmark.py", line 270, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_dp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 216, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_dp_benchmark.py", line 176, in train
+    torch.nn.utils.clip_grad_value_(model.parameters(), model_specs["clip_value"])
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/utils/clip_grad.py", line 126, in clip_grad_value_
+    torch._foreach_clamp_min_(cast(List[Tensor], grads), -clip_value)
+RuntimeError: CUDA error: uncorrectable ECC error encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+[W CUDAGuardImpl.h:115] Warning: CUDA warning: uncorrectable ECC error encountered (function destroyEvent)
+terminate called after throwing an instance of 'c10::Error'
+  what():  CUDA error: uncorrectable ECC error encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Exception raised from c10_cuda_check_implementation at ../c10/cuda/CUDAException.cpp:44 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7f02ad97b617 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, std::string const&) + 0x64 (0x7f02ad93698d in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #2: c10::cuda::c10_cuda_check_implementation(int, char const*, char const*, int, bool) + 0x118 (0x7f02ada37128 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #3: <unknown function> + 0x16e76 (0x7f02ad9ffe76 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #4: <unknown function> + 0x19bad (0x7f02ada02bad in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #5: <unknown function> + 0x19fcd (0x7f02ada02fcd in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #6: <unknown function> + 0x510c56 (0x7f02f0776c56 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #7: <unknown function> + 0x55ca7 (0x7f02ad960ca7 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #8: c10::TensorImpl::~TensorImpl() + 0x1e3 (0x7f02ad958cb3 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #9: c10::TensorImpl::~TensorImpl() + 0x9 (0x7f02ad958e49 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #10: c10d::Reducer::~Reducer() + 0x5b7 (0x7f02de912337 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_cpu.so)
+frame #11: std::_Sp_counted_ptr<c10d::Reducer*, (__gnu_cxx::_Lock_policy)2>::_M_dispose() + 0x12 (0x7f02f0e74692 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #12: std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release() + 0x48 (0x7f02f06485e8 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #13: <unknown function> + 0xc11181 (0x7f02f0e77181 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #14: <unknown function> + 0x3ec17b (0x7f02f065217b in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #15: <unknown function> + 0x3ed101 (0x7f02f0653101 in /scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #16: /scratch/fad3ew/rtp/.venv/bin/python() [0x4d3ade]
+frame #17: /scratch/fad3ew/rtp/.venv/bin/python() [0x4f9696]
+frame #18: /scratch/fad3ew/rtp/.venv/bin/python() [0x4e09c0]
+frame #19: /scratch/fad3ew/rtp/.venv/bin/python() [0x4f18c8]
+frame #20: /scratch/fad3ew/rtp/.venv/bin/python() [0x4f18b1]
+frame #21: /scratch/fad3ew/rtp/.venv/bin/python() [0x4c93b0]
+frame #22: PyDict_SetItemString + 0x52 (0x582492 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #23: PyImport_Cleanup + 0x93 (0x5a7713 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #24: Py_FinalizeEx + 0x71 (0x5a6831 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #25: Py_RunMain + 0x112 (0x5a2502 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #26: Py_BytesMain + 0x39 (0x57a899 in /scratch/fad3ew/rtp/.venv/bin/python)
+frame #27: __libc_start_main + 0xf5 (0x7f0334e06555 in /lib64/libc.so.6)
+frame #28: /scratch/fad3ew/rtp/.venv/bin/python() [0x57a74d]
+
+srun: error: udc-an36-25: task 7: Aborted (core dumped)
+srun: launch/slurm: _step_signal: Terminating StepId=55794640.5
+slurmstepd: error: *** STEP 55794640.5 ON udc-an36-25 CANCELLED AT 2023-12-02T03:06:08 ***
+srun: error: udc-an36-25: task 6: Terminated
+srun: error: udc-an36-31: tasks 14-15: Terminated
+srun: error: udc-an36-25: task 2: Terminated
+srun: error: udc-an36-25: task 5: Terminated
+srun: error: udc-an36-31: task 10: Terminated
+srun: error: udc-an36-31: task 12: Terminated
+srun: error: udc-an36-25: task 4: Terminated
+srun: error: udc-an36-25: task 3: Terminated
+srun: error: udc-an36-31: task 9: Terminated
+srun: error: udc-an36-25: task 1: Terminated
+srun: error: udc-an36-31: task 8: Terminated
+srun: error: udc-an36-31: task 11: Terminated
+srun: error: udc-an36-25: task 0: Terminated
+srun: error: udc-an36-31: task 13: Terminated
+srun: Force Terminated StepId=55794640.5

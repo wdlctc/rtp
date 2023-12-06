@@ -1,0 +1,16 @@
+WORLD_SIZE=32
+MASTER_ADDR=udc-an34-31
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=1, benchmark_eval=False, checkpoint=True, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=True, initrange=0.1, lr=0.0001, max_batch=4, model_config='Llama-2-7b', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 138.85 | loss   nan | ppl      nan
+| batch     2 | wps 318.79 | loss   nan | ppl      nan
+| batch     3 | wps 297.08 | loss   nan | ppl      nan
+| batch     4 | wps 311.87 | loss   nan | ppl      nan
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 98.85s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 308.49.
+Elapsed_time(s) is 98.85.
+Peak allocated bytes on cuda:0: 14.494807GB

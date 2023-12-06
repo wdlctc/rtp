@@ -1,0 +1,17 @@
+CUDA error (../aten/src/ATen/native/transformers/cuda/flash_attn/fmha_bwd_launch_template.h:87): out of memory
+CUDA error (../aten/src/ATen/native/transformers/cuda/flash_attn/fmha_bwd_launch_template.h:87): out of memory
+CUDA error (../aten/src/ATen/native/transformers/cuda/flash_attn/fmha_bwd_launch_template.h:87): out of memory
+CUDA error (../aten/src/ATen/native/transformers/cuda/flash_attn/fmha_bwd_launch_template.h:87): out of memory
+CUDA error (../aten/src/ATen/native/transformers/cuda/flash_attn/fmha_bwd_launch_template.h:87): out of memory
+CUDA error (../aten/src/ATen/native/transformers/cuda/flash_attn/fmha_bwd_launch_template.h:87): out of memory
+srun: error: udc-an37-25: task 2: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55813568.0
+slurmstepd: error: *** STEP 55813568.0 ON udc-an37-25 CANCELLED AT 2023-12-03T02:11:56 ***
+srun: error: udc-an37-25: task 1: Exited with exit code 1
+srun: error: udc-an37-25: task 6: Exited with exit code 1
+srun: error: udc-an37-25: task 5: Exited with exit code 1
+srun: error: udc-an37-25: task 7: Terminated
+srun: error: udc-an37-25: task 4: Exited with exit code 1
+srun: error: udc-an37-25: task 0: Terminated
+srun: error: udc-an37-25: task 3: Exited with exit code 1
+srun: Force Terminated StepId=55813568.0

@@ -1,16 +1,16 @@
 #!/bin/bash
 
-#SBATCH --job-name=16A100
-#SBATCH --nodes=2
+#SBATCH --job-name=8nA100_throughput
+#SBATCH --nodes=1
 #SBATCH --ntasks-per-node=8
 #SBATCH --gres=gpu:a100:8
-#SBATCH -C gpupod
 #SBATCH --mem=2000000M
-#SBATCH --partition=gpu
+#SBATCH --partition=bii-gpu
 #SBATCH -A bii_dsc_community
 #SBATCH --time=04:00:00          # total run time limit (HH:MM:SS)
-#SBATCH --error="slurm/A100/16A100.err"
-#SBATCH --output="slurm/A100/16A100.output"
+#SBATCH --reservation=bi_fox_dgx
+#SBATCH --error="slurm/throughput_repeat/test4.err"
+#SBATCH --output="slurm/throughput_repeat/test4.output"
 
 export MASTER_PORT=$(expr 10000 + $(echo -n $SLURM_JOBID | tail -c 4))
 export WORLD_SIZE=$(($SLURM_NNODES * $SLURM_NTASKS_PER_NODE))
@@ -28,15 +28,15 @@ source /scratch/fad3ew/rtp/.venv/bin/activate
 cd /scratch/fad3ew/rtp
 
 SCRIPTS=(
+multi_dp_benchmark.py
+multi_fsdp_benchmark.py
 multi_rtp_benchmark.py
-multi_rtp_benchmark.py
+# multi_rtp_benchmark_inplace.py
 )
 
 CONFIGS=(
-gpt2-xl
-EleutherAI_gpt-neo-1.3B
+Llama-2-7b
 )
-
 
 for config in "${CONFIGS[@]}"; do
     for script in "${SCRIPTS[@]}"; do
@@ -44,8 +44,10 @@ for config in "${CONFIGS[@]}"; do
             srun --export=ALL /scratch/fad3ew/rtp/.venv/bin/python \
             benchmarks/$script \
             --use_synthetic_data \
-            --model_config=$config \
-            --batch_size $i
+            --full_fp16 \
+            --batch_size $i \
+            --checkpoint \
+            --model_config=$config
         done
     done
 done

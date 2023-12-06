@@ -1,0 +1,72 @@
+WORLD_SIZE=8
+MASTER_ADDR=udc-an26-1
+Running DP benchmark with args: Namespace(batch_size=1, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=4, model_config='gpt2-large', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 1249.94 | loss 25.89 | ppl 175755177424.46
+| batch     2 | wps 2581.80 | loss 12.67 | ppl 317707.73
+| batch     3 | wps 2511.80 | loss 12.42 | ppl 247778.38
+| batch     4 | wps 2587.62 | loss 12.46 | ppl 256576.24
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time:  3.15s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2542.21.
+Elapsed_time(s) is 3.15.
+Peak allocated bytes on cuda:0: 16.136050GB
+Running DP benchmark with args: Namespace(batch_size=1, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=4, model_config='gpt2-large', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 996.70 | loss 25.89 | ppl 175755345037.74
+| batch     2 | wps 2373.56 | loss 12.67 | ppl 317704.70
+| batch     3 | wps 2383.37 | loss 12.42 | ppl 247753.81
+| batch     4 | wps 2377.02 | loss 12.46 | ppl 256575.01
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time:  3.69s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2297.10.
+Elapsed_time(s) is 3.69.
+Peak allocated bytes on cuda:0: 19.232364GB
+Running FSDP benchmark with args: Namespace(batch_size=1, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=4, model_config='gpt2-large', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 129.23 | loss 25.89 | ppl 175755177424.46
+| batch     2 | wps 2412.90 | loss 12.67 | ppl 317704.09
+| batch     3 | wps 2614.32 | loss 12.42 | ppl 247738.21
+| batch     4 | wps 2610.07 | loss 12.46 | ppl 256574.04
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 17.09s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2513.12.
+Elapsed_time(s) is 17.09.
+Peak allocated bytes on cuda:0: 10.825802GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=1, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=4, model_config='gpt2-large', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 66.28 | loss 25.79 | ppl 158337908199.73
+| batch     2 | wps 1336.91 | loss 12.92 | ppl 407195.40
+| batch     3 | wps 1326.15 | loss 12.62 | ppl 303262.06
+| batch     4 | wps 1318.41 | loss 12.51 | ppl 272103.80
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 33.55s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 1299.04.
+Elapsed_time(s) is 33.55.
+Peak allocated bytes on cuda:0: 4.532689GB
+Running RTP-in-place benchmark with args: Namespace(batch_size=1, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=4, model_config='gpt2-large', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 67.17 | loss 26.03 | ppl 202389260001.23
+| batch     2 | wps 1197.07 | loss 12.88 | ppl 392776.02
+| batch     3 | wps 1196.98 | loss 12.68 | ppl 320956.52
+| batch     4 | wps 1194.11 | loss 12.52 | ppl 272914.38
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 33.39s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 1178.74.
+Elapsed_time(s) is 33.39.
+Peak allocated bytes on cuda:0: 4.512525GB
