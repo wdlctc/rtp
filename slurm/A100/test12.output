@@ -1,0 +1,16 @@
+WORLD_SIZE=8
+MASTER_ADDR=udc-an36-1
+Running FSDP benchmark with args: Namespace(batch_size=1, benchmark_eval=False, checkpoint=True, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=True, initrange=0.1, lr=0.0001, max_batch=4, model_config='EleutherAI_gpt-neo-2.7B', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 254.85 | loss   nan | ppl      nan
+| batch     2 | wps 4944.04 | loss   nan | ppl      nan
+| batch     3 | wps 4943.35 | loss   nan | ppl      nan
+| batch     4 | wps 4934.13 | loss   nan | ppl      nan
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 17.35s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 4866.32.
+Elapsed_time(s) is 17.35.
+Peak allocated bytes on cuda:0: 17.690813GB

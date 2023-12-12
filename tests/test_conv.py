@@ -14,6 +14,7 @@ from typing import Any, Optional
 
 RPC_PORT = 29501
 from rtp.module.conv import ColumnParallelConv2d
+from rtp.rotated_tensor_parallel import RotatedTensorParallel
 
 
 def init_random_seed(seed: int):
@@ -146,11 +147,11 @@ class TestIdenticalOutputs(unittest.TestCase):
         output_list = torch.split(Conv_output, sub_sample, dim=0)
         cur_output = output_list[rank]
 
-        Weight_conv = ColumnParallelConv2d(in_channels, out_channels,
-                                           kernel_size=kernel_size, padding=padding,
-                                           Conv2d_layer = Conv)
-        # Weight_conv.cuda()
-        Weight_conv.to(device)
+        # Weight_conv = ColumnParallelConv2d(in_channels, out_channels,
+        #                                    kernel_size=kernel_size, padding=padding,
+        #                                    Conv2d_layer = Conv)
+        Weight_conv = RotatedTensorParallel(Conv)
+        Weight_conv.cuda()
         Weight_conv_output = Weight_conv(cur_data)
 
         assert objects_are_equal(cur_output, Weight_conv_output)

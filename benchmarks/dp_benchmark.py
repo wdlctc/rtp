@@ -148,9 +148,9 @@ def train(model_config, model, benchmark_config, model_specs, args):
             epoch_start_time = time.time()
 
         source, target = get_batch(batch)
-        if args.full_fp16:
+        # if args.full_fp16:
             # source = source.half()
-            target = target.half()
+            # target = target.half()
         if args.max_batch and i > args.max_batch:
             break
 
@@ -161,7 +161,7 @@ def train(model_config, model, benchmark_config, model_specs, args):
             input = source.cuda()
             target = target.cuda()
             output = model(input)
-            print(f"output.dtype {output.dtype}, target.dtype {target.dtype}")
+            # print(f"output.dtype {output.dtype}, target.dtype {target.dtype}")
             loss = torch.nn.CrossEntropyLoss()(output.view(-1, vocab_size), target.view(-1))
         else:
             optimizer.zero_grad()
@@ -240,11 +240,12 @@ def benchmark_fsdp(rank, args, world_size):
     model_specs = FSDP.get_model_config(args)
     model_config = create_model_config(args, benchmark_config=benchmark_config, model_specs=model_specs)
     model = model_config["model"]
-    config = {}
+    if args.full_fp16:
+        model.half()
 
-    rfsdp_model = DDP(model, **config)
+    dp_model = DDP(model)
 
-    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+    benchmark_language_model(model_config, dp_model, benchmark_config, model_specs, args)
 
 
 from config import parse_args

@@ -14,6 +14,7 @@ from typing import Any, Optional
 
 RPC_PORT = 29501
 from rtp.module.embedding import ParallelEmbedding
+from rtp.rotated_tensor_parallel import RotatedTensorParallel
 
 def init_random_seed(seed: int):
 
@@ -137,10 +138,12 @@ class TestIdenticalOutputs(unittest.TestCase):
         output_list = torch.split(Embedding_output, sub_sample, dim=0)
         Embedding_output = output_list[rank]
 
-        Weight_Embedding = ParallelEmbedding(num_embeddings, embedding_dim, 
-                                                   world_size=world_size, rank=rank, 
-                                                   device = device,
-                                                   Embedding_layer=Embedding)
+        Weight_Embedding = RotatedTensorParallel(Embedding)
+        Weight_Embedding.cuda()
+        # Weight_Embedding = ParallelEmbedding(num_embeddings, embedding_dim, 
+        #                                            world_size=world_size, rank=rank, 
+        #                                            device = device,
+        #                                            Embedding_layer=Embedding)
         Weight_Embedding_output = Weight_Embedding(data)
         
         assert objects_are_equal(Embedding_output, Weight_Embedding_output)
@@ -155,16 +158,6 @@ class TestIdenticalOutputs(unittest.TestCase):
         for grad1, grad2 in zip(ref_grads, Weight_grads):
             grad = _gather(grad2, dim=1)
             assert objects_are_equal(grad, grad1)
-
-
-        # Activation_Embedding = ActivationParallelEmbedding(num_embeddings, embedding_dim, world_size=world_size, rank=rank, Embedding_layer=Embedding).cuda()
-        # Activation_Embedding_output = Activation_Embedding(data)
-
-        # assert objects_are_equal(Embedding_output, Activation_Embedding_output)
-        # print(Embedding_output.shape, Model_Embedding_output.shape)
-
-        # if rank == 1:
-        #     print(Embedding_output[0], Model_Embedding_output[0])
 
 
 parser = argparse.ArgumentParser()

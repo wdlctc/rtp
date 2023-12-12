@@ -1,0 +1,146 @@
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 269, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 249, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 216, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 174, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 157, in hook_fn
+    module.grad_reqs = counter_clock_rotation_buffer(module._full_grad.data, module._grad_buffer)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 149, in counter_clock_rotation_buffer
+    reqs = torch.distributed.batch_isend_irecv([send_op, recv_op])
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 1802, in batch_isend_irecv
+    p2p_op.op(p2p_op.tensor, p2p_op.peer, p2p_op.group, p2p_op.tag)
+  File "/apps/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 1747, in _coalescing_manager
+    work = group._end_coalescing(device)
+torch.distributed.DistBackendError: NCCL error in: ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:3065, internal error - please report this issue to the NCCL developers, NCCL version 2.18.1
+ncclInternalError: Internal check failed.
+Last error:
+Socket recv failed while polling for opId=0x7f1df8000da0
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 269, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 249, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 216, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 174, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 157, in hook_fn
+    module.grad_reqs = counter_clock_rotation_buffer(module._full_grad.data, module._grad_buffer)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 149, in counter_clock_rotation_buffer
+    reqs = torch.distributed.batch_isend_irecv([send_op, recv_op])
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 1802, in batch_isend_irecv
+    p2p_op.op(p2p_op.tensor, p2p_op.peer, p2p_op.group, p2p_op.tag)
+  File "/apps/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 1747, in _coalescing_manager
+    work = group._end_coalescing(device)
+torch.distributed.DistBackendError: NCCL error in: ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:3065, internal error - please report this issue to the NCCL developers, NCCL version 2.18.1
+ncclInternalError: Internal check failed.
+Last error:
+Socket recv failed while polling for opId=0x7f20e8000da0
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 269, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 249, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 216, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark_inplace.py", line 174, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 157, in hook_fn
+    module.grad_reqs = counter_clock_rotation_buffer(module._full_grad.data, module._grad_buffer)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 149, in counter_clock_rotation_buffer
+    reqs = torch.distributed.batch_isend_irecv([send_op, recv_op])
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 1802, in batch_isend_irecv
+    p2p_op.op(p2p_op.tensor, p2p_op.peer, p2p_op.group, p2p_op.tag)
+  File "/apps/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 1747, in _coalescing_manager
+    work = group._end_coalescing(device)
+torch.distributed.DistBackendError: NCCL error in: ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:3065, internal error - please report this issue to the NCCL developers, NCCL version 2.18.1
+ncclInternalError: Internal check failed.
+Last error:
+Socket recv failed while polling for opId=0x7f59c0000da0
+srun: error: udc-an26-1: task 6: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55269713.3
+slurmstepd: error: *** STEP 55269713.3 ON udc-an26-1 CANCELLED AT 2023-11-22T11:42:53 ***
+srun: error: udc-an26-1: task 1: Exited with exit code 1
+srun: error: udc-an26-1: task 2: Exited with exit code 1
+srun: error: udc-an26-1: task 5: Terminated
+srun: error: udc-an26-1: task 4: Terminated
+srun: error: udc-an26-1: task 7: Terminated
+srun: error: udc-an26-1: task 3: Terminated
+srun: error: udc-an26-1: task 0: Terminated
+srun: Force Terminated StepId=55269713.3

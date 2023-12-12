@@ -1,0 +1,1442 @@
+WORLD_SIZE=8
+MASTER_ADDR=udc-an26-1
+Running DP benchmark with args: Namespace(batch_size=1, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 1011.55 | loss 25.91 | ppl 179576817165.70
+| batch     2 | wps 2367.86 | loss 12.78 | ppl 355261.74
+| batch     3 | wps 2384.74 | loss 12.60 | ppl 297427.07
+| batch     4 | wps 2379.94 | loss 12.49 | ppl 266765.52
+| batch     5 | wps 2382.40 | loss 12.44 | ppl 251487.90
+| batch     6 | wps 2383.07 | loss 12.24 | ppl 207578.76
+| batch     7 | wps 2379.70 | loss 12.22 | ppl 203124.78
+| batch     8 | wps 2381.86 | loss 12.31 | ppl 222131.04
+| batch     9 | wps 2381.22 | loss 11.94 | ppl 152858.84
+| batch    10 | wps 2384.01 | loss 11.95 | ppl 154058.90
+| batch    11 | wps 2384.38 | loss 11.84 | ppl 138717.89
+| batch    12 | wps 2383.40 | loss 11.83 | ppl 137733.57
+| batch    13 | wps 2381.14 | loss 11.78 | ppl 130052.80
+| batch    14 | wps 2390.54 | loss 11.72 | ppl 123580.44
+| batch    15 | wps 2378.63 | loss 11.67 | ppl 117210.22
+| batch    16 | wps 2381.69 | loss 11.47 | ppl 95920.53
+| batch    17 | wps 2381.97 | loss 11.46 | ppl 95245.71
+| batch    18 | wps 2383.70 | loss 11.36 | ppl 85605.26
+| batch    19 | wps 2384.18 | loss 11.44 | ppl 92580.33
+| batch    20 | wps 2385.25 | loss 11.27 | ppl 78242.45
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 10.59s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2349.26.
+Elapsed_time(s) is 10.59.
+Peak allocated bytes on cuda:0: 19.232425GB
+Running DP benchmark with args: Namespace(batch_size=2, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 1543.32 | loss 25.81 | ppl 161706784503.22
+| batch     2 | wps 2661.97 | loss 12.60 | ppl 296376.32
+| batch     3 | wps 2670.70 | loss 12.35 | ppl 232008.96
+| batch     4 | wps 2667.44 | loss 12.21 | ppl 201162.88
+| batch     5 | wps 2666.88 | loss 12.07 | ppl 173965.99
+| batch     6 | wps 2665.39 | loss 12.02 | ppl 166198.62
+| batch     7 | wps 2666.24 | loss 11.97 | ppl 158358.26
+| batch     8 | wps 2662.71 | loss 11.77 | ppl 129201.17
+| batch     9 | wps 2667.38 | loss 11.79 | ppl 131357.75
+| batch    10 | wps 2666.36 | loss 11.63 | ppl 112258.45
+| batch    11 | wps 2670.22 | loss 11.51 | ppl 99791.33
+| batch    12 | wps 2668.75 | loss 11.53 | ppl 102217.16
+| batch    13 | wps 2343.15 | loss 11.36 | ppl 85970.31
+| batch    14 | wps 2667.99 | loss 11.33 | ppl 83045.64
+| batch    15 | wps 2664.42 | loss 11.22 | ppl 74571.02
+| batch    16 | wps 2666.06 | loss 11.14 | ppl 69007.71
+| batch    17 | wps 2662.51 | loss 11.05 | ppl 62990.69
+| batch    18 | wps 2666.76 | loss 11.04 | ppl 62217.11
+| batch    19 | wps 2669.04 | loss 10.97 | ppl 58138.53
+| batch    20 | wps 2667.62 | loss 10.92 | ppl 55501.52
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 17.68s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2630.09.
+Elapsed_time(s) is 17.68.
+Peak allocated bytes on cuda:0: 19.377566GB
+Running DP benchmark with args: Namespace(batch_size=3, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 1951.08 | loss 25.82 | ppl 163860432939.83
+| batch     2 | wps 2786.28 | loss 12.55 | ppl 282510.43
+| batch     3 | wps 2786.33 | loss 12.27 | ppl 212148.41
+| batch     4 | wps 2785.92 | loss 12.15 | ppl 188381.60
+| batch     5 | wps 2787.52 | loss 12.04 | ppl 168702.41
+| batch     6 | wps 2785.41 | loss 11.95 | ppl 154641.96
+| batch     7 | wps 2786.14 | loss 11.76 | ppl 127628.97
+| batch     8 | wps 2539.11 | loss 11.74 | ppl 125927.14
+| batch     9 | wps 2785.31 | loss 11.61 | ppl 110327.13
+| batch    10 | wps 2784.40 | loss 11.49 | ppl 97807.17
+| batch    11 | wps 2788.57 | loss 11.40 | ppl 89482.06
+| batch    12 | wps 2786.46 | loss 11.41 | ppl 90051.70
+| batch    13 | wps 2787.47 | loss 11.27 | ppl 78170.18
+| batch    14 | wps 2778.56 | loss 11.18 | ppl 71820.40
+| batch    15 | wps 2784.31 | loss 11.12 | ppl 67554.01
+| batch    16 | wps 2783.77 | loss 11.00 | ppl 59945.85
+| batch    17 | wps 2787.38 | loss 10.93 | ppl 55995.64
+| batch    18 | wps 2786.76 | loss 10.82 | ppl 49983.66
+| batch    19 | wps 2780.71 | loss 10.78 | ppl 48051.21
+| batch    20 | wps 2785.91 | loss 10.74 | ppl 45964.53
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 24.53s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2765.52.
+Elapsed_time(s) is 24.53.
+Peak allocated bytes on cuda:0: 21.871565GB
+Running DP benchmark with args: Namespace(batch_size=4, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 2198.69 | loss 25.75 | ppl 152775507957.90
+| batch     2 | wps 2879.46 | loss 12.51 | ppl 270162.19
+| batch     3 | wps 2878.86 | loss 12.27 | ppl 212178.76
+| batch     4 | wps 2878.09 | loss 12.12 | ppl 183194.08
+| batch     5 | wps 2879.11 | loss 11.91 | ppl 149143.10
+| batch     6 | wps 2674.90 | loss 11.86 | ppl 141501.89
+| batch     7 | wps 2878.80 | loss 11.73 | ppl 124546.72
+| batch     8 | wps 2878.17 | loss 11.61 | ppl 109772.35
+| batch     9 | wps 2875.79 | loss 11.55 | ppl 104078.46
+| batch    10 | wps 2874.71 | loss 11.44 | ppl 93399.93
+| batch    11 | wps 2873.46 | loss 11.36 | ppl 85965.31
+| batch    12 | wps 2875.01 | loss 11.23 | ppl 75251.78
+| batch    13 | wps 2873.39 | loss 11.12 | ppl 67405.93
+| batch    14 | wps 2870.81 | loss 11.08 | ppl 64732.90
+| batch    15 | wps 2872.66 | loss 11.01 | ppl 60251.56
+| batch    16 | wps 2872.77 | loss 10.94 | ppl 56365.97
+| batch    17 | wps 2871.32 | loss 10.82 | ppl 50050.05
+| batch    18 | wps 2869.85 | loss 10.77 | ppl 47435.04
+| batch    19 | wps 2872.74 | loss 10.70 | ppl 44140.00
+| batch    20 | wps 2871.09 | loss 10.66 | ppl 42681.67
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 31.25s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2860.20.
+Elapsed_time(s) is 31.25.
+Peak allocated bytes on cuda:0: 24.870005GB
+Running DP benchmark with args: Namespace(batch_size=5, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 2363.58 | loss 25.71 | ppl 145758138652.19
+| batch     2 | wps 2910.05 | loss 12.45 | ppl 254590.23
+| batch     3 | wps 2908.30 | loss 12.24 | ppl 206746.61
+| batch     4 | wps 2912.58 | loss 12.02 | ppl 166735.53
+| batch     5 | wps 2745.89 | loss 11.92 | ppl 150312.56
+| batch     6 | wps 2910.04 | loss 11.76 | ppl 127555.11
+| batch     7 | wps 2904.13 | loss 11.71 | ppl 121397.93
+| batch     8 | wps 2911.02 | loss 11.58 | ppl 107170.69
+| batch     9 | wps 2910.47 | loss 11.46 | ppl 94401.37
+| batch    10 | wps 2905.59 | loss 11.36 | ppl 85716.77
+| batch    11 | wps 2905.33 | loss 11.26 | ppl 77734.62
+| batch    12 | wps 2905.87 | loss 11.20 | ppl 73266.13
+| batch    13 | wps 2901.74 | loss 11.10 | ppl 66412.94
+| batch    14 | wps 2902.88 | loss 11.00 | ppl 60036.87
+| batch    15 | wps 2904.88 | loss 10.95 | ppl 56833.31
+| batch    16 | wps 2905.63 | loss 10.87 | ppl 52457.96
+| batch    17 | wps 2903.36 | loss 10.75 | ppl 46535.76
+| batch    18 | wps 2899.42 | loss 10.68 | ppl 43584.42
+| batch    19 | wps 2900.82 | loss 10.57 | ppl 39060.14
+| batch    20 | wps 2903.91 | loss 10.51 | ppl 36679.54
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 39.23s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2893.97.
+Elapsed_time(s) is 39.23.
+Peak allocated bytes on cuda:0: 27.976489GB
+Running DP benchmark with args: Namespace(batch_size=6, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 2458.11 | loss 25.71 | ppl 145904167836.64
+| batch     2 | wps 2958.93 | loss 12.43 | ppl 250437.93
+| batch     3 | wps 2957.27 | loss 12.20 | ppl 199057.74
+| batch     4 | wps 2809.45 | loss 12.05 | ppl 170971.23
+| batch     5 | wps 2954.98 | loss 11.88 | ppl 144254.23
+| batch     6 | wps 2953.40 | loss 11.78 | ppl 130632.06
+| batch     7 | wps 2954.43 | loss 11.66 | ppl 115483.86
+| batch     8 | wps 2954.46 | loss 11.51 | ppl 99524.46
+| batch     9 | wps 2951.76 | loss 11.40 | ppl 88945.21
+| batch    10 | wps 2951.54 | loss 11.33 | ppl 83502.60
+| batch    11 | wps 2951.62 | loss 11.24 | ppl 76121.25
+| batch    12 | wps 2948.46 | loss 11.16 | ppl 70523.35
+| batch    13 | wps 2947.16 | loss 11.08 | ppl 64682.18
+| batch    14 | wps 2947.60 | loss 10.95 | ppl 56719.93
+| batch    15 | wps 2948.70 | loss 10.87 | ppl 52658.85
+| batch    16 | wps 2947.03 | loss 10.74 | ppl 45975.23
+| batch    17 | wps 2948.24 | loss 10.73 | ppl 45839.86
+| batch    18 | wps 2948.78 | loss 10.63 | ppl 41176.25
+| batch    19 | wps 2948.26 | loss 10.56 | ppl 38500.51
+| batch    20 | wps 2806.28 | loss 10.47 | ppl 35222.74
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 45.11s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2934.55.
+Elapsed_time(s) is 45.11.
+Peak allocated bytes on cuda:0: 30.956813GB
+Running DP benchmark with args: Namespace(batch_size=7, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 2509.17 | loss 25.71 | ppl 146426197739.75
+| batch     2 | wps 2963.46 | loss 12.49 | ppl 265867.96
+| batch     3 | wps 2837.88 | loss 12.19 | ppl 196138.42
+| batch     4 | wps 2964.53 | loss 12.02 | ppl 165552.25
+| batch     5 | wps 2963.71 | loss 11.90 | ppl 146743.50
+| batch     6 | wps 2964.27 | loss 11.75 | ppl 127034.92
+| batch     7 | wps 2961.94 | loss 11.59 | ppl 108333.73
+| batch     8 | wps 2957.23 | loss 11.51 | ppl 99445.04
+| batch     9 | wps 2958.68 | loss 11.41 | ppl 90558.27
+| batch    10 | wps 2955.46 | loss 11.30 | ppl 81113.84
+| batch    11 | wps 2957.28 | loss 11.24 | ppl 75858.11
+| batch    12 | wps 2954.39 | loss 11.10 | ppl 66396.73
+| batch    13 | wps 2954.51 | loss 11.00 | ppl 59671.61
+| batch    14 | wps 2952.55 | loss 10.90 | ppl 54070.58
+| batch    15 | wps 2956.01 | loss 10.85 | ppl 51487.21
+| batch    16 | wps 2959.16 | loss 10.77 | ppl 47465.72
+| batch    17 | wps 2956.55 | loss 10.66 | ppl 42595.70
+| batch    18 | wps 2956.98 | loss 10.60 | ppl 40183.19
+| batch    19 | wps 2954.52 | loss 10.51 | ppl 36642.27
+| batch    20 | wps 2829.68 | loss 10.46 | ppl 34918.25
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 52.31s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2943.79.
+Elapsed_time(s) is 52.31.
+Peak allocated bytes on cuda:0: 34.030482GB
+Running DP benchmark with args: Namespace(batch_size=8, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 2583.48 | loss 25.69 | ppl 144152770526.20
+| batch     2 | wps 2998.51 | loss 12.47 | ppl 261143.67
+| batch     3 | wps 2885.51 | loss 12.21 | ppl 200240.31
+| batch     4 | wps 2996.51 | loss 12.03 | ppl 167243.39
+| batch     5 | wps 2996.56 | loss 11.90 | ppl 146943.62
+| batch     6 | wps 2993.13 | loss 11.70 | ppl 121145.92
+| batch     7 | wps 2993.00 | loss 11.62 | ppl 111407.80
+| batch     8 | wps 2991.24 | loss 11.50 | ppl 98556.23
+| batch     9 | wps 2987.99 | loss 11.40 | ppl 89279.87
+| batch    10 | wps 2987.67 | loss 11.29 | ppl 80115.26
+| batch    11 | wps 2986.85 | loss 11.19 | ppl 72314.42
+| batch    12 | wps 2986.57 | loss 11.06 | ppl 63817.07
+| batch    13 | wps 2987.53 | loss 11.00 | ppl 60162.22
+| batch    14 | wps 2872.33 | loss 10.91 | ppl 54650.33
+| batch    15 | wps 2981.79 | loss 10.81 | ppl 49634.24
+| batch    16 | wps 2985.72 | loss 10.73 | ppl 45730.39
+| batch    17 | wps 2981.39 | loss 10.66 | ppl 42794.85
+| batch    18 | wps 2981.80 | loss 10.55 | ppl 38330.71
+| batch    19 | wps 2984.93 | loss 10.48 | ppl 35686.09
+| batch    20 | wps 2984.62 | loss 10.43 | ppl 33982.06
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 59.00s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2975.84.
+Elapsed_time(s) is 59.00.
+Peak allocated bytes on cuda:0: 37.079631GB
+Running DP benchmark with args: Namespace(batch_size=9, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 2646.57 | loss 25.68 | ppl 141761382961.11
+| batch     2 | wps 3023.31 | loss 12.52 | ppl 273540.53
+| batch     3 | wps 2923.28 | loss 12.19 | ppl 196187.24
+| batch     4 | wps 3024.59 | loss 12.05 | ppl 171082.63
+| batch     5 | wps 3022.54 | loss 11.85 | ppl 140782.70
+| batch     6 | wps 3023.39 | loss 11.72 | ppl 122865.48
+| batch     7 | wps 3022.97 | loss 11.60 | ppl 108926.30
+| batch     8 | wps 3018.86 | loss 11.50 | ppl 98400.33
+| batch     9 | wps 3017.70 | loss 11.38 | ppl 87165.48
+| batch    10 | wps 3014.88 | loss 11.26 | ppl 77903.75
+| batch    11 | wps 3013.32 | loss 11.16 | ppl 70299.34
+| batch    12 | wps 2908.66 | loss 11.09 | ppl 65642.46
+| batch    13 | wps 3016.42 | loss 10.96 | ppl 57682.90
+| batch    14 | wps 3013.96 | loss 10.88 | ppl 53250.52
+| batch    15 | wps 3015.86 | loss 10.81 | ppl 49756.27
+| batch    16 | wps 3013.95 | loss 10.71 | ppl 44629.87
+| batch    17 | wps 3011.61 | loss 10.62 | ppl 40881.50
+| batch    18 | wps 3017.21 | loss 10.52 | ppl 37123.63
+| batch    19 | wps 3014.86 | loss 10.47 | ppl 35370.68
+| batch    20 | wps 3011.95 | loss 10.41 | ppl 33229.23
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 65.57s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 3005.40.
+Elapsed_time(s) is 65.57.
+Peak allocated bytes on cuda:0: 40.150691GB
+Running DP benchmark with args: Namespace(batch_size=10, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 2695.42 | loss 25.68 | ppl 141863761913.77
+| batch     2 | wps 2953.49 | loss 12.44 | ppl 253949.33
+| batch     3 | wps 3050.23 | loss 12.20 | ppl 198970.43
+| batch     4 | wps 3047.23 | loss 12.01 | ppl 164335.52
+| batch     5 | wps 3050.60 | loss 11.84 | ppl 138459.10
+| batch     6 | wps 3049.84 | loss 11.71 | ppl 121500.66
+| batch     7 | wps 3048.02 | loss 11.58 | ppl 107111.84
+| batch     8 | wps 3047.27 | loss 11.46 | ppl 95032.04
+| batch     9 | wps 3046.70 | loss 11.34 | ppl 83706.31
+| batch    10 | wps 3047.79 | loss 11.24 | ppl 75888.29
+| batch    11 | wps 2948.84 | loss 11.15 | ppl 69824.21
+| batch    12 | wps 3045.58 | loss 11.03 | ppl 61484.05
+| batch    13 | wps 3042.87 | loss 10.96 | ppl 57455.22
+| batch    14 | wps 3040.47 | loss 10.86 | ppl 52173.72
+| batch    15 | wps 3042.43 | loss 10.75 | ppl 46575.18
+| batch    16 | wps 3041.04 | loss 10.67 | ppl 42842.14
+| batch    17 | wps 3041.08 | loss 10.60 | ppl 39962.33
+| batch    18 | wps 3040.02 | loss 10.53 | ppl 37240.15
+| batch    19 | wps 3039.81 | loss 10.46 | ppl 34851.65
+| batch    20 | wps 2951.02 | loss 10.37 | ppl 31740.62
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 72.18s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 3029.41.
+Elapsed_time(s) is 72.18.
+Peak allocated bytes on cuda:0: 43.207438GB
+Running DP benchmark with args: Namespace(batch_size=11, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 2738.23 | loss 25.65 | ppl 137576460891.74
+| batch     2 | wps 2963.09 | loss 12.47 | ppl 260422.93
+| batch     3 | wps 3049.93 | loss 12.23 | ppl 205340.67
+| batch     4 | wps 3045.37 | loss 12.01 | ppl 164251.70
+| batch     5 | wps 3047.70 | loss 11.85 | ppl 140445.57
+| batch     6 | wps 3049.45 | loss 11.71 | ppl 121456.52
+| batch     7 | wps 3044.87 | loss 11.59 | ppl 107706.87
+| batch     8 | wps 3040.32 | loss 11.45 | ppl 94035.75
+| batch     9 | wps 3040.90 | loss 11.33 | ppl 83347.06
+| batch    10 | wps 2957.72 | loss 11.24 | ppl 76454.10
+| batch    11 | wps 3038.37 | loss 11.14 | ppl 68749.82
+| batch    12 | wps 3041.31 | loss 11.04 | ppl 62016.59
+| batch    13 | wps 3038.73 | loss 10.95 | ppl 56871.21
+| batch    14 | wps 3037.98 | loss 10.84 | ppl 50836.68
+| batch    15 | wps 3035.38 | loss 10.73 | ppl 45844.93
+| batch    16 | wps 3040.01 | loss 10.68 | ppl 43515.64
+| batch    17 | wps 3040.31 | loss 10.61 | ppl 40580.46
+| batch    18 | wps 2957.28 | loss 10.50 | ppl 36291.82
+| batch    19 | wps 3037.50 | loss 10.42 | ppl 33469.64
+| batch    20 | wps 3040.56 | loss 10.35 | ppl 31176.67
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 79.26s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 3028.04.
+Elapsed_time(s) is 79.26.
+Peak allocated bytes on cuda:0: 46.288806GB
+Running DP benchmark with args: Namespace(batch_size=12, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 2774.92 | loss 25.65 | ppl 137309983323.10
+| batch     2 | wps 2989.35 | loss 12.44 | ppl 252622.48
+| batch     3 | wps 3069.29 | loss 12.20 | ppl 199721.37
+| batch     4 | wps 3068.23 | loss 11.97 | ppl 158373.07
+| batch     5 | wps 3066.36 | loss 11.83 | ppl 136711.91
+| batch     6 | wps 3068.54 | loss 11.70 | ppl 121022.82
+| batch     7 | wps 3065.87 | loss 11.54 | ppl 103099.75
+| batch     8 | wps 3069.33 | loss 11.42 | ppl 91381.22
+| batch     9 | wps 2987.71 | loss 11.33 | ppl 83678.77
+| batch    10 | wps 3065.74 | loss 11.22 | ppl 74521.75
+| batch    11 | wps 3068.58 | loss 11.13 | ppl 67854.12
+| batch    12 | wps 3068.69 | loss 11.01 | ppl 60720.65
+| batch    13 | wps 3068.40 | loss 10.91 | ppl 54938.57
+| batch    14 | wps 3068.04 | loss 10.80 | ppl 49253.15
+| batch    15 | wps 3063.91 | loss 10.76 | ppl 46871.10
+| batch    16 | wps 3062.34 | loss 10.66 | ppl 42566.79
+| batch    17 | wps 2987.11 | loss 10.55 | ppl 38081.05
+| batch    18 | wps 3067.72 | loss 10.47 | ppl 35354.02
+| batch    19 | wps 3064.32 | loss 10.41 | ppl 33184.04
+| batch    20 | wps 3061.76 | loss 10.34 | ppl 31034.97
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 85.67s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 3053.39.
+Elapsed_time(s) is 85.67.
+Peak allocated bytes on cuda:0: 49.337985GB
+Running DP benchmark with args: Namespace(batch_size=13, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 2783.64 | loss 25.67 | ppl 140511378194.26
+| batch     2 | wps 2999.29 | loss 12.43 | ppl 249487.97
+| batch     3 | wps 3073.16 | loss 12.17 | ppl 192527.18
+| batch     4 | wps 3074.60 | loss 11.95 | ppl 154504.43
+| batch     5 | wps 3071.35 | loss 11.80 | ppl 133029.03
+| batch     6 | wps 3071.38 | loss 11.67 | ppl 116660.99
+| batch     7 | wps 3068.69 | loss 11.51 | ppl 99907.50
+| batch     8 | wps 2992.23 | loss 11.43 | ppl 91925.86
+| batch     9 | wps 3064.04 | loss 11.29 | ppl 79681.93
+| batch    10 | wps 3060.81 | loss 11.22 | ppl 74330.96
+| batch    11 | wps 3060.16 | loss 11.10 | ppl 66391.47
+| batch    12 | wps 3062.34 | loss 10.97 | ppl 58299.10
+| batch    13 | wps 3060.11 | loss 10.88 | ppl 53248.34
+| batch    14 | wps 3060.06 | loss 10.81 | ppl 49394.97
+| batch    15 | wps 2987.76 | loss 10.72 | ppl 45064.71
+| batch    16 | wps 3062.89 | loss 10.61 | ppl 40636.89
+| batch    17 | wps 3062.34 | loss 10.52 | ppl 37178.93
+| batch    18 | wps 3061.23 | loss 10.47 | ppl 35336.66
+| batch    19 | wps 3063.53 | loss 10.38 | ppl 32265.32
+| batch    20 | wps 3060.69 | loss 10.31 | ppl 30074.96
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 92.80s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 3053.17.
+Elapsed_time(s) is 92.80.
+Peak allocated bytes on cuda:0: 52.426176GB
+Running DP benchmark with args: Namespace(batch_size=14, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 2816.35 | loss 25.67 | ppl 141265279223.92
+| batch     2 | wps 3023.98 | loss 12.44 | ppl 251841.43
+| batch     3 | wps 3091.50 | loss 12.15 | ppl 189867.24
+| batch     4 | wps 3093.11 | loss 11.96 | ppl 156685.83
+| batch     5 | wps 3093.98 | loss 11.81 | ppl 135158.48
+| batch     6 | wps 3093.20 | loss 11.65 | ppl 114382.20
+| batch     7 | wps 3091.89 | loss 11.52 | ppl 100841.10
+| batch     8 | wps 3024.66 | loss 11.42 | ppl 90964.30
+| batch     9 | wps 3093.06 | loss 11.30 | ppl 80746.54
+| batch    10 | wps 3094.32 | loss 11.21 | ppl 73655.51
+| batch    11 | wps 3093.92 | loss 11.08 | ppl 64954.91
+| batch    12 | wps 3091.74 | loss 10.96 | ppl 57700.01
+| batch    13 | wps 3094.04 | loss 10.89 | ppl 53830.10
+| batch    14 | wps 3023.86 | loss 10.80 | ppl 48941.40
+| batch    15 | wps 3093.05 | loss 10.69 | ppl 43903.68
+| batch    16 | wps 3095.00 | loss 10.61 | ppl 40413.77
+| batch    17 | wps 3093.03 | loss 10.54 | ppl 37717.34
+| batch    18 | wps 3093.19 | loss 10.45 | ppl 34695.35
+| batch    19 | wps 3092.76 | loss 10.37 | ppl 31851.18
+| batch    20 | wps 3093.89 | loss 10.31 | ppl 29882.03
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 98.99s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 3078.48.
+Elapsed_time(s) is 98.99.
+Peak allocated bytes on cuda:0: 55.454464GB
+Running FSDP benchmark with args: Namespace(batch_size=1, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 134.93 | loss 25.91 | ppl 179576817165.70
+| batch     2 | wps 2356.48 | loss 12.78 | ppl 355261.40
+| batch     3 | wps 2556.15 | loss 12.60 | ppl 297422.82
+| batch     4 | wps 2552.46 | loss 12.49 | ppl 266776.46
+| batch     5 | wps 2560.15 | loss 12.44 | ppl 251487.66
+| batch     6 | wps 2557.71 | loss 12.24 | ppl 207570.25
+| batch     7 | wps 2550.43 | loss 12.22 | ppl 203065.32
+| batch     8 | wps 2556.42 | loss 12.31 | ppl 222127.86
+| batch     9 | wps 2556.21 | loss 11.94 | ppl 152867.88
+| batch    10 | wps 2554.50 | loss 11.95 | ppl 154070.80
+| batch    11 | wps 2555.19 | loss 11.84 | ppl 138701.48
+| batch    12 | wps 2557.28 | loss 11.83 | ppl 137731.08
+| batch    13 | wps 2551.89 | loss 11.78 | ppl 130039.65
+| batch    14 | wps 2555.08 | loss 11.73 | ppl 123633.84
+| batch    15 | wps 2555.90 | loss 11.67 | ppl 117200.49
+| batch    16 | wps 2525.47 | loss 11.47 | ppl 95887.24
+| batch    17 | wps 2555.13 | loss 11.46 | ppl 95216.20
+| batch    18 | wps 2555.43 | loss 11.36 | ppl 85622.49
+| batch    19 | wps 2552.44 | loss 11.44 | ppl 92611.51
+| batch    20 | wps 2555.30 | loss 11.27 | ppl 78237.45
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 22.87s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2532.36.
+Elapsed_time(s) is 22.87.
+Peak allocated bytes on cuda:0: 10.825978GB
+Running FSDP benchmark with args: Namespace(batch_size=2, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 252.98 | loss 25.81 | ppl 161706784503.22
+| batch     2 | wps 2830.51 | loss 12.60 | ppl 296385.64
+| batch     3 | wps 2829.51 | loss 12.35 | ppl 232022.02
+| batch     4 | wps 2830.27 | loss 12.21 | ppl 201163.26
+| batch     5 | wps 2827.74 | loss 12.07 | ppl 173947.74
+| batch     6 | wps 2829.30 | loss 12.02 | ppl 166190.86
+| batch     7 | wps 2829.20 | loss 11.97 | ppl 158367.78
+| batch     8 | wps 2829.73 | loss 11.77 | ppl 129222.37
+| batch     9 | wps 2831.17 | loss 11.79 | ppl 131337.08
+| batch    10 | wps 2830.45 | loss 11.63 | ppl 112245.93
+| batch    11 | wps 2827.68 | loss 11.51 | ppl 99794.00
+| batch    12 | wps 2457.35 | loss 11.53 | ppl 102224.18
+| batch    13 | wps 2827.98 | loss 11.36 | ppl 85973.34
+| batch    14 | wps 2828.93 | loss 11.33 | ppl 83078.43
+| batch    15 | wps 2828.50 | loss 11.22 | ppl 74582.47
+| batch    16 | wps 2829.33 | loss 11.14 | ppl 68994.68
+| batch    17 | wps 2827.19 | loss 11.05 | ppl 62977.89
+| batch    18 | wps 2828.73 | loss 11.04 | ppl 62233.14
+| batch    19 | wps 2828.19 | loss 10.97 | ppl 58157.89
+| batch    20 | wps 2829.12 | loss 10.92 | ppl 55496.81
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 30.10s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2801.10.
+Elapsed_time(s) is 30.10.
+Peak allocated bytes on cuda:0: 11.020527GB
+Running FSDP benchmark with args: Namespace(batch_size=3, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 357.40 | loss 25.82 | ppl 163860432939.83
+| batch     2 | wps 2895.74 | loss 12.55 | ppl 282510.70
+| batch     3 | wps 2893.61 | loss 12.27 | ppl 212153.06
+| batch     4 | wps 2895.68 | loss 12.15 | ppl 188386.45
+| batch     5 | wps 2896.32 | loss 12.04 | ppl 168713.51
+| batch     6 | wps 2620.68 | loss 11.95 | ppl 154658.92
+| batch     7 | wps 2894.91 | loss 11.76 | ppl 127601.71
+| batch     8 | wps 2889.04 | loss 11.74 | ppl 125965.09
+| batch     9 | wps 2895.86 | loss 11.61 | ppl 110347.75
+| batch    10 | wps 2894.05 | loss 11.49 | ppl 97805.31
+| batch    11 | wps 2894.82 | loss 11.40 | ppl 89488.72
+| batch    12 | wps 2894.01 | loss 11.41 | ppl 90066.64
+| batch    13 | wps 2894.11 | loss 11.27 | ppl 78180.10
+| batch    14 | wps 2895.27 | loss 11.18 | ppl 71841.09
+| batch    15 | wps 2894.75 | loss 11.12 | ppl 67551.05
+| batch    16 | wps 2893.51 | loss 11.00 | ppl 59960.14
+| batch    17 | wps 2894.47 | loss 10.93 | ppl 55992.65
+| batch    18 | wps 2893.76 | loss 10.82 | ppl 49983.04
+| batch    19 | wps 2893.15 | loss 10.78 | ppl 48062.35
+| batch    20 | wps 2893.23 | loss 10.74 | ppl 45971.63
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 37.51s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2874.62.
+Elapsed_time(s) is 37.51.
+Peak allocated bytes on cuda:0: 13.530239GB
+Running FSDP benchmark with args: Namespace(batch_size=4, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 465.46 | loss 25.75 | ppl 152775507957.90
+| batch     2 | wps 2964.29 | loss 12.51 | ppl 270161.42
+| batch     3 | wps 2966.27 | loss 12.27 | ppl 212176.53
+| batch     4 | wps 2964.67 | loss 12.12 | ppl 183194.60
+| batch     5 | wps 2748.60 | loss 11.91 | ppl 149143.53
+| batch     6 | wps 2964.95 | loss 11.86 | ppl 141501.75
+| batch     7 | wps 2963.35 | loss 11.73 | ppl 124544.58
+| batch     8 | wps 2963.84 | loss 11.61 | ppl 109773.40
+| batch     9 | wps 2963.68 | loss 11.55 | ppl 104075.58
+| batch    10 | wps 2962.66 | loss 11.44 | ppl 93396.46
+| batch    11 | wps 2963.06 | loss 11.36 | ppl 85968.92
+| batch    12 | wps 2958.02 | loss 11.23 | ppl 75254.36
+| batch    13 | wps 2960.43 | loss 11.12 | ppl 67407.03
+| batch    14 | wps 2960.22 | loss 11.08 | ppl 64736.05
+| batch    15 | wps 2961.05 | loss 11.01 | ppl 60248.80
+| batch    16 | wps 2959.59 | loss 10.94 | ppl 56368.61
+| batch    17 | wps 2960.76 | loss 10.82 | ppl 50052.15
+| batch    18 | wps 2958.74 | loss 10.77 | ppl 47433.46
+| batch    19 | wps 2957.19 | loss 10.70 | ppl 44143.33
+| batch    20 | wps 2957.86 | loss 10.66 | ppl 42683.95
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 44.03s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2946.63.
+Elapsed_time(s) is 44.03.
+Peak allocated bytes on cuda:0: 16.578655GB
+Running FSDP benchmark with args: Namespace(batch_size=5, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 553.41 | loss 25.71 | ppl 145758277658.05
+| batch     2 | wps 2984.39 | loss 12.45 | ppl 254589.74
+| batch     3 | wps 2803.93 | loss 12.24 | ppl 206745.63
+| batch     4 | wps 2986.51 | loss 12.02 | ppl 166734.74
+| batch     5 | wps 2986.26 | loss 11.92 | ppl 150314.85
+| batch     6 | wps 2986.81 | loss 11.76 | ppl 127550.24
+| batch     7 | wps 2987.02 | loss 11.71 | ppl 121396.65
+| batch     8 | wps 2986.70 | loss 11.58 | ppl 107168.34
+| batch     9 | wps 2987.06 | loss 11.46 | ppl 94398.67
+| batch    10 | wps 2984.27 | loss 11.36 | ppl 85715.71
+| batch    11 | wps 2985.70 | loss 11.26 | ppl 77731.72
+| batch    12 | wps 2985.67 | loss 11.20 | ppl 73263.06
+| batch    13 | wps 2985.60 | loss 11.10 | ppl 66411.80
+| batch    14 | wps 2985.42 | loss 11.00 | ppl 60040.13
+| batch    15 | wps 2982.59 | loss 10.95 | ppl 56831.79
+| batch    16 | wps 2981.67 | loss 10.87 | ppl 52454.71
+| batch    17 | wps 2975.98 | loss 10.75 | ppl 46530.61
+| batch    18 | wps 2975.91 | loss 10.68 | ppl 43583.96
+| batch    19 | wps 2974.38 | loss 10.57 | ppl 39056.72
+| batch    20 | wps 2971.09 | loss 10.51 | ppl 36679.68
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 51.28s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2970.51.
+Elapsed_time(s) is 51.28.
+Peak allocated bytes on cuda:0: 19.746578GB
+Running FSDP benchmark with args: Namespace(batch_size=6, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 636.61 | loss 25.71 | ppl 145904167836.64
+| batch     2 | wps 3013.45 | loss 12.43 | ppl 250437.45
+| batch     3 | wps 2857.21 | loss 12.20 | ppl 199048.25
+| batch     4 | wps 3008.40 | loss 12.05 | ppl 170970.58
+| batch     5 | wps 3005.39 | loss 11.88 | ppl 144251.76
+| batch     6 | wps 3002.02 | loss 11.78 | ppl 130643.89
+| batch     7 | wps 3005.61 | loss 11.66 | ppl 115493.56
+| batch     8 | wps 3003.47 | loss 11.51 | ppl 99523.03
+| batch     9 | wps 3003.69 | loss 11.40 | ppl 88942.66
+| batch    10 | wps 3003.44 | loss 11.33 | ppl 83498.14
+| batch    11 | wps 3002.89 | loss 11.24 | ppl 76126.62
+| batch    12 | wps 3000.27 | loss 11.16 | ppl 70522.27
+| batch    13 | wps 3000.47 | loss 11.08 | ppl 64682.67
+| batch    14 | wps 3003.60 | loss 10.95 | ppl 56721.44
+| batch    15 | wps 3002.87 | loss 10.87 | ppl 52660.06
+| batch    16 | wps 3002.40 | loss 10.74 | ppl 45973.69
+| batch    17 | wps 3001.19 | loss 10.73 | ppl 45846.54
+| batch    18 | wps 3000.79 | loss 10.63 | ppl 41171.58
+| batch    19 | wps 3000.43 | loss 10.56 | ppl 38497.50
+| batch    20 | wps 3000.12 | loss 10.47 | ppl 35220.52
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 58.33s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2993.75.
+Elapsed_time(s) is 58.33.
+Peak allocated bytes on cuda:0: 22.700390GB
+Running FSDP benchmark with args: Namespace(batch_size=7, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 717.94 | loss 25.71 | ppl 146426477025.83
+| batch     2 | wps 2886.76 | loss 12.49 | ppl 265867.96
+| batch     3 | wps 3022.61 | loss 12.19 | ppl 196138.04
+| batch     4 | wps 3020.36 | loss 12.02 | ppl 165550.04
+| batch     5 | wps 3019.24 | loss 11.90 | ppl 146749.10
+| batch     6 | wps 3018.07 | loss 11.75 | ppl 127034.07
+| batch     7 | wps 3018.21 | loss 11.59 | ppl 108331.04
+| batch     8 | wps 3014.95 | loss 11.51 | ppl 99444.48
+| batch     9 | wps 3013.38 | loss 11.41 | ppl 90559.04
+| batch    10 | wps 3012.38 | loss 11.30 | ppl 81117.71
+| batch    11 | wps 3015.71 | loss 11.24 | ppl 75859.05
+| batch    12 | wps 3011.76 | loss 11.10 | ppl 66404.52
+| batch    13 | wps 3012.27 | loss 11.00 | ppl 59670.92
+| batch    14 | wps 3009.92 | loss 10.90 | ppl 54071.72
+| batch    15 | wps 3009.61 | loss 10.85 | ppl 51489.96
+| batch    16 | wps 2883.12 | loss 10.77 | ppl 47464.68
+| batch    17 | wps 3010.84 | loss 10.66 | ppl 42599.24
+| batch    18 | wps 3007.40 | loss 10.60 | ppl 40178.24
+| batch    19 | wps 3010.18 | loss 10.51 | ppl 36642.03
+| batch    20 | wps 3010.51 | loss 10.46 | ppl 34920.01
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 65.43s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2998.84.
+Elapsed_time(s) is 65.43.
+Peak allocated bytes on cuda:0: 25.818508GB
+Running FSDP benchmark with args: Namespace(batch_size=8, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 811.75 | loss 25.69 | ppl 144152770526.20
+| batch     2 | wps 2928.09 | loss 12.47 | ppl 261144.67
+| batch     3 | wps 3049.37 | loss 12.21 | ppl 200243.75
+| batch     4 | wps 3046.02 | loss 12.03 | ppl 167231.91
+| batch     5 | wps 3043.87 | loss 11.90 | ppl 146950.49
+| batch     6 | wps 3041.91 | loss 11.70 | ppl 121145.22
+| batch     7 | wps 3043.21 | loss 11.62 | ppl 111411.41
+| batch     8 | wps 3041.14 | loss 11.50 | ppl 98553.23
+| batch     9 | wps 3040.27 | loss 11.40 | ppl 89280.30
+| batch    10 | wps 3041.40 | loss 11.29 | ppl 80120.23
+| batch    11 | wps 3037.80 | loss 11.19 | ppl 72316.56
+| batch    12 | wps 3037.24 | loss 11.06 | ppl 63814.76
+| batch    13 | wps 3036.01 | loss 11.00 | ppl 60163.94
+| batch    14 | wps 2918.47 | loss 10.91 | ppl 54651.47
+| batch    15 | wps 3038.38 | loss 10.81 | ppl 49632.39
+| batch    16 | wps 3038.08 | loss 10.73 | ppl 45730.96
+| batch    17 | wps 3037.02 | loss 10.66 | ppl 42789.34
+| batch    18 | wps 3036.94 | loss 10.55 | ppl 38325.73
+| batch    19 | wps 3035.82 | loss 10.48 | ppl 35688.30
+| batch    20 | wps 3035.04 | loss 10.43 | ppl 33986.40
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 71.66s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 3026.53.
+Elapsed_time(s) is 71.66.
+Peak allocated bytes on cuda:0: 28.823833GB
+Running FSDP benchmark with args: Namespace(batch_size=9, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 885.33 | loss 25.68 | ppl 141761382961.11
+| batch     2 | wps 2951.21 | loss 12.52 | ppl 273541.06
+| batch     3 | wps 3058.97 | loss 12.19 | ppl 196187.43
+| batch     4 | wps 3058.77 | loss 12.05 | ppl 171082.15
+| batch     5 | wps 3063.63 | loss 11.85 | ppl 140781.89
+| batch     6 | wps 3062.96 | loss 11.72 | ppl 122866.65
+| batch     7 | wps 3061.23 | loss 11.60 | ppl 108925.78
+| batch     8 | wps 3057.38 | loss 11.50 | ppl 98398.46
+| batch     9 | wps 3061.48 | loss 11.38 | ppl 87164.31
+| batch    10 | wps 3061.45 | loss 11.26 | ppl 77899.29
+| batch    11 | wps 3058.26 | loss 11.16 | ppl 70299.81
+| batch    12 | wps 2953.02 | loss 11.09 | ppl 65641.59
+| batch    13 | wps 3058.26 | loss 10.96 | ppl 57681.42
+| batch    14 | wps 3060.43 | loss 10.88 | ppl 53251.03
+| batch    15 | wps 3060.76 | loss 10.81 | ppl 49756.04
+| batch    16 | wps 3058.21 | loss 10.71 | ppl 44630.42
+| batch    17 | wps 3057.01 | loss 10.62 | ppl 40880.65
+| batch    18 | wps 3055.33 | loss 10.52 | ppl 37121.72
+| batch    19 | wps 3057.68 | loss 10.47 | ppl 35369.10
+| batch    20 | wps 3058.59 | loss 10.41 | ppl 33227.05
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 78.34s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 3046.78.
+Elapsed_time(s) is 78.34.
+Peak allocated bytes on cuda:0: 31.945026GB
+Running FSDP benchmark with args: Namespace(batch_size=10, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 940.61 | loss 25.68 | ppl 141863761913.77
+| batch     2 | wps 3087.33 | loss 12.44 | ppl 253949.08
+| batch     3 | wps 3088.87 | loss 12.20 | ppl 198964.55
+| batch     4 | wps 3086.66 | loss 12.01 | ppl 164332.70
+| batch     5 | wps 3089.44 | loss 11.84 | ppl 138453.29
+| batch     6 | wps 3088.20 | loss 11.71 | ppl 121497.53
+| batch     7 | wps 3088.43 | loss 11.58 | ppl 107104.49
+| batch     8 | wps 3087.14 | loss 11.46 | ppl 95034.03
+| batch     9 | wps 3087.53 | loss 11.34 | ppl 83709.34
+| batch    10 | wps 3087.96 | loss 11.24 | ppl 75884.60
+| batch    11 | wps 2983.91 | loss 11.15 | ppl 69824.48
+| batch    12 | wps 3082.04 | loss 11.03 | ppl 61480.12
+| batch    13 | wps 3083.05 | loss 10.96 | ppl 57455.72
+| batch    14 | wps 3086.97 | loss 10.86 | ppl 52174.67
+| batch    15 | wps 3078.31 | loss 10.75 | ppl 46575.32
+| batch    16 | wps 3077.56 | loss 10.67 | ppl 42841.77
+| batch    17 | wps 3084.18 | loss 10.60 | ppl 39961.27
+| batch    18 | wps 3082.11 | loss 10.53 | ppl 37239.79
+| batch    19 | wps 3076.00 | loss 10.46 | ppl 34848.99
+| batch    20 | wps 2977.57 | loss 10.37 | ppl 31739.44
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 85.13s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 3072.72.
+Elapsed_time(s) is 85.13.
+Peak allocated bytes on cuda:0: 34.951633GB
+Running FSDP benchmark with args: Namespace(batch_size=11, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 1016.80 | loss 25.65 | ppl 137576460891.74
+| batch     2 | wps 3084.25 | loss 12.47 | ppl 260420.70
+| batch     3 | wps 3083.07 | loss 12.23 | ppl 205341.26
+| batch     4 | wps 3083.35 | loss 12.01 | ppl 164251.23
+| batch     5 | wps 3084.65 | loss 11.85 | ppl 140447.71
+| batch     6 | wps 3079.03 | loss 11.71 | ppl 121453.51
+| batch     7 | wps 3080.52 | loss 11.59 | ppl 107702.87
+| batch     8 | wps 3078.51 | loss 11.45 | ppl 94033.06
+| batch     9 | wps 3078.71 | loss 11.33 | ppl 83347.14
+| batch    10 | wps 2989.29 | loss 11.24 | ppl 76458.62
+| batch    11 | wps 3080.94 | loss 11.14 | ppl 68750.41
+| batch    12 | wps 3082.22 | loss 11.04 | ppl 62019.55
+| batch    13 | wps 3084.47 | loss 10.95 | ppl 56870.29
+| batch    14 | wps 3084.91 | loss 10.84 | ppl 50837.94
+| batch    15 | wps 3084.70 | loss 10.73 | ppl 45842.70
+| batch    16 | wps 3082.94 | loss 10.68 | ppl 43515.19
+| batch    17 | wps 3079.27 | loss 10.61 | ppl 40576.63
+| batch    18 | wps 2991.93 | loss 10.50 | ppl 36293.34
+| batch    19 | wps 3081.94 | loss 10.42 | ppl 33469.96
+| batch    20 | wps 3080.47 | loss 10.35 | ppl 31177.74
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 91.88s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 3071.49.
+Elapsed_time(s) is 91.88.
+Peak allocated bytes on cuda:0: 38.073231GB
+Running FSDP benchmark with args: Namespace(batch_size=12, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 1066.81 | loss 25.65 | ppl 137309852374.16
+| batch     2 | wps 3113.58 | loss 12.44 | ppl 252622.72
+| batch     3 | wps 3112.27 | loss 12.20 | ppl 199715.28
+| batch     4 | wps 3111.25 | loss 11.97 | ppl 158370.65
+| batch     5 | wps 3111.33 | loss 11.83 | ppl 136708.78
+| batch     6 | wps 3110.60 | loss 11.70 | ppl 121021.67
+| batch     7 | wps 3111.83 | loss 11.54 | ppl 103100.15
+| batch     8 | wps 3111.95 | loss 11.42 | ppl 91379.04
+| batch     9 | wps 3026.44 | loss 11.33 | ppl 83681.49
+| batch    10 | wps 3112.89 | loss 11.22 | ppl 74524.74
+| batch    11 | wps 3112.92 | loss 11.13 | ppl 67856.71
+| batch    12 | wps 3112.86 | loss 11.01 | ppl 60724.53
+| batch    13 | wps 3111.64 | loss 10.91 | ppl 54943.18
+| batch    14 | wps 3112.71 | loss 10.80 | ppl 49253.05
+| batch    15 | wps 3112.72 | loss 10.76 | ppl 46869.94
+| batch    16 | wps 3113.03 | loss 10.66 | ppl 42567.60
+| batch    17 | wps 3027.99 | loss 10.55 | ppl 38081.81
+| batch    18 | wps 3112.10 | loss 10.47 | ppl 35355.00
+| batch    19 | wps 3112.73 | loss 10.41 | ppl 33184.01
+| batch    20 | wps 3107.78 | loss 10.34 | ppl 31035.14
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 98.34s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 3102.22.
+Elapsed_time(s) is 98.34.
+Peak allocated bytes on cuda:0: 41.072514GB
+Running FSDP benchmark with args: Namespace(batch_size=13, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 1106.02 | loss 25.67 | ppl 140511378194.26
+| batch     2 | wps 3101.44 | loss 12.43 | ppl 249488.69
+| batch     3 | wps 3103.59 | loss 12.17 | ppl 192528.64
+| batch     4 | wps 3103.95 | loss 11.95 | ppl 154505.31
+| batch     5 | wps 3102.77 | loss 11.80 | ppl 133028.78
+| batch     6 | wps 3103.91 | loss 11.67 | ppl 116662.43
+| batch     7 | wps 3104.85 | loss 11.51 | ppl 99904.93
+| batch     8 | wps 3027.22 | loss 11.43 | ppl 91925.60
+| batch     9 | wps 3102.67 | loss 11.29 | ppl 79677.44
+| batch    10 | wps 3102.56 | loss 11.22 | ppl 74326.71
+| batch    11 | wps 3103.43 | loss 11.10 | ppl 66388.56
+| batch    12 | wps 3103.66 | loss 10.97 | ppl 58298.04
+| batch    13 | wps 3096.62 | loss 10.88 | ppl 53249.10
+| batch    14 | wps 3096.33 | loss 10.81 | ppl 49394.78
+| batch    15 | wps 3016.97 | loss 10.72 | ppl 45064.96
+| batch    16 | wps 3097.59 | loss 10.61 | ppl 40634.83
+| batch    17 | wps 3098.10 | loss 10.52 | ppl 37179.11
+| batch    18 | wps 3097.52 | loss 10.47 | ppl 35338.28
+| batch    19 | wps 3098.49 | loss 10.38 | ppl 32264.86
+| batch    20 | wps 3097.59 | loss 10.31 | ppl 30075.50
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 105.94s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 3091.45.
+Elapsed_time(s) is 105.94.
+Peak allocated bytes on cuda:0: 44.197991GB
+Running FSDP benchmark with args: Namespace(batch_size=14, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 1190.51 | loss 25.67 | ppl 141265548666.31
+| batch     2 | wps 3124.79 | loss 12.44 | ppl 251840.95
+| batch     3 | wps 3122.80 | loss 12.15 | ppl 189868.15
+| batch     4 | wps 3122.87 | loss 11.96 | ppl 156686.87
+| batch     5 | wps 3123.63 | loss 11.81 | ppl 135159.38
+| batch     6 | wps 3123.10 | loss 11.65 | ppl 114382.41
+| batch     7 | wps 3119.17 | loss 11.52 | ppl 100840.91
+| batch     8 | wps 3052.03 | loss 11.42 | ppl 90963.35
+| batch     9 | wps 3124.06 | loss 11.30 | ppl 80746.61
+| batch    10 | wps 3118.50 | loss 11.21 | ppl 73656.78
+| batch    11 | wps 3119.95 | loss 11.08 | ppl 64954.22
+| batch    12 | wps 3120.49 | loss 10.96 | ppl 57700.34
+| batch    13 | wps 3120.71 | loss 10.89 | ppl 53830.51
+| batch    14 | wps 3047.91 | loss 10.80 | ppl 48940.84
+| batch    15 | wps 3122.02 | loss 10.69 | ppl 43905.36
+| batch    16 | wps 3119.68 | loss 10.61 | ppl 40413.16
+| batch    17 | wps 3118.25 | loss 10.54 | ppl 37718.02
+| batch    18 | wps 3116.21 | loss 10.45 | ppl 34693.60
+| batch    19 | wps 3118.41 | loss 10.37 | ppl 31850.60
+| batch    20 | wps 3117.92 | loss 10.31 | ppl 29881.66
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 111.75s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 3109.11.
+Elapsed_time(s) is 111.75.
+Peak allocated bytes on cuda:0: 47.196362GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=1, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 66.18 | loss 25.91 | ppl 179552328970.37
+| batch     2 | wps 1275.09 | loss 12.77 | ppl 350299.03
+| batch     3 | wps 1265.84 | loss 12.60 | ppl 295809.87
+| batch     4 | wps 1261.21 | loss 12.49 | ppl 266386.73
+| batch     5 | wps 1248.83 | loss 12.43 | ppl 250716.81
+| batch     6 | wps 1239.13 | loss 12.24 | ppl 206390.44
+| batch     7 | wps 1230.70 | loss 12.22 | ppl 202444.62
+| batch     8 | wps 1070.46 | loss 12.31 | ppl 221788.76
+| batch     9 | wps 1222.87 | loss 11.93 | ppl 152504.72
+| batch    10 | wps 1217.58 | loss 11.94 | ppl 153854.67
+| batch    11 | wps 1211.55 | loss 11.84 | ppl 138273.84
+| batch    12 | wps 1209.28 | loss 11.83 | ppl 137558.59
+| batch    13 | wps 1203.09 | loss 11.78 | ppl 130320.60
+| batch    14 | wps 1201.27 | loss 11.72 | ppl 123027.28
+| batch    15 | wps 1194.28 | loss 11.67 | ppl 116901.66
+| batch    16 | wps 1032.52 | loss 11.46 | ppl 94992.44
+| batch    17 | wps 1183.20 | loss 11.46 | ppl 95007.12
+| batch    18 | wps 1181.16 | loss 11.35 | ppl 85095.39
+| batch    19 | wps 1175.52 | loss 11.43 | ppl 92310.12
+| batch    20 | wps 1174.44 | loss 11.26 | ppl 77883.32
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 47.55s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 1194.99.
+Elapsed_time(s) is 47.55.
+Peak allocated bytes on cuda:0: 4.540146GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=2, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 127.58 | loss 25.81 | ppl 161695064541.80
+| batch     2 | wps 1883.18 | loss 12.59 | ppl 293161.81
+| batch     3 | wps 1880.25 | loss 12.35 | ppl 230533.44
+| batch     4 | wps 1884.05 | loss 12.21 | ppl 200301.81
+| batch     5 | wps 1882.64 | loss 12.07 | ppl 173793.20
+| batch     6 | wps 1881.54 | loss 12.02 | ppl 166080.42
+| batch     7 | wps 1746.60 | loss 11.97 | ppl 158312.66
+| batch     8 | wps 1882.21 | loss 11.77 | ppl 128959.40
+| batch     9 | wps 1884.49 | loss 11.78 | ppl 130993.59
+| batch    10 | wps 1884.26 | loss 11.63 | ppl 111873.17
+| batch    11 | wps 1885.26 | loss 11.51 | ppl 99353.09
+| batch    12 | wps 1885.03 | loss 11.53 | ppl 102043.50
+| batch    13 | wps 1884.29 | loss 11.36 | ppl 86061.12
+| batch    14 | wps 1732.49 | loss 11.32 | ppl 82790.77
+| batch    15 | wps 1882.53 | loss 11.22 | ppl 74557.29
+| batch    16 | wps 1882.75 | loss 11.14 | ppl 68897.56
+| batch    17 | wps 1884.97 | loss 11.05 | ppl 62920.38
+| batch    18 | wps 1882.93 | loss 11.04 | ppl 62065.52
+| batch    19 | wps 1885.39 | loss 10.97 | ppl 58029.63
+| batch    20 | wps 1884.09 | loss 10.92 | ppl 55398.62
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 53.29s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 1864.01.
+Elapsed_time(s) is 53.29.
+Peak allocated bytes on cuda:0: 7.872096GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=3, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 194.11 | loss 25.82 | ppl 163844337973.24
+| batch     2 | wps 2227.35 | loss 12.54 | ppl 279415.67
+| batch     3 | wps 2226.37 | loss 12.26 | ppl 211520.53
+| batch     4 | wps 2226.26 | loss 12.15 | ppl 188318.55
+| batch     5 | wps 2226.85 | loss 12.04 | ppl 169111.72
+| batch     6 | wps 2155.35 | loss 11.95 | ppl 154426.20
+| batch     7 | wps 2083.86 | loss 11.75 | ppl 127219.20
+| batch     8 | wps 2226.50 | loss 11.74 | ppl 125707.56
+| batch     9 | wps 2228.99 | loss 11.61 | ppl 109977.63
+| batch    10 | wps 2220.56 | loss 11.49 | ppl 98044.85
+| batch    11 | wps 2228.49 | loss 11.40 | ppl 89380.14
+| batch    12 | wps 2225.37 | loss 11.41 | ppl 89797.85
+| batch    13 | wps 2110.78 | loss 11.26 | ppl 78009.02
+| batch    14 | wps 2230.12 | loss 11.18 | ppl 71467.23
+| batch    15 | wps 2225.51 | loss 11.12 | ppl 67359.66
+| batch    16 | wps 2228.75 | loss 11.00 | ppl 59717.89
+| batch    17 | wps 2225.33 | loss 10.93 | ppl 55901.95
+| batch    18 | wps 2227.48 | loss 10.82 | ppl 49964.78
+| batch    19 | wps 2228.40 | loss 10.78 | ppl 47955.53
+| batch    20 | wps 2099.34 | loss 10.73 | ppl 45804.76
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 58.49s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2200.62.
+Elapsed_time(s) is 58.49.
+Peak allocated bytes on cuda:0: 10.884802GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=4, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 243.05 | loss 25.75 | ppl 152752780748.36
+| batch     2 | wps 2265.83 | loss 12.50 | ppl 267618.13
+| batch     3 | wps 2265.37 | loss 12.26 | ppl 211455.38
+| batch     4 | wps 2262.68 | loss 12.12 | ppl 182907.08
+| batch     5 | wps 2264.37 | loss 11.91 | ppl 149233.59
+| batch     6 | wps 2188.95 | loss 11.86 | ppl 141469.50
+| batch     7 | wps 2265.72 | loss 11.73 | ppl 124682.91
+| batch     8 | wps 2265.37 | loss 11.61 | ppl 110073.01
+| batch     9 | wps 2264.49 | loss 11.55 | ppl 103886.87
+| batch    10 | wps 2263.80 | loss 11.45 | ppl 93438.42
+| batch    11 | wps 2265.83 | loss 11.36 | ppl 85715.87
+| batch    12 | wps 2204.24 | loss 11.23 | ppl 75034.21
+| batch    13 | wps 2262.47 | loss 11.12 | ppl 67372.38
+| batch    14 | wps 2264.09 | loss 11.08 | ppl 64665.58
+| batch    15 | wps 2263.95 | loss 11.00 | ppl 60066.54
+| batch    16 | wps 2266.54 | loss 10.94 | ppl 56119.46
+| batch    17 | wps 2265.58 | loss 10.82 | ppl 49906.64
+| batch    18 | wps 2207.92 | loss 10.77 | ppl 47363.67
+| batch    19 | wps 2267.45 | loss 10.69 | ppl 44032.96
+| batch    20 | wps 2263.55 | loss 10.66 | ppl 42525.08
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 68.58s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2252.56.
+Elapsed_time(s) is 68.58.
+Peak allocated bytes on cuda:0: 13.918853GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=5, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 306.14 | loss 25.70 | ppl 145724503131.74
+| batch     2 | wps 2396.19 | loss 12.44 | ppl 253236.61
+| batch     3 | wps 2399.64 | loss 12.24 | ppl 206247.98
+| batch     4 | wps 2399.76 | loss 12.03 | ppl 166906.08
+| batch     5 | wps 2397.58 | loss 11.92 | ppl 150383.11
+| batch     6 | wps 2270.96 | loss 11.76 | ppl 128076.21
+| batch     7 | wps 2399.64 | loss 11.71 | ppl 121503.33
+| batch     8 | wps 2397.61 | loss 11.58 | ppl 107191.96
+| batch     9 | wps 2400.28 | loss 11.45 | ppl 94181.41
+| batch    10 | wps 2400.64 | loss 11.36 | ppl 85767.96
+| batch    11 | wps 2399.80 | loss 11.26 | ppl 77758.12
+| batch    12 | wps 2268.55 | loss 11.20 | ppl 73109.86
+| batch    13 | wps 2399.54 | loss 11.10 | ppl 66259.34
+| batch    14 | wps 2400.24 | loss 11.00 | ppl 59989.88
+| batch    15 | wps 2398.62 | loss 10.95 | ppl 56671.86
+| batch    16 | wps 2398.45 | loss 10.87 | ppl 52355.20
+| batch    17 | wps 2400.45 | loss 10.75 | ppl 46452.80
+| batch    18 | wps 2261.50 | loss 10.68 | ppl 43443.70
+| batch    19 | wps 2399.37 | loss 10.57 | ppl 39002.78
+| batch    20 | wps 2399.75 | loss 10.51 | ppl 36604.10
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 74.71s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2376.55.
+Elapsed_time(s) is 74.71.
+Peak allocated bytes on cuda:0: 17.181526GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=6, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 355.77 | loss 25.71 | ppl 145884967082.21
+| batch     2 | wps 2460.89 | loss 12.42 | ppl 248445.88
+| batch     3 | wps 2461.41 | loss 12.20 | ppl 199303.54
+| batch     4 | wps 2460.49 | loss 12.05 | ppl 171012.49
+| batch     5 | wps 2459.49 | loss 11.88 | ppl 144494.63
+| batch     6 | wps 2457.68 | loss 11.78 | ppl 130754.70
+| batch     7 | wps 2461.05 | loss 11.66 | ppl 115497.19
+| batch     8 | wps 2460.19 | loss 11.51 | ppl 99391.00
+| batch     9 | wps 2458.93 | loss 11.40 | ppl 89014.70
+| batch    10 | wps 2459.46 | loss 11.33 | ppl 83337.44
+| batch    11 | wps 2449.13 | loss 11.24 | ppl 75975.84
+| batch    12 | wps 2458.87 | loss 11.16 | ppl 70342.53
+| batch    13 | wps 2461.14 | loss 11.07 | ppl 64519.96
+| batch    14 | wps 2459.16 | loss 10.94 | ppl 56584.70
+| batch    15 | wps 2460.33 | loss 10.87 | ppl 52487.83
+| batch    16 | wps 2457.70 | loss 10.73 | ppl 45932.37
+| batch    17 | wps 2459.61 | loss 10.73 | ppl 45763.42
+| batch    18 | wps 2347.11 | loss 10.62 | ppl 41070.25
+| batch    19 | wps 2458.26 | loss 10.56 | ppl 38378.81
+| batch    20 | wps 2458.38 | loss 10.47 | ppl 35085.02
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 82.47s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2452.07.
+Elapsed_time(s) is 82.47.
+Peak allocated bytes on cuda:0: 20.115584GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=7, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 408.20 | loss 25.71 | ppl 146379564437.19
+| batch     2 | wps 2463.91 | loss 12.48 | ppl 263777.83
+| batch     3 | wps 2463.33 | loss 12.19 | ppl 196455.91
+| batch     4 | wps 2463.53 | loss 12.02 | ppl 165481.54
+| batch     5 | wps 2366.37 | loss 11.90 | ppl 146914.90
+| batch     6 | wps 2463.75 | loss 11.75 | ppl 127275.63
+| batch     7 | wps 2463.64 | loss 11.60 | ppl 108615.42
+| batch     8 | wps 2463.29 | loss 11.51 | ppl 99515.34
+| batch     9 | wps 2463.22 | loss 11.41 | ppl 90417.78
+| batch    10 | wps 2463.44 | loss 11.30 | ppl 81076.25
+| batch    11 | wps 2463.58 | loss 11.23 | ppl 75712.63
+| batch    12 | wps 2464.94 | loss 11.10 | ppl 66188.79
+| batch    13 | wps 2462.36 | loss 11.00 | ppl 59588.07
+| batch    14 | wps 2461.71 | loss 10.90 | ppl 54068.78
+| batch    15 | wps 2463.43 | loss 10.85 | ppl 51386.75
+| batch    16 | wps 2373.83 | loss 10.77 | ppl 47395.07
+| batch    17 | wps 2463.70 | loss 10.66 | ppl 42483.94
+| batch    18 | wps 2462.92 | loss 10.60 | ppl 40109.45
+| batch    19 | wps 2462.34 | loss 10.51 | ppl 36517.31
+| batch    20 | wps 2461.64 | loss 10.46 | ppl 34790.31
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 91.08s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2447.85.
+Elapsed_time(s) is 91.08.
+Peak allocated bytes on cuda:0: 23.369725GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=8, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 449.48 | loss 25.69 | ppl 144113732971.22
+| batch     2 | wps 2568.71 | loss 12.46 | ppl 258718.09
+| batch     3 | wps 2569.89 | loss 12.20 | ppl 199094.19
+| batch     4 | wps 2568.88 | loss 12.02 | ppl 166667.81
+| batch     5 | wps 2476.76 | loss 11.89 | ppl 146452.29
+| batch     6 | wps 2567.01 | loss 11.71 | ppl 121213.29
+| batch     7 | wps 2565.66 | loss 11.62 | ppl 111361.80
+| batch     8 | wps 2568.93 | loss 11.50 | ppl 98348.17
+| batch     9 | wps 2567.57 | loss 11.40 | ppl 89133.63
+| batch    10 | wps 2473.15 | loss 11.29 | ppl 79879.75
+| batch    11 | wps 2569.16 | loss 11.19 | ppl 72179.65
+| batch    12 | wps 2569.45 | loss 11.06 | ppl 63747.91
+| batch    13 | wps 2566.75 | loss 11.00 | ppl 60011.68
+| batch    14 | wps 2566.12 | loss 10.91 | ppl 54556.75
+| batch    15 | wps 2466.96 | loss 10.81 | ppl 49431.06
+| batch    16 | wps 2569.11 | loss 10.73 | ppl 45560.32
+| batch    17 | wps 2569.96 | loss 10.66 | ppl 42634.31
+| batch    18 | wps 2567.29 | loss 10.55 | ppl 38225.03
+| batch    19 | wps 2565.92 | loss 10.48 | ppl 35594.02
+| batch    20 | wps 2480.18 | loss 10.43 | ppl 33862.43
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 97.91s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2546.88.
+Elapsed_time(s) is 97.91.
+Peak allocated bytes on cuda:0: 26.132000GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=9, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 504.98 | loss 25.68 | ppl 141723128167.86
+| batch     2 | wps 2584.48 | loss 12.51 | ppl 270962.85
+| batch     3 | wps 2582.07 | loss 12.18 | ppl 194826.54
+| batch     4 | wps 2581.67 | loss 12.05 | ppl 170545.55
+| batch     5 | wps 2584.07 | loss 11.86 | ppl 140798.01
+| batch     6 | wps 2581.53 | loss 11.72 | ppl 122752.58
+| batch     7 | wps 2582.45 | loss 11.60 | ppl 108808.98
+| batch     8 | wps 2584.25 | loss 11.50 | ppl 98336.26
+| batch     9 | wps 2499.14 | loss 11.37 | ppl 86926.90
+| batch    10 | wps 2582.59 | loss 11.26 | ppl 77832.61
+| batch    11 | wps 2582.11 | loss 11.16 | ppl 70225.97
+| batch    12 | wps 2581.77 | loss 11.09 | ppl 65451.31
+| batch    13 | wps 2582.90 | loss 10.96 | ppl 57464.76
+| batch    14 | wps 2494.03 | loss 10.88 | ppl 53136.48
+| batch    15 | wps 2584.47 | loss 10.81 | ppl 49608.49
+| batch    16 | wps 2582.30 | loss 10.70 | ppl 44519.85
+| batch    17 | wps 2581.47 | loss 10.62 | ppl 40755.53
+| batch    18 | wps 2580.26 | loss 10.52 | ppl 36985.14
+| batch    19 | wps 2581.77 | loss 10.47 | ppl 35282.75
+| batch    20 | wps 2581.02 | loss 10.41 | ppl 33124.82
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 104.91s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2572.62.
+Elapsed_time(s) is 104.91.
+Peak allocated bytes on cuda:0: 29.438174GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=10, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 552.45 | loss 25.68 | ppl 141824803218.25
+| batch     2 | wps 2649.35 | loss 12.43 | ppl 251346.43
+| batch     3 | wps 2650.01 | loss 12.19 | ppl 197411.87
+| batch     4 | wps 2649.58 | loss 12.01 | ppl 163619.46
+| batch     5 | wps 2648.37 | loss 11.84 | ppl 138245.49
+| batch     6 | wps 2648.39 | loss 11.71 | ppl 121382.64
+| batch     7 | wps 2645.39 | loss 11.58 | ppl 106824.47
+| batch     8 | wps 2648.39 | loss 11.46 | ppl 94775.63
+| batch     9 | wps 2567.23 | loss 11.34 | ppl 83723.88
+| batch    10 | wps 2648.67 | loss 11.24 | ppl 75805.03
+| batch    11 | wps 2647.65 | loss 11.15 | ppl 69735.24
+| batch    12 | wps 2648.02 | loss 11.03 | ppl 61402.66
+| batch    13 | wps 2647.35 | loss 10.96 | ppl 57314.03
+| batch    14 | wps 2648.15 | loss 10.86 | ppl 52049.08
+| batch    15 | wps 2646.44 | loss 10.75 | ppl 46501.86
+| batch    16 | wps 2648.29 | loss 10.66 | ppl 42690.99
+| batch    17 | wps 2647.43 | loss 10.59 | ppl 39865.12
+| batch    18 | wps 2557.09 | loss 10.52 | ppl 37117.79
+| batch    19 | wps 2646.18 | loss 10.46 | ppl 34754.63
+| batch    20 | wps 2645.73 | loss 10.36 | ppl 31668.72
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 111.16s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2637.59.
+Elapsed_time(s) is 111.16.
+Peak allocated bytes on cuda:0: 32.408904GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=11, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 577.69 | loss 25.65 | ppl 137532646022.37
+| batch     2 | wps 2604.71 | loss 12.46 | ppl 257157.54
+| batch     3 | wps 2604.27 | loss 12.22 | ppl 202880.84
+| batch     4 | wps 2532.54 | loss 12.00 | ppl 162865.03
+| batch     5 | wps 2602.10 | loss 11.85 | ppl 139647.29
+| batch     6 | wps 2601.71 | loss 11.70 | ppl 120687.42
+| batch     7 | wps 2601.22 | loss 11.58 | ppl 107107.45
+| batch     8 | wps 2602.06 | loss 11.45 | ppl 93680.31
+| batch     9 | wps 2601.71 | loss 11.33 | ppl 83060.53
+| batch    10 | wps 2601.97 | loss 11.24 | ppl 76210.59
+| batch    11 | wps 2599.59 | loss 11.13 | ppl 68482.25
+| batch    12 | wps 2599.85 | loss 11.03 | ppl 61843.36
+| batch    13 | wps 2599.90 | loss 10.94 | ppl 56651.22
+| batch    14 | wps 2600.50 | loss 10.83 | ppl 50681.38
+| batch    15 | wps 2600.62 | loss 10.73 | ppl 45633.89
+| batch    16 | wps 2599.73 | loss 10.68 | ppl 43336.03
+| batch    17 | wps 2524.86 | loss 10.61 | ppl 40425.03
+| batch    18 | wps 2598.80 | loss 10.49 | ppl 36133.65
+| batch    19 | wps 2600.41 | loss 10.42 | ppl 33357.67
+| batch    20 | wps 2600.35 | loss 10.34 | ppl 31037.04
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 122.01s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2589.49.
+Elapsed_time(s) is 122.01.
+Peak allocated bytes on cuda:0: 35.600255GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=12, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 634.46 | loss 25.65 | ppl 137258791807.26
+| batch     2 | wps 2661.28 | loss 12.43 | ppl 249926.39
+| batch     3 | wps 2658.84 | loss 12.20 | ppl 198398.58
+| batch     4 | wps 2591.71 | loss 11.97 | ppl 158169.15
+| batch     5 | wps 2659.06 | loss 11.82 | ppl 136381.54
+| batch     6 | wps 2657.88 | loss 11.70 | ppl 120866.42
+| batch     7 | wps 2656.83 | loss 11.54 | ppl 102911.54
+| batch     8 | wps 2590.09 | loss 11.42 | ppl 91246.68
+| batch     9 | wps 2656.88 | loss 11.33 | ppl 83478.55
+| batch    10 | wps 2656.57 | loss 11.22 | ppl 74338.62
+| batch    11 | wps 2657.49 | loss 11.12 | ppl 67737.42
+| batch    12 | wps 2584.83 | loss 11.01 | ppl 60625.23
+| batch    13 | wps 2655.93 | loss 10.91 | ppl 54850.20
+| batch    14 | wps 2656.27 | loss 10.80 | ppl 49093.51
+| batch    15 | wps 2655.51 | loss 10.75 | ppl 46700.57
+| batch    16 | wps 2589.27 | loss 10.65 | ppl 42396.84
+| batch    17 | wps 2656.49 | loss 10.54 | ppl 37958.02
+| batch    18 | wps 2656.09 | loss 10.47 | ppl 35179.23
+| batch    19 | wps 2656.11 | loss 10.41 | ppl 33065.42
+| batch    20 | wps 2654.85 | loss 10.34 | ppl 30938.72
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 127.46s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2641.94.
+Elapsed_time(s) is 127.46.
+Peak allocated bytes on cuda:0: 38.368181GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=13, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 678.41 | loss 25.74 | ppl 150564234840.34
+| batch     2 | wps 2721.59 | loss 13.02 | ppl 451105.23
+| batch     3 | wps 2720.49 | loss 12.86 | ppl 384904.01
+| batch     4 | wps 2717.73 | loss 12.52 | ppl 272930.78
+| batch     5 | wps 2715.70 | loss 12.30 | ppl 220147.80
+| batch     6 | wps 2715.60 | loss 12.18 | ppl 194846.42
+| batch     7 | wps 2714.63 | loss 12.06 | ppl 172864.55
+| batch     8 | wps 2714.57 | loss 11.97 | ppl 157234.89
+| batch     9 | wps 2715.45 | loss 11.88 | ppl 144769.53
+| batch    10 | wps 2715.46 | loss 11.84 | ppl 138275.55
+| batch    11 | wps 2715.05 | loss 11.73 | ppl 123727.72
+| batch    12 | wps 2714.07 | loss 11.65 | ppl 114890.45
+| batch    13 | wps 2715.89 | loss 11.59 | ppl 108289.21
+| batch    14 | wps 2713.82 | loss 11.53 | ppl 101897.44
+| batch    15 | wps 2646.06 | loss 11.46 | ppl 94440.99
+| batch    16 | wps 2714.34 | loss 11.41 | ppl 89954.11
+| batch    17 | wps 2714.23 | loss 11.35 | ppl 84910.40
+| batch    18 | wps 2714.10 | loss 11.31 | ppl 81488.88
+| batch    19 | wps 2641.49 | loss 11.27 | ppl 78128.67
+| batch    20 | wps 2714.95 | loss 11.22 | ppl 74934.88
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 133.01s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2708.09.
+Elapsed_time(s) is 133.01.
+Peak allocated bytes on cuda:0: 41.574089GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=14, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 715.54 | loss 25.73 | ppl 149429011908.41
+| batch     2 | wps 2694.65 | loss 13.03 | ppl 455753.31
+| batch     3 | wps 2692.15 | loss 12.79 | ppl 356865.18
+| batch     4 | wps 2692.43 | loss 12.47 | ppl 260202.98
+| batch     5 | wps 2692.47 | loss 12.28 | ppl 214641.78
+| batch     6 | wps 2690.30 | loss 12.17 | ppl 192116.51
+| batch     7 | wps 2630.39 | loss 12.02 | ppl 166697.37
+| batch     8 | wps 2691.37 | loss 11.94 | ppl 152858.99
+| batch     9 | wps 2691.65 | loss 11.88 | ppl 143691.16
+| batch    10 | wps 2689.99 | loss 11.79 | ppl 131754.21
+| batch    11 | wps 2627.61 | loss 11.70 | ppl 120569.28
+| batch    12 | wps 2688.54 | loss 11.63 | ppl 112589.43
+| batch    13 | wps 2690.58 | loss 11.57 | ppl 105745.09
+| batch    14 | wps 2688.10 | loss 11.49 | ppl 97924.30
+| batch    15 | wps 2626.45 | loss 11.44 | ppl 92613.89
+| batch    16 | wps 2687.51 | loss 11.38 | ppl 87841.75
+| batch    17 | wps 2687.11 | loss 11.33 | ppl 83201.09
+| batch    18 | wps 2686.54 | loss 11.30 | ppl 80990.86
+| batch    19 | wps 2687.04 | loss 11.24 | ppl 76450.82
+| batch    20 | wps 2689.13 | loss 11.21 | ppl 74143.13
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 142.08s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2679.91.
+Elapsed_time(s) is 142.08.
+Peak allocated bytes on cuda:0: 44.761921GB
+Running RTP-in-place benchmark with args: Namespace(batch_size=1, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 65.89 | loss 25.99 | ppl 193362231847.67
+| batch     2 | wps 1199.14 | loss 12.83 | ppl 372284.48
+| batch     3 | wps 1196.65 | loss 12.75 | ppl 345638.28
+| batch     4 | wps 1196.86 | loss 12.67 | ppl 318848.10
+| batch     5 | wps 1197.27 | loss 12.58 | ppl 291341.54
+| batch     6 | wps 1199.00 | loss 12.54 | ppl 278472.89
+| batch     7 | wps 1198.00 | loss 12.49 | ppl 266977.28
+| batch     8 | wps 1062.42 | loss 12.49 | ppl 264979.23
+| batch     9 | wps 1197.40 | loss 12.38 | ppl 238457.09
+| batch    10 | wps 1198.78 | loss 12.44 | ppl 252645.37
+| batch    11 | wps 1198.15 | loss 12.24 | ppl 207654.79
+| batch    12 | wps 1195.55 | loss 12.30 | ppl 220536.76
+| batch    13 | wps 1197.36 | loss 12.21 | ppl 200974.38
+| batch    14 | wps 1198.94 | loss 12.19 | ppl 197474.01
+| batch    15 | wps 1198.93 | loss 12.11 | ppl 180838.57
+| batch    16 | wps 1041.03 | loss 12.10 | ppl 179479.53
+| batch    17 | wps 1193.79 | loss 12.09 | ppl 178108.29
+| batch    18 | wps 1194.95 | loss 12.09 | ppl 178477.60
+| batch    19 | wps 1189.43 | loss 12.02 | ppl 165849.81
+| batch    20 | wps 1185.80 | loss 11.98 | ppl 159485.26
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 47.92s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 1177.07.
+Elapsed_time(s) is 47.92.
+Peak allocated bytes on cuda:0: 4.529159GB
+Running RTP-in-place benchmark with args: Namespace(batch_size=2, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 128.60 | loss 25.94 | ppl 183995845613.55
+| batch     2 | wps 1694.10 | loss 12.82 | ppl 368766.09
+| batch     3 | wps 1690.31 | loss 12.64 | ppl 309044.07
+| batch     4 | wps 1691.53 | loss 12.53 | ppl 275132.80
+| batch     5 | wps 1691.10 | loss 12.37 | ppl 236517.03
+| batch     6 | wps 1691.47 | loss 12.41 | ppl 244923.44
+| batch     7 | wps 1631.69 | loss 12.34 | ppl 229265.74
+| batch     8 | wps 1691.70 | loss 12.27 | ppl 213910.41
+| batch     9 | wps 1690.28 | loss 12.25 | ppl 208154.84
+| batch    10 | wps 1692.25 | loss 12.33 | ppl 226573.54
+| batch    11 | wps 1692.58 | loss 12.19 | ppl 196404.96
+| batch    12 | wps 1690.65 | loss 12.20 | ppl 198102.32
+| batch    13 | wps 1691.69 | loss 12.10 | ppl 179502.81
+| batch    14 | wps 1692.45 | loss 12.13 | ppl 184653.95
+| batch    15 | wps 1528.23 | loss 12.07 | ppl 174722.51
+| batch    16 | wps 1691.02 | loss 12.02 | ppl 166528.63
+| batch    17 | wps 1689.66 | loss 12.03 | ppl 166898.60
+| batch    18 | wps 1691.56 | loss 11.94 | ppl 154010.28
+| batch    19 | wps 1691.22 | loss 11.86 | ppl 141520.64
+| batch    20 | wps 1689.98 | loss 11.87 | ppl 142318.09
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 55.37s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 1676.18.
+Elapsed_time(s) is 55.37.
+Peak allocated bytes on cuda:0: 7.832355GB
+Running RTP-in-place benchmark with args: Namespace(batch_size=3, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 191.59 | loss 26.04 | ppl 203343832385.20
+| batch     2 | wps 2002.06 | loss 12.84 | ppl 375368.26
+| batch     3 | wps 2004.42 | loss 12.65 | ppl 310317.55
+| batch     4 | wps 2004.68 | loss 12.68 | ppl 322419.58
+| batch     5 | wps 2002.38 | loss 12.62 | ppl 302732.40
+| batch     6 | wps 2004.44 | loss 12.54 | ppl 278977.67
+| batch     7 | wps 1857.00 | loss 12.47 | ppl 260007.76
+| batch     8 | wps 2003.38 | loss 12.35 | ppl 231597.34
+| batch     9 | wps 2002.62 | loss 12.35 | ppl 231246.43
+| batch    10 | wps 2002.76 | loss 12.32 | ppl 224414.69
+| batch    11 | wps 2003.62 | loss 12.28 | ppl 214843.30
+| batch    12 | wps 2003.34 | loss 12.23 | ppl 204931.41
+| batch    13 | wps 2002.85 | loss 12.24 | ppl 206938.74
+| batch    14 | wps 1845.98 | loss 12.13 | ppl 185344.85
+| batch    15 | wps 2003.02 | loss 12.12 | ppl 183576.56
+| batch    16 | wps 2000.21 | loss 12.09 | ppl 178135.30
+| batch    17 | wps 2004.03 | loss 12.01 | ppl 165080.07
+| batch    18 | wps 2001.82 | loss 11.92 | ppl 150422.98
+| batch    19 | wps 2000.64 | loss 11.89 | ppl 146346.87
+| batch    20 | wps 2002.69 | loss 11.87 | ppl 143177.10
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 61.91s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 1977.32.
+Elapsed_time(s) is 61.91.
+Peak allocated bytes on cuda:0: 10.852644GB
+Running RTP-in-place benchmark with args: Namespace(batch_size=4, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 246.17 | loss 25.83 | ppl 164619310467.72
+| batch     2 | wps 2107.41 | loss 12.69 | ppl 323280.45
+| batch     3 | wps 2103.87 | loss 12.73 | ppl 337951.47
+| batch     4 | wps 2103.60 | loss 12.53 | ppl 275204.70
+| batch     5 | wps 2105.87 | loss 12.33 | ppl 225463.90
+| batch     6 | wps 2107.49 | loss 12.27 | ppl 213644.97
+| batch     7 | wps 2104.29 | loss 12.26 | ppl 210169.89
+| batch     8 | wps 2106.67 | loss 12.21 | ppl 200044.29
+| batch     9 | wps 2107.12 | loss 12.17 | ppl 192734.76
+| batch    10 | wps 2107.81 | loss 12.10 | ppl 180715.65
+| batch    11 | wps 2107.60 | loss 12.06 | ppl 173063.98
+| batch    12 | wps 2104.89 | loss 12.02 | ppl 165730.13
+| batch    13 | wps 2107.57 | loss 11.96 | ppl 157105.08
+| batch    14 | wps 2105.89 | loss 11.90 | ppl 147117.35
+| batch    15 | wps 2106.34 | loss 11.90 | ppl 147859.17
+| batch    16 | wps 2105.67 | loss 11.85 | ppl 140101.10
+| batch    17 | wps 2107.61 | loss 11.84 | ppl 138540.60
+| batch    18 | wps 2108.27 | loss 11.80 | ppl 132807.08
+| batch    19 | wps 1969.71 | loss 11.75 | ppl 127309.01
+| batch    20 | wps 2107.02 | loss 11.71 | ppl 121210.63
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 70.70s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2097.04.
+Elapsed_time(s) is 70.70.
+Peak allocated bytes on cuda:0: 13.892940GB
+Running RTP-in-place benchmark with args: Namespace(batch_size=5, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 300.31 | loss 25.85 | ppl 169100137267.17
+| batch     2 | wps 2223.45 | loss 12.75 | ppl 343593.75
+| batch     3 | wps 2224.95 | loss 12.60 | ppl 295661.80
+| batch     4 | wps 2224.63 | loss 12.53 | ppl 276821.70
+| batch     5 | wps 2223.84 | loss 12.41 | ppl 244421.06
+| batch     6 | wps 2111.82 | loss 12.39 | ppl 240481.17
+| batch     7 | wps 2223.82 | loss 12.30 | ppl 219495.82
+| batch     8 | wps 2222.67 | loss 12.24 | ppl 207504.34
+| batch     9 | wps 2224.68 | loss 12.19 | ppl 196262.66
+| batch    10 | wps 2223.77 | loss 12.13 | ppl 185460.66
+| batch    11 | wps 2223.34 | loss 12.20 | ppl 197985.22
+| batch    12 | wps 2108.50 | loss 12.10 | ppl 179721.38
+| batch    13 | wps 2222.28 | loss 12.04 | ppl 169221.74
+| batch    14 | wps 2225.60 | loss 12.03 | ppl 167082.70
+| batch    15 | wps 2222.48 | loss 11.91 | ppl 149284.55
+| batch    16 | wps 2222.65 | loss 11.90 | ppl 147236.24
+| batch    17 | wps 2221.74 | loss 11.87 | ppl 142212.00
+| batch    18 | wps 2101.35 | loss 11.82 | ppl 135829.76
+| batch    19 | wps 2223.73 | loss 11.83 | ppl 136877.07
+| batch    20 | wps 2223.90 | loss 11.71 | ppl 121447.26
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 78.59s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2203.60.
+Elapsed_time(s) is 78.59.
+Peak allocated bytes on cuda:0: 17.032842GB
+Running RTP-in-place benchmark with args: Namespace(batch_size=6, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=20, model_config='gpt-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 349.29 | loss 25.96 | ppl 188731749554.16
+| batch     2 | wps 2319.78 | loss 12.66 | ppl 316120.70
+| batch     3 | wps 2318.59 | loss 12.62 | ppl 302868.12
+| batch     4 | wps 2315.60 | loss 12.50 | ppl 268637.12
+| batch     5 | wps 2317.14 | loss 12.36 | ppl 233813.47
+| batch     6 | wps 2316.21 | loss 12.36 | ppl 233539.59
+| batch     7 | wps 2319.57 | loss 12.29 | ppl 218099.25
+| batch     8 | wps 2319.23 | loss 12.21 | ppl 201191.08
+| batch     9 | wps 2316.60 | loss 12.28 | ppl 216132.22
+| batch    10 | wps 2318.78 | loss 12.21 | ppl 200645.37
+| batch    11 | wps 2317.24 | loss 12.12 | ppl 183308.72
+| batch    12 | wps 2212.71 | loss 12.17 | ppl 193540.23
+| batch    13 | wps 2319.11 | loss 12.11 | ppl 181393.19
+| batch    14 | wps 2317.59 | loss 12.02 | ppl 165653.49
+| batch    15 | wps 2317.41 | loss 11.97 | ppl 157701.02
+| batch    16 | wps 2317.52 | loss 12.02 | ppl 165569.62
+| batch    17 | wps 2315.60 | loss 11.93 | ppl 151529.48
+| batch    18 | wps 2318.54 | loss 11.90 | ppl 146697.19
+| batch    19 | wps 2319.35 | loss 11.86 | ppl 141633.65
+| batch    20 | wps 2319.38 | loss 11.82 | ppl 136114.91
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 86.03s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 2310.95.
+Elapsed_time(s) is 86.03.
+Peak allocated bytes on cuda:0: 20.146685GB

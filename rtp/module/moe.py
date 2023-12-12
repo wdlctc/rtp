@@ -88,19 +88,87 @@ class MOELayer(Base):
             expert_outputs += [expert(chunk)]
         expert_output = torch.cat(expert_outputs, dim=1)
         expert_output = _AllToAll.apply(self.group, expert_output)
-        # Re-shape back: gecm -> ecm
         expert_output = expert_output.reshape(self.world_size * self.num_local_experts, -1, d_model)
         combined_output = torch.einsum("sec,ecm->sm", combine_weights, expert_output)
         return combined_output.reshape(input[0].shape)
 
 from .collectives import set_full_param, set_full_param2, allign_storage
-from .collectives import affine_module_weight
-from .collectives import _WeightParallelRegion_before, _WeightParallelRegion_after, hook_fn
+from .collectives import affine_module_weight, _left_shift_buffer, _right_shift_buffer
 from functools import partial
+
+
+class _WeightParallelRegion_before(torch.autograd.Function):
+    """Pass the input to the model parallel region."""
+
+    @staticmethod
+    def forward(ctx, input_, module, itr):  # type: ignore
+        if itr == 0:
+            module._buffer = torch.zeros_like(module.flat_param)
+            module.reqs = _left_shift_buffer(module.flat_param.data, module._buffer)
+        else:
+            for req in module.reqs:
+                req.wait()
+            module.flat_param.data.copy_(module._buffer)
+            if itr != torch.distributed.get_world_size() - 1:
+                module.reqs = _left_shift_buffer(module.flat_param.data, module._buffer)
+        return input_
+
+    @staticmethod
+    def backward(ctx, grad_output):  # type: ignore
+        return grad_output, None, None
+
+
+class _WeightParallelRegion_after(torch.autograd.Function):
+    """Pass the input to the model parallel region."""
+
+    @staticmethod
+    def forward(ctx, input_, module, itr):  # type: ignore
+        ctx.module = module
+        ctx.itr = itr
+
+        # with torch.cuda.stream(m._streams["rtp"]):
+        if itr == torch.distributed.get_world_size() - 1:
+            module._buffer = None
+
+        return input_
+
+    @staticmethod
+    def backward(ctx, grad_output):  # type: ignore
+        module = ctx.module
+        itr = ctx.itr
+
+        if itr != torch.distributed.get_world_size() - 1:
+            for req in module.reqs:
+                req.wait()
+            for req in module.grad_reqs:
+                req.wait()
+            module.flat_param.data.copy_(module._buffer)
+            module._full_grad.data.copy_(module._grad_buffer)
+
+            if itr == 0:
+                module._full_grad = None
+                module._grad_buffer = None
+                module._buffer = None
+            else:
+                module.reqs = _right_shift_buffer(module.flat_param.data, module._buffer)
+        else:
+            module._full_grad = torch.zeros_like(module.flat_param)
+            module._grad_buffer = torch.zeros_like(module.flat_param)
+            module._buffer = torch.zeros_like(module.flat_param)
+
+            for sub_module in module.module_list:
+                cur_numel = 0
+                for param in sub_module.parameters():
+                    param.grad = module._full_grad[cur_numel: cur_numel + param.numel()].view(param.shape)
+                    cur_numel += param.numel()
+
+            module.reqs = _right_shift_buffer(module.flat_param.data, module._buffer)
+        return grad_output, None, None
+
 
 class WeightMOELayer(Base):
     def __init__(self, gate: Module, experts: Union[Module, ModuleList], group: Optional[Any] = None,
-                 device=None, dtype=None, original_experts = None) -> None:
+                 device=None, dtype=None) -> None:
         super().__init__()
         self.gate = gate
         if type(experts) == ModuleList:
@@ -115,25 +183,36 @@ class WeightMOELayer(Base):
         self.rank = dist.get_rank(self.group)
 
         self.num_local_experts = len(self.experts)
+
+        param_list = list(experts.parameters())
+        self._param_numels = [p.numel() for p in param_list]
+
+        self.flat_param = torch.cat([p.detach().reshape(-1) if isinstance(p, nn.Parameter) else p.reshape(-1) for p in param_list], 0)
         
-        set_full_param(self.experts, device, dtype)
-        allign_storage(self.experts)
+        cur_numel = 0
+        for param in param_list:
+            param.data = self.flat_param[cur_numel: cur_numel + param.numel()].view(param.shape)
+            cur_numel += param.numel()
 
-        if original_experts is not None:
-            affine_module_weight(self.experts, original_experts)
-
-        self.experts_list = [None for _ in range(self.world_size)]
+        self.module_list = []
         
         for i in range(self.world_size):
             if i == self.rank:
-                self.experts_list[i] = self.experts
+                sub_module = self.experts
+                self.module_list.append(sub_module)
+                continue
             else:
                 experts = nn.ModuleList(
                     [copy.deepcopy(expert) for expert in (self.experts)]
                 )
-                set_full_param2(experts, device, dtype, self.experts._full_param)
-                allign_storage(experts)
-                self.experts_list[i] =  experts
+                sub_module = experts
+                
+                cur_numel = 0
+                for param in sub_module.parameters():
+                    param.data = self.flat_param[cur_numel: cur_numel + param.numel()].view(param.shape)
+                    cur_numel += param.numel()
+            self.module_list.append(sub_module)
+        
 
     def forward(self, *input: Tensor, **kwargs: Any) -> Tensor:
         assert len(input) == 1, "only single input Tensor supported"
@@ -148,40 +227,59 @@ class WeightMOELayer(Base):
         dispatched_input = torch.einsum("sec,sm->ecm", dispatch_mask.float(), reshaped_input)
 
         chunks = dispatched_input.chunk(self.world_size, dim=0)
+
         all_outputs = [None for _ in range(self.world_size)]
         for i in range(self.world_size):
-            index = (self.rank +i) % self.world_size
+            index = (self.rank + i) % self.world_size
 
             chunk = chunks[index]
 
-            _WeightParallelRegion_before.apply(self.experts_list[index], self.experts_list[index], i, self)
+            _WeightParallelRegion_before.apply(chunk, self, i)
 
-            experts = self.experts_list[index]
+            experts = self.module_list[index]
+
             expert_outputs = []
             for expert in experts:
                 expert_outputs += [expert(chunk)]
             
             expert_outputs = torch.cat(expert_outputs, dim=1)
 
-            expert_outputs = _WeightParallelRegion_after.apply(expert_outputs, self.experts_list[index], self.experts_list[(index+1) % self.world_size], i, self)
-            # expert_outputs = _WeightParallelRegion_moe.apply(expert_outputs, self.experts_list[index], self.experts_list[(index+1) % self.world_size], i)
+            expert_outputs = _WeightParallelRegion_after.apply(expert_outputs,  self, i)
 
             all_outputs[index] = expert_outputs
-            
-        all_outputs = torch.cat(all_outputs, dim=1)
-        # Re-shape back: gecm -> ecm
+
+        
+        all_outputs = torch.stack(all_outputs)
         expert_output = all_outputs.reshape(self.world_size * self.num_local_experts, -1, d_model)
         combined_output = torch.einsum("sec,ecm->sm", combine_weights, expert_output)
 
-        for i, layer in enumerate(self.experts_list):
+        self._register_post_backward_hooks()
+        return combined_output.reshape(input[0].shape)
+
+    def _register_post_backward_hooks(self) -> None:
+        for i, sub_module in enumerate(self.module_list):
             if i == self.rank:
                 continue
-            layer.count = 0
-            for p in layer.parameters():
-                p_tmp = p.expand_as(p)
-                assert p_tmp.grad_fn is not None
-                grad_acc = p_tmp.grad_fn.next_functions[0][0]
-                layer.count += 1
-                handle = grad_acc.register_hook(partial(hook_fn, p, layer, self))
+            sub_module.count = 0
+            for p in sub_module.parameters():
+                if p.requires_grad:
+                    p_tmp = p.expand_as(p)
+                    assert p_tmp.grad_fn is not None
+                    grad_acc = p_tmp.grad_fn.next_functions[0][0]
+                    sub_module.count += 1
+                    handle = grad_acc.register_hook(partial(hook_fn, sub_module, self))
 
-        return combined_output.reshape(input[0].shape)
+
+    def cuda(self, device=None):
+        self.gate.cuda(device)
+        self.flat_param = self.flat_param.cuda(device)
+        for sub_module in self.module_list:
+            cur_numel = 0
+            for param in sub_module.parameters():
+                param.data = self.flat_param[cur_numel: cur_numel + param.numel()].view(param.shape)
+                cur_numel += param.numel()
+
+def hook_fn(sub_module, module, *unused: Any):
+    sub_module.count -= 1
+    if sub_module.count == 0:
+        module.grad_reqs = _right_shift_buffer(module._full_grad.data, module._grad_buffer)

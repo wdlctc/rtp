@@ -1,0 +1,244 @@
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 19.99 GiB. GPU 6 has a total capacty of 79.15 GiB of which 18.51 GiB is free. Including non-PyTorch memory, this process has 60.62 GiB memory in use. Of the allocated memory 42.79 GiB is allocated by PyTorch, and 16.43 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 19.99 GiB. GPU 7 has a total capacty of 79.15 GiB of which 18.66 GiB is free. Including non-PyTorch memory, this process has 60.48 GiB memory in use. Of the allocated memory 42.79 GiB is allocated by PyTorch, and 16.43 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 19.99 GiB. GPU 1 has a total capacty of 79.15 GiB of which 18.51 GiB is free. Including non-PyTorch memory, this process has 60.62 GiB memory in use. Of the allocated memory 42.79 GiB is allocated by PyTorch, and 16.43 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 19.99 GiB. GPU 0 has a total capacty of 79.15 GiB of which 18.66 GiB is free. Including non-PyTorch memory, this process has 60.48 GiB memory in use. Of the allocated memory 42.79 GiB is allocated by PyTorch, and 16.43 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 19.99 GiB. GPU 5 has a total capacty of 79.15 GiB of which 18.51 GiB is free. Including non-PyTorch memory, this process has 60.62 GiB memory in use. Of the allocated memory 42.79 GiB is allocated by PyTorch, and 16.43 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 19.99 GiB. GPU 3 has a total capacty of 79.15 GiB of which 18.51 GiB is free. Including non-PyTorch memory, this process has 60.62 GiB memory in use. Of the allocated memory 42.79 GiB is allocated by PyTorch, and 16.43 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 19.99 GiB. GPU 4 has a total capacty of 79.15 GiB of which 18.51 GiB is free. Including non-PyTorch memory, this process has 60.62 GiB memory in use. Of the allocated memory 42.79 GiB is allocated by PyTorch, and 16.43 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 19.99 GiB. GPU 2 has a total capacty of 79.15 GiB of which 18.51 GiB is free. Including non-PyTorch memory, this process has 60.62 GiB memory in use. Of the allocated memory 42.79 GiB is allocated by PyTorch, and 16.43 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: udc-an36-31: task 2: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55895364.7
+slurmstepd: error: *** STEP 55895364.7 ON udc-an36-31 CANCELLED AT 2023-12-06T00:29:45 ***
+srun: error: udc-an36-31: task 5: Exited with exit code 1
+srun: error: udc-an36-31: task 4: Exited with exit code 1
+srun: error: udc-an36-31: task 7: Exited with exit code 1
+srun: error: udc-an36-31: task 0: Exited with exit code 1
+srun: error: udc-an36-31: task 1: Exited with exit code 1
+srun: error: udc-an36-31: task 3: Exited with exit code 1
+srun: error: udc-an36-31: task 6: Exited with exit code 1
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 21.87 GiB. GPU 7 has a total capacty of 79.15 GiB of which 13.07 GiB is free. Including non-PyTorch memory, this process has 66.06 GiB memory in use. Of the allocated memory 46.77 GiB is allocated by PyTorch, and 18.03 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 21.87 GiB. GPU 4 has a total capacty of 79.15 GiB of which 12.93 GiB is free. Including non-PyTorch memory, this process has 66.21 GiB memory in use. Of the allocated memory 46.77 GiB is allocated by PyTorch, and 18.03 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 21.87 GiB. GPU 3 has a total capacty of 79.15 GiB of which 12.93 GiB is free. Including non-PyTorch memory, this process has 66.21 GiB memory in use. Of the allocated memory 46.77 GiB is allocated by PyTorch, and 18.03 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 21.87 GiB. GPU 1 has a total capacty of 79.15 GiB of which 13.00 GiB is free. Including non-PyTorch memory, this process has 66.14 GiB memory in use. Of the allocated memory 46.77 GiB is allocated by PyTorch, and 17.97 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 21.87 GiB. GPU 0 has a total capacty of 79.15 GiB of which 13.14 GiB is free. Including non-PyTorch memory, this process has 66.00 GiB memory in use. Of the allocated memory 46.77 GiB is allocated by PyTorch, and 17.97 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 21.87 GiB. GPU 6 has a total capacty of 79.15 GiB of which 12.93 GiB is free. Including non-PyTorch memory, this process has 66.21 GiB memory in use. Of the allocated memory 46.77 GiB is allocated by PyTorch, and 18.03 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 21.87 GiB. GPU 5 has a total capacty of 79.15 GiB of which 12.93 GiB is free. Including non-PyTorch memory, this process has 66.21 GiB memory in use. Of the allocated memory 46.77 GiB is allocated by PyTorch, and 18.03 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_fsdp_benchmark.py", line 289, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_fsdp_benchmark.py", line 269, in benchmark_fsdp
+    benchmark_language_model(model_config, rfsdp_model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 225, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_fsdp_benchmark.py", line 183, in train
+    loss.backward()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 21.87 GiB. GPU 2 has a total capacty of 79.15 GiB of which 12.93 GiB is free. Including non-PyTorch memory, this process has 66.21 GiB memory in use. Of the allocated memory 46.77 GiB is allocated by PyTorch, and 18.03 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: udc-an36-31: task 7: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55895364.8
+slurmstepd: error: *** STEP 55895364.8 ON udc-an36-31 CANCELLED AT 2023-12-06T00:31:23 ***
+srun: error: udc-an36-31: task 1: Exited with exit code 1
+srun: error: udc-an36-31: task 6: Exited with exit code 1
+srun: error: udc-an36-31: task 5: Exited with exit code 1
+srun: error: udc-an36-31: task 2: Exited with exit code 1
+srun: error: udc-an36-31: task 3: Exited with exit code 1
+srun: error: udc-an36-31: task 4: Exited with exit code 1
+srun: error: udc-an36-31: task 0: Exited with exit code 1

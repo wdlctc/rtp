@@ -6,6 +6,7 @@ import copy
 from functools import partial
 from torch.nn.parallel import DistributedDataParallel as DDP
 from .attention import ParallelMultiheadAttention
+from .module.moe import MOELayer, WeightMOELayer
 
 from typing import (
     TYPE_CHECKING,
@@ -61,6 +62,56 @@ def split_tensor(
 
     return tensor_list
 
+
+def _clock_rotation_buffer_wait(input_, buffer):
+
+    group = torch.distributed.distributed_c10d._get_default_group()
+
+    # Bypass the function if we are using only 1 GPU.
+    if torch.distributed.get_world_size(group=group) == 1:
+        return input_
+
+    # Size and dimension.
+    rank = torch.distributed.get_rank(group=group)
+    world_size = torch.distributed.get_world_size(group=group)
+
+    send_op = torch.distributed.P2POp(torch.distributed.isend, input_, (rank + 1)%world_size)
+    recv_op = torch.distributed.P2POp(torch.distributed.irecv, buffer, (rank - 1 + world_size)%world_size)
+
+    reqs = torch.distributed.batch_isend_irecv([send_op, recv_op])
+
+    for req in reqs:
+        req.wait()
+
+    # torch.distributed.barrier()
+
+    return buffer
+
+def counter_clock_rotation_buffer_wait(input_, buffer):
+
+    group = torch.distributed.distributed_c10d._get_default_group()
+
+    # Bypass the function if we are using only 1 GPU.
+    if torch.distributed.get_world_size(group=group) == 1:
+        return input_
+
+    # Size and dimension.
+    rank = torch.distributed.get_rank(group=group)
+    world_size = torch.distributed.get_world_size(group=group)
+
+    send_op = torch.distributed.P2POp(torch.distributed.isend, input_, (rank - 1 + world_size)%world_size)
+    recv_op = torch.distributed.P2POp(torch.distributed.irecv, buffer, (rank + 1)%world_size)
+
+    reqs = torch.distributed.batch_isend_irecv([send_op, recv_op])
+
+    for req in reqs:
+        req.wait()
+
+    # torch.distributed.barrier()
+
+    return buffer
+
+
 def _clock_rotation_buffer(input_, buffer):
 
     group = torch.distributed.distributed_c10d._get_default_group()
@@ -107,6 +158,12 @@ def hook_fn(sub_module, module, *unused: Any):
         module.grad_reqs = counter_clock_rotation_buffer(module._full_grad.data, module._grad_buffer)
 
 
+def hook_fn_inplace(sub_module, module, *unused: Any):
+    sub_module.count -= 1
+    if sub_module.count == 0:
+        module.grad_reqs = counter_clock_rotation_buffer(module._full_grad.data, module._full_grad.data)
+
+
 def allign_grad(module):
     cur_numel = 0
     for param_name, param in module.named_parameters():
@@ -125,7 +182,8 @@ class ParallelRegion_before(torch.autograd.Function):
             for req in module.reqs:
                 req.wait()
             module.flat_param.data.copy_(module._buffer)
-            module.reqs = _clock_rotation_buffer(module.flat_param.data, module._buffer)
+            if itr != torch.distributed.get_world_size() - 1:
+                module.reqs = _clock_rotation_buffer(module.flat_param.data, module._buffer)
 
         return input_
 
@@ -181,6 +239,39 @@ class ParallelRegion_after(torch.autograd.Function):
         return grad_output, None, None
 
 
+class ParallelRegion_inplace(torch.autograd.Function):
+    """Pass the input to the model parallel region."""
+
+    @staticmethod
+    def forward(ctx, input_, module, itr):  # type: ignore
+        ctx.module = module
+        ctx.itr = itr
+
+        if itr != torch.distributed.get_world_size() - 1:
+            _clock_rotation_buffer_wait(module.flat_param, module.flat_param)
+        return input_
+
+    @staticmethod
+    def backward(ctx, grad_output):  # type: ignore
+        module = ctx.module
+        itr = ctx.itr
+
+        if itr == torch.distributed.get_world_size() - 1:
+            module._full_grad = torch.zeros_like(module.flat_param)
+
+            for sub_module in module.module_list:
+                cur_numel = 0
+                for param in sub_module.parameters():
+                    param.grad = module._full_grad[cur_numel: cur_numel + param.numel()].view(param.shape)
+                    cur_numel += param.numel()
+
+        else:
+            counter_clock_rotation_buffer_wait(module.flat_param.data, module.flat_param.data)
+            counter_clock_rotation_buffer_wait(module._full_grad.data, module._full_grad.data)
+
+        return grad_output, None, None
+
+
 class FlattenParamsWrapper(nn.Module):
     def __init__(
         self,
@@ -215,6 +306,7 @@ class FlyweightWarpper(nn.Module):
         row_partition: bool = False,
         input_partition_dim: int = None,
         cat_output: bool = True,
+        inplace: bool = False
     ):
         super().__init__()
         self.module = module
@@ -230,6 +322,7 @@ class FlyweightWarpper(nn.Module):
         self.input_partition_dim = input_partition_dim
         self.row_partition = row_partition  
         self.cat_output = cat_output
+        self.inplace = inplace
         self.FlyweightList = []
 
         self.group = group if group is not None else dist.group.WORLD
@@ -273,9 +366,17 @@ class FlyweightWarpper(nn.Module):
             for i in range(self.world_size):
                 index = (self.rank -i +self.world_size) % self.world_size
                 input_parallel = input_list[index]
-                ParallelRegion_before.apply(input_parallel, self, i)
+
+                if not self.inplace:
+                    ParallelRegion_before.apply(input_parallel, self, i)
+                
                 output = self.module_list[index](input_parallel)
-                output = ParallelRegion_after.apply(output, self, i)
+
+                if not self.inplace:
+                    output = ParallelRegion_after.apply(output, self, i)
+                else:
+                    output = ParallelRegion_inplace.apply(output, self, i)
+
                 
                 if i == 0:
                     output_parallel = output
@@ -283,12 +384,22 @@ class FlyweightWarpper(nn.Module):
                     output_parallel = output + output_parallel
         else:
             output_list = [None for _ in range(self.world_size)]
-            
             for i in range(self.world_size):
                 index = (self.rank -i +self.world_size) % self.world_size
-                ParallelRegion_before.apply(args[0], self, i)
-                output = self.module_list[index](*args, **kwargs)
-                output = ParallelRegion_after.apply(output, self, i)
+                if not self.inplace:
+                    ParallelRegion_before.apply(args[0], self, i)
+
+                outputs = self.module_list[index](*args, **kwargs)
+                if isinstance(outputs, tuple):
+                    output, *unused = outputs
+                else:
+                    output = outputs
+
+                if not self.inplace:
+                    output = ParallelRegion_after.apply(output, self, i)
+                else:
+                    output = ParallelRegion_inplace.apply(output, self, i)
+
                 if self.cat_output:
                     output_list[index] = output
                 else:
@@ -300,19 +411,24 @@ class FlyweightWarpper(nn.Module):
             if self.cat_output:
                 output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
         
-        return output_parallel
+        if 'unused' in locals():
+            return output_parallel, *unused
+        else:
+            return output_parallel
 
 class RotatedTensorParallel(nn.Module):
     def __init__(
         self,
         module,
-        group: Optional[Any] = None,):
+        group: Optional[Any] = None,
+        inplace=False):
         super().__init__()
         
         self.group = group if group is not None else dist.group.WORLD
         self.world_size = dist.get_world_size(self.group)
         self.rank = dist.get_rank(self.group)
         self.module = module
+        self.inplace = inplace
         self.FlyweightModule_list = []
         self.RecursiveVisit('module', self.module, self)
 
@@ -328,24 +444,28 @@ class RotatedTensorParallel(nn.Module):
         has_parameters = any(isinstance(param, nn.Parameter) for param in module.parameters())
         has_child = any(isinstance(child, nn.Module) for child in module.children())
         is_MultiheadAttention = isinstance(module, nn.MultiheadAttention)
+        is_MOELayer = isinstance(module, MOELayer)
 
-        if has_child and not is_MultiheadAttention:
+        if has_child and not is_MultiheadAttention and not is_MOELayer:
             for name, child in module.named_children():
                 self.RecursiveVisit(name, child, module)
         else:
             if has_parameters:
-                pass
-                if isinstance(module, nn.Linear):
+                if isinstance(module, MOELayer):
+                    r = WeightMOELayer(module.gate, module.experts)
+                    setattr(upper_module, name, r)
+                    self.FlyweightModule_list.append(r)
+                elif isinstance(module, nn.Linear):
                     if module.out_features % self.world_size == 0:
                         module.weight = nn.Parameter(split_tensor(module.weight, self.world_size, dim=0)[self.rank])
                         if module.bias is not None:
                             module.bias = nn.Parameter(split_tensor(module.bias, self.world_size, dim=0)[self.rank])
-                        module = FlyweightWarpper(module, self.group)
+                        module = FlyweightWarpper(module, self.group, inplace=self.inplace)
                     elif module.in_features % self.world_size == 0:
                         module.weight = nn.Parameter(split_tensor(module.weight, self.world_size, dim=-1)[self.rank])
                         if module.bias is not None:
                             module.bias.data.div_(self.world_size)
-                        module = FlyweightWarpper(module, self.group, row_partition=True, input_partition_dim=-1)
+                        module = FlyweightWarpper(module, self.group, row_partition=True, input_partition_dim=-1, inplace=self.inplace)
                     else:
                         raise ValueError("The input or output features of the linear layer must be divisible by the world size.")
                     
@@ -360,7 +480,7 @@ class RotatedTensorParallel(nn.Module):
                             module.bias = nn.Parameter(split_tensor(module.bias, self.world_size, dim=0)[self.rank])
                     else:
                         raise ValueError("The input or output channels of the conv layer must be divisible by the world size.")
-                    module = FlyweightWarpper(module, self.group, output_partition_dim=1)
+                    module = FlyweightWarpper(module, self.group, output_partition_dim=1, inplace=self.inplace)
                     
                     setattr(upper_module, name, module)
 
@@ -368,7 +488,7 @@ class RotatedTensorParallel(nn.Module):
                 elif isinstance(module, nn.Embedding):
                     if module.embedding_dim % self.world_size == 0:
                         module.weight = nn.Parameter(split_tensor(module.weight, self.world_size, dim=1)[self.rank])
-                        module = FlyweightWarpper(module, self.group)
+                        module = FlyweightWarpper(module, self.group, inplace=self.inplace)
                         setattr(upper_module, name, module)
                         self.FlyweightModule_list.append(module)
                     else:
@@ -390,7 +510,8 @@ class RotatedTensorParallel(nn.Module):
                     r = ParallelMultiheadAttention(embed_dim, num_heads, dropout=dropout, bias=bias,
                                     add_bias_kv=add_bias_kv, add_zero_attn=add_zero_attn,
                                     kdim=kdim, vdim=vdim,
-                                    device=device, dtype=dtype)
+                                    device=device, dtype=dtype,
+                                    group=self.group)
 
                     index = [self.rank, self.rank+self.world_size, self.rank+self.world_size*2]
                     for n, param in module.named_parameters():
@@ -407,15 +528,11 @@ class RotatedTensorParallel(nn.Module):
                         if n == 'out_proj.weight':
                             r.out_proj.weight = nn.Parameter(split_tensor(module.out_proj.weight, self.world_size, dim=1)[self.rank])
                         if n == 'out_proj.bias':
+                            r.out_proj.bias.data.copy_(param.data)
                             r.out_proj.bias.data.div_(self.world_size)
+                    r = FlyweightWarpper(r, self.group, cat_output=False, inplace=self.inplace)
                     setattr(upper_module, name, r)
-                    r = FlyweightWarpper(r, self.group, cat_output=False)
                     self.FlyweightModule_list.append(r)
-                # elif isinstance(module, nn.LayerNorm):
-                #     pass
-                # else:
-                #     print(module)
-                #     raise ValueError("The layer must be nn.Linear, nn.Conv2d or nn.Embedding.")
         
     def forward(self, *args: Any, **kwargs: Any) -> torch.Tensor:
         outputs = self.module(*args, **kwargs)
@@ -437,7 +554,11 @@ class RotatedTensorParallel(nn.Module):
                         assert p_tmp.grad_fn is not None
                         grad_acc = p_tmp.grad_fn.next_functions[0][0]  # Gets its GradAccumulation object.
                         sub_module.count += 1
-                        handle = grad_acc.register_hook(partial(hook_fn, sub_module, module))
+
+                        if self.inplace:
+                            handle = grad_acc.register_hook(partial(hook_fn_inplace, sub_module, module))
+                        else:
+                            handle = grad_acc.register_hook(partial(hook_fn, sub_module, module))
 
     def cuda(self, device=None):
         self.module.cuda(device)

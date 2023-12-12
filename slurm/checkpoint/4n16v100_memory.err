@@ -1,0 +1,3 @@
+slurmstepd: error: *** STEP 55223910.0 ON udc-aj37-35 CANCELLED AT 2023-11-21T12:20:15 ***
+slurmstepd: error: *** JOB 55223910 ON udc-aj37-35 CANCELLED AT 2023-11-21T12:20:15 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.

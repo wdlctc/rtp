@@ -8,7 +8,7 @@ import math
 import torch
 import torch.nn as nn
 
-from fairscale.nn.moe.moe_layer import MOELayer
+from rtp.module.moe import MOELayer
 from fairscale.nn.moe.top2gate import Top2Gate
 
 
@@ -187,10 +187,10 @@ class TransformerDecoderLayer(TransformerEncoderLayer):
         # TODO(anj-s): Fix the data format so that we have [seq_len, batch_size, embedding dim].
         # Currently real data has seq_len as the second dimension and batch_size as the first dimension.
         # We need to mask the sequence length dimension and not the batch size.
-        if self.src_mask is None or self.src_mask.size(0) != len(src):
-            device = src.device
-            mask = self._generate_square_subsequent_mask(len(src)).to(device)
-            self.src_mask = mask
+        # if self.src_mask is None or self.src_mask.size(0) != len(src):
+        #     device = src.device
+        #     mask = self._generate_square_subsequent_mask(len(src)).to(device)
+        #     self.src_mask = mask
 
         return super().forward(src, self.src_mask)
 
@@ -207,13 +207,25 @@ class LinearLayer(nn.Linear):
 class TransformerLM(nn.Sequential):
     """A GPT-2 based nn.Sequential language model."""
 
-    def __init__(self, ntokens, ninp, nhead, nhid, dropout, initrange, ndecoder, is_moe=False, num_local_experts=1):
-        layers = [
-            EmbeddingLayer(ntokens, ninp, initrange),
-            PositionalEncodingLayer(ninp, dropout),
-        ]
-        for _ in range(ndecoder):
-            layers.append(TransformerDecoderLayer(ninp, nhead, nhid, dropout, is_moe, num_local_experts))
+    def __init__(self, ntokens, ninp, nhead, nhid, dropout, initrange, ndecoder, is_moe=False, num_local_experts=1, half=False):
+        if half:
+            layers = [
+                EmbeddingLayer(ntokens, ninp, initrange).half(),
+                PositionalEncodingLayer(ninp, dropout).half(),
+            ]
+            for _ in range(ndecoder):
+                layers.append(TransformerDecoderLayer(ninp, nhead, nhid, dropout, is_moe, num_local_experts).half())
 
-        layers.append(LinearLayer(ninp, ntokens, initrange))
-        super(TransformerLM, self).__init__(*layers)
+            layers.append(LinearLayer(ninp, ntokens, initrange).half())
+            super(TransformerLM, self).__init__(*layers)
+        else:
+            layers = [
+                EmbeddingLayer(ntokens, ninp, initrange),
+                PositionalEncodingLayer(ninp, dropout),
+            ]
+            for _ in range(ndecoder):
+                layers.append(TransformerDecoderLayer(ninp, nhead, nhid, dropout, is_moe, num_local_experts))
+
+            layers.append(LinearLayer(ninp, ntokens, initrange))
+            super(TransformerLM, self).__init__(*layers)
+

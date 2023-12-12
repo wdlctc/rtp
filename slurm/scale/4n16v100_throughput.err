@@ -1,0 +1,1407 @@
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 0 has a total capacty of 31.74 GiB of which 325.62 MiB is free. Including non-PyTorch memory, this process has 31.42 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 653.96 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 2 has a total capacty of 31.74 GiB of which 281.62 MiB is free. Including non-PyTorch memory, this process has 31.46 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 653.16 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 3 has a total capacty of 31.74 GiB of which 309.62 MiB is free. Including non-PyTorch memory, this process has 31.43 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 653.16 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 1 has a total capacty of 31.74 GiB of which 281.62 MiB is free. Including non-PyTorch memory, this process has 31.46 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 653.16 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 1 has a total capacty of 31.74 GiB of which 265.62 MiB is free. Including non-PyTorch memory, this process has 31.48 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 669.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 2 has a total capacty of 31.74 GiB of which 265.62 MiB is free. Including non-PyTorch memory, this process has 31.48 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 669.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 1 has a total capacty of 31.74 GiB of which 281.62 MiB is free. Including non-PyTorch memory, this process has 31.46 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 653.96 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 3 has a total capacty of 31.74 GiB of which 313.62 MiB is free. Including non-PyTorch memory, this process has 31.43 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 668.46 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 0 has a total capacty of 31.74 GiB of which 329.62 MiB is free. Including non-PyTorch memory, this process has 31.41 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 653.96 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 3 has a total capacty of 31.74 GiB of which 313.62 MiB is free. Including non-PyTorch memory, this process has 31.43 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 668.46 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 0 has a total capacty of 31.74 GiB of which 313.62 MiB is free. Including non-PyTorch memory, this process has 31.43 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 668.46 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 2 has a total capacty of 31.74 GiB of which 265.62 MiB is free. Including non-PyTorch memory, this process has 31.48 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 668.47 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 1 has a total capacty of 31.74 GiB of which 265.62 MiB is free. Including non-PyTorch memory, this process has 31.48 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 669.16 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 2 has a total capacty of 31.74 GiB of which 265.62 MiB is free. Including non-PyTorch memory, this process has 31.48 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 668.47 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 3 has a total capacty of 31.74 GiB of which 313.62 MiB is free. Including non-PyTorch memory, this process has 31.43 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 668.47 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 420, in forward
+    output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 500.00 MiB. GPU 0 has a total capacty of 31.74 GiB of which 313.62 MiB is free. Including non-PyTorch memory, this process has 31.43 GiB memory in use. Of the allocated memory 30.27 GiB is allocated by PyTorch, and 669.19 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: udc-aj40-36: tasks 14-15: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55205371.5
+slurmstepd: error: *** STEP 55205371.5 ON udc-aj33-9 CANCELLED AT 2023-11-21T00:33:25 ***
+srun: error: udc-aj40-36: task 13: Exited with exit code 1
+srun: error: udc-aj33-10: task 7: Exited with exit code 1
+srun: error: udc-aj34-35: tasks 9,11: Exited with exit code 1
+srun: error: udc-aj33-9: tasks 1,3: Exited with exit code 1
+srun: error: udc-aj33-10: tasks 4-5: Exited with exit code 1
+srun: error: udc-aj33-9: task 0: Exited with exit code 1
+srun: error: udc-aj34-35: task 8: Exited with exit code 1
+srun: error: udc-aj40-36: task 12: Exited with exit code 1
+srun: error: udc-aj34-35: task 10: Exited with exit code 1
+srun: error: udc-aj33-10: task 6: Exited with exit code 1
+srun: error: udc-aj33-9: task 2: Exited with exit code 1
+srun: Job 55205371 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 55205371
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 156, in forward
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 163, in _sa_block
+    x = self.self_attn(x, x, x, attn_mask=attn_mask, key_padding_mask=key_padding_mask, need_weights=False)[0]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 400, in forward
+    outputs = self.module_list[index](*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 131, in forward
+    attn_output, attn_output_weights = multi_head_attention_forward(
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/functional.py", line 830, in multi_head_attention_forward
+    attn_output = torch._C._nn.linear(attn_output, out_proj_weight, out_proj_bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 1 has a total capacty of 31.74 GiB of which 27.62 MiB is free. Including non-PyTorch memory, this process has 31.71 GiB memory in use. Of the allocated memory 30.70 GiB is allocated by PyTorch, and 493.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 156, in forward
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 163, in _sa_block
+    x = self.self_attn(x, x, x, attn_mask=attn_mask, key_padding_mask=key_padding_mask, need_weights=False)[0]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 400, in forward
+    outputs = self.module_list[index](*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 131, in forward
+    attn_output, attn_output_weights = multi_head_attention_forward(
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/functional.py", line 830, in multi_head_attention_forward
+    attn_output = torch._C._nn.linear(attn_output, out_proj_weight, out_proj_bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 3 has a total capacty of 31.74 GiB of which 35.62 MiB is free. Including non-PyTorch memory, this process has 31.70 GiB memory in use. Of the allocated memory 30.70 GiB is allocated by PyTorch, and 493.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 156, in forward
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 163, in _sa_block
+    x = self.self_attn(x, x, x, attn_mask=attn_mask, key_padding_mask=key_padding_mask, need_weights=False)[0]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 400, in forward
+    outputs = self.module_list[index](*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 156, in forward
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 131, in forward
+    attn_output, attn_output_weights = multi_head_attention_forward(
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/functional.py", line 830, in multi_head_attention_forward
+    attn_output = torch._C._nn.linear(attn_output, out_proj_weight, out_proj_bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 0 has a total capacty of 31.74 GiB of which 67.62 MiB is free. Including non-PyTorch memory, this process has 31.67 GiB memory in use. Of the allocated memory 30.70 GiB is allocated by PyTorch, and 493.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 163, in _sa_block
+    x = self.self_attn(x, x, x, attn_mask=attn_mask, key_padding_mask=key_padding_mask, need_weights=False)[0]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 400, in forward
+    outputs = self.module_list[index](*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 131, in forward
+    attn_output, attn_output_weights = multi_head_attention_forward(
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/functional.py", line 830, in multi_head_attention_forward
+    attn_output = torch._C._nn.linear(attn_output, out_proj_weight, out_proj_bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 0 has a total capacty of 31.74 GiB of which 47.62 MiB is free. Including non-PyTorch memory, this process has 31.69 GiB memory in use. Of the allocated memory 30.70 GiB is allocated by PyTorch, and 517.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 156, in forward
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 163, in _sa_block
+    x = self.self_attn(x, x, x, attn_mask=attn_mask, key_padding_mask=key_padding_mask, need_weights=False)[0]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 400, in forward
+    outputs = self.module_list[index](*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 156, in forward
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 131, in forward
+    attn_output, attn_output_weights = multi_head_attention_forward(
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/functional.py", line 830, in multi_head_attention_forward
+    attn_output = torch._C._nn.linear(attn_output, out_proj_weight, out_proj_bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 2 has a total capacty of 31.74 GiB of which 27.62 MiB is free. Including non-PyTorch memory, this process has 31.71 GiB memory in use. Of the allocated memory 30.70 GiB is allocated by PyTorch, and 493.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 163, in _sa_block
+    x = self.self_attn(x, x, x, attn_mask=attn_mask, key_padding_mask=key_padding_mask, need_weights=False)[0]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 400, in forward
+    outputs = self.module_list[index](*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 131, in forward
+    attn_output, attn_output_weights = multi_head_attention_forward(
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/functional.py", line 830, in multi_head_attention_forward
+    attn_output = torch._C._nn.linear(attn_output, out_proj_weight, out_proj_bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 1 has a total capacty of 31.74 GiB of which 27.62 MiB is free. Including non-PyTorch memory, this process has 31.71 GiB memory in use. Of the allocated memory 30.70 GiB is allocated by PyTorch, and 493.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 156, in forward
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 156, in forward
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 163, in _sa_block
+    x = self.self_attn(x, x, x, attn_mask=attn_mask, key_padding_mask=key_padding_mask, need_weights=False)[0]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 400, in forward
+    outputs = self.module_list[index](*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 163, in _sa_block
+    x = self.self_attn(x, x, x, attn_mask=attn_mask, key_padding_mask=key_padding_mask, need_weights=False)[0]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 400, in forward
+    outputs = self.module_list[index](*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 131, in forward
+    attn_output, attn_output_weights = multi_head_attention_forward(
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/functional.py", line 830, in multi_head_attention_forward
+    attn_output = torch._C._nn.linear(attn_output, out_proj_weight, out_proj_bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 1 has a total capacty of 31.74 GiB of which 75.62 MiB is free. Including non-PyTorch memory, this process has 31.66 GiB memory in use. Of the allocated memory 30.70 GiB is allocated by PyTorch, and 445.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 131, in forward
+    attn_output, attn_output_weights = multi_head_attention_forward(
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/functional.py", line 830, in multi_head_attention_forward
+    attn_output = torch._C._nn.linear(attn_output, out_proj_weight, out_proj_bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 3 has a total capacty of 31.74 GiB of which 31.62 MiB is free. Including non-PyTorch memory, this process has 31.71 GiB memory in use. Of the allocated memory 30.70 GiB is allocated by PyTorch, and 517.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 156, in forward
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 163, in _sa_block
+    x = self.self_attn(x, x, x, attn_mask=attn_mask, key_padding_mask=key_padding_mask, need_weights=False)[0]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 400, in forward
+    outputs = self.module_list[index](*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 131, in forward
+    attn_output, attn_output_weights = multi_head_attention_forward(
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/functional.py", line 830, in multi_head_attention_forward
+    attn_output = torch._C._nn.linear(attn_output, out_proj_weight, out_proj_bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 3 has a total capacty of 31.74 GiB of which 31.62 MiB is free. Including non-PyTorch memory, this process has 31.71 GiB memory in use. Of the allocated memory 30.70 GiB is allocated by PyTorch, and 517.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 156, in forward
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 163, in _sa_block
+    x = self.self_attn(x, x, x, attn_mask=attn_mask, key_padding_mask=key_padding_mask, need_weights=False)[0]
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 400, in forward
+    outputs = self.module_list[index](*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/attention.py", line 131, in forward
+    attn_output, attn_output_weights = multi_head_attention_forward(
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/module/functional.py", line 830, in multi_head_attention_forward
+    attn_output = torch._C._nn.linear(attn_output, out_proj_weight, out_proj_bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 2 has a total capacty of 31.74 GiB of which 3.62 MiB is free. Including non-PyTorch memory, this process has 31.73 GiB memory in use. Of the allocated memory 30.70 GiB is allocated by PyTorch, and 517.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: udc-aj40-36: tasks 13,15: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55205371.6
+slurmstepd: error: *** STEP 55205371.6 ON udc-aj33-9 CANCELLED AT 2023-11-21T00:35:36 ***
+srun: error: udc-aj40-36: task 12: Exited with exit code 1
+srun: error: udc-aj33-10: task 7: Exited with exit code 1
+srun: error: udc-aj34-35: tasks 9,11: Exited with exit code 1
+srun: error: udc-aj33-10: tasks 4-5: Exited with exit code 1
+srun: error: udc-aj33-9: task 2: Exited with exit code 1
+srun: error: udc-aj34-35: task 8: Terminated
+srun: error: udc-aj33-9: tasks 0-1: Terminated
+srun: error: udc-aj40-36: task 14: Exited with exit code 1
+srun: error: udc-aj33-10: task 6: Terminated
+srun: error: udc-aj34-35: task 10: Terminated
+srun: error: udc-aj33-9: task 3: Terminated
+srun: Force Terminated StepId=55205371.6
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 157, in forward
+    x = self.norm2(x + self._ff_block(x))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 171, in _ff_block
+    return self.ff_block(x)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 72, in forward
+    return self.dropout2(self.linear2(self.dropout1(self.activation(self.linear1(x)))))
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/activation.py", line 101, in forward
+    return F.relu(input, inplace=self.inplace)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/functional.py", line 1471, in relu
+    result = torch.relu(input)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 512.00 MiB. GPU 1 has a total capacty of 31.74 GiB of which 481.62 MiB is free. Including non-PyTorch memory, this process has 31.27 GiB memory in use. Of the allocated memory 29.99 GiB is allocated by PyTorch, and 764.19 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 157, in forward
+    x = self.norm2(x + self._ff_block(x))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 171, in _ff_block
+    return self.ff_block(x)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 72, in forward
+    return self.dropout2(self.linear2(self.dropout1(self.activation(self.linear1(x)))))
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/activation.py", line 101, in forward
+    return F.relu(input, inplace=self.inplace)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/functional.py", line 1471, in relu
+    result = torch.relu(input)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 512.00 MiB. GPU 2 has a total capacty of 31.74 GiB of which 481.62 MiB is free. Including non-PyTorch memory, this process has 31.27 GiB memory in use. Of the allocated memory 29.99 GiB is allocated by PyTorch, and 764.18 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 157, in forward
+    x = self.norm2(x + self._ff_block(x))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 171, in _ff_block
+    return self.ff_block(x)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 72, in forward
+    return self.dropout2(self.linear2(self.dropout1(self.activation(self.linear1(x)))))
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/activation.py", line 101, in forward
+    return F.relu(input, inplace=self.inplace)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/functional.py", line 1471, in relu
+    result = torch.relu(input)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 512.00 MiB. GPU 3 has a total capacty of 31.74 GiB of which 509.62 MiB is free. Including non-PyTorch memory, this process has 31.24 GiB memory in use. Of the allocated memory 29.99 GiB is allocated by PyTorch, and 764.18 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/autograd/function.py:539: UserWarning: 0NCCL_AVOID_RECORD_STREAMS=1 has no effect for point-to-point collectives. (Triggered internally at ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1856.)
+  return super().apply(*args, **kwargs)  # type: ignore[misc]
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 157, in forward
+    x = self.norm2(x + self._ff_block(x))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 171, in _ff_block
+    return self.ff_block(x)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 72, in forward
+    return self.dropout2(self.linear2(self.dropout1(self.activation(self.linear1(x)))))
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/activation.py", line 101, in forward
+    return F.relu(input, inplace=self.inplace)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/functional.py", line 1471, in relu
+    result = torch.relu(input)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 512.00 MiB. GPU 3 has a total capacty of 31.74 GiB of which 509.62 MiB is free. Including non-PyTorch memory, this process has 31.24 GiB memory in use. Of the allocated memory 29.99 GiB is allocated by PyTorch, and 764.19 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "benchmarks/multi_rtp_benchmark.py", line 271, in <module>
+    benchmark_fsdp(rank, local_rank, args, world_size)
+  File "benchmarks/multi_rtp_benchmark.py", line 250, in benchmark_fsdp
+    benchmark_language_model(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 215, in benchmark_language_model
+    wps, t = train(model_config, model, benchmark_config, model_specs, args)
+  File "benchmarks/multi_rtp_benchmark.py", line 170, in train
+    output = model(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/rtp/rotated_tensor_parallel.py", line 542, in forward
+    outputs = self.module(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 195, in forward
+    return super().forward(src, self.src_mask)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 157, in forward
+    x = self.norm2(x + self._ff_block(x))
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 171, in _ff_block
+    return self.ff_block(x)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/sfs/weka/scratch/fad3ew/rtp/benchmarks/transformer_lm_dp.py", line 72, in forward
+    return self.dropout2(self.linear2(self.dropout1(self.activation(self.linear1(x)))))
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/modules/activation.py", line 101, in forward
+    return F.relu(input, inplace=self.inplace)
+  File "/scratch/fad3ew/rtp/.venv/lib/python3.8/site-packages/torch/nn/functional.py", line 1471, in relu
+    result = torch.relu(input)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 512.00 MiB. GPU 2 has a total capacty of 31.74 GiB of which 481.62 MiB is free. Including non-PyTorch memory, this process has 31.27 GiB memory in use. Of the allocated memory 29.99 GiB is allocated by PyTorch, and 764.19 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: udc-aj40-36: task 13: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=55205371.7
+slurmstepd: error: *** STEP 55205371.7 ON udc-aj33-9 CANCELLED AT 2023-11-21T00:37:26 ***
+srun: error: udc-aj34-35: task 11: Exited with exit code 1
+srun: error: udc-aj33-9: task 3: Exited with exit code 1
+srun: error: udc-aj40-36: tasks 14-15: Terminated
+srun: error: udc-aj33-10: task 6: Exited with exit code 1
+srun: error: udc-aj33-9: task 2: Exited with exit code 1
+srun: error: udc-aj34-35: tasks 8-9: Terminated
+srun: error: udc-aj33-10: tasks 4-5: Terminated
+srun: error: udc-aj33-9: task 1: Terminated
+srun: error: udc-aj40-36: task 12: Terminated
+srun: error: udc-aj34-35: task 10: Terminated
+srun: error: udc-aj33-9: task 0: Terminated
+srun: error: udc-aj33-10: task 7: Terminated
+srun: Force Terminated StepId=55205371.7

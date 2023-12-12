@@ -1,0 +1,10 @@
+{
+    "name": "Llama-2-30b",
+    "num_layers": 60,
+    "n_head": 32,
+    "hidden_dim": 6656,
+    "vocab_size": 32000,
+    "max_seq_len": 2048,
+    "ffn_embed_dim": 26624,
+    "model_type": "llama"
+}

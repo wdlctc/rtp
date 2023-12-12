@@ -1,0 +1,114 @@
+WORLD_SIZE=32
+MASTER_ADDR=udc-an34-31
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=1, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=4, model_config='gpt2-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 67.15 | loss 27.05 | ppl 561296139221.39
+| batch     2 | wps 102.46 | loss 13.09 | ppl 484221.03
+| batch     3 | wps 102.01 | loss 12.99 | ppl 439513.39
+| batch     4 | wps 103.14 | loss 12.71 | ppl 329454.81
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 60.94s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 101.64.
+Elapsed_time(s) is 60.94.
+Peak allocated bytes on cuda:0: 11.842557GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=2, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=4, model_config='gpt2-xl', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 119.42 | loss 27.17 | ppl 631757243866.95
+| batch     2 | wps 200.75 | loss 13.09 | ppl 486078.66
+| batch     3 | wps 197.66 | loss 12.86 | ppl 383373.43
+| batch     4 | wps 201.82 | loss 12.61 | ppl 299595.49
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 65.48s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 199.25.
+Elapsed_time(s) is 65.48.
+Peak allocated bytes on cuda:0: 23.151082GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=1, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=4, model_config='EleutherAI_gpt-neo-1.3B', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 174.72 | loss 28.37 | ppl 2098267782944.56
+| batch     2 | wps 315.53 | loss 13.77 | ppl 954684.72
+| batch     3 | wps 358.93 | loss 13.41 | ppl 665374.85
+| batch     4 | wps 294.21 | loss 13.09 | ppl 484678.41
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 43.16s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 320.40.
+Elapsed_time(s) is 43.16.
+Peak allocated bytes on cuda:0: 6.930737GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=2, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=4, model_config='EleutherAI_gpt-neo-1.3B', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 314.13 | loss 28.42 | ppl 2200778394978.95
+| batch     2 | wps 667.08 | loss 13.76 | ppl 943018.95
+| batch     3 | wps 667.05 | loss 13.39 | ppl 651271.29
+| batch     4 | wps 605.83 | loss 13.01 | ppl 444791.36
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 45.63s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 648.56.
+Elapsed_time(s) is 45.63.
+Peak allocated bytes on cuda:0: 13.635057GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=3, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=4, model_config='EleutherAI_gpt-neo-1.3B', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 482.56 | loss 28.44 | ppl 2235188327691.90
+| batch     2 | wps 870.85 | loss 13.69 | ppl 877846.82
+| batch     3 | wps 861.76 | loss 13.23 | ppl 555447.05
+| batch     4 | wps 880.73 | loss 12.85 | ppl 381638.87
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 47.16s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 866.52.
+Elapsed_time(s) is 47.16.
+Peak allocated bytes on cuda:0: 20.169876GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=4, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=4, model_config='EleutherAI_gpt-neo-1.3B', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 623.04 | loss 28.42 | ppl 2204179018603.67
+| batch     2 | wps 1064.68 | loss 13.63 | ppl 827006.17
+| batch     3 | wps 1062.35 | loss 13.13 | ppl 505547.41
+| batch     4 | wps 1081.83 | loss 12.87 | ppl 388215.96
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 49.80s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 1051.71.
+Elapsed_time(s) is 49.80.
+Peak allocated bytes on cuda:0: 26.470366GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=1, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=4, model_config='EleutherAI_gpt-neo-2.7B', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 114.34 | loss 30.15 | ppl 12450625479924.93
+| batch     2 | wps 231.93 | loss 14.49 | ppl 1964970.47
+| batch     3 | wps 245.07 | loss 13.96 | ppl 1152688.12
+| batch     4 | wps 244.45 | loss 13.55 | ppl 763219.87
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 61.78s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 239.43.
+Elapsed_time(s) is 61.78.
+Peak allocated bytes on cuda:0: 10.511704GB
+Running RTP-out-of-place benchmark with args: Namespace(batch_size=2, benchmark_eval=False, checkpoint=False, clip_value=0.05, debug=False, dropout=0, dry_run=False, enable_auto_wrap=False, epochs=1, full_fp16=False, initrange=0.1, lr=0.0001, max_batch=4, model_config='EleutherAI_gpt-neo-2.7B', model_name='lm', nhead=32, nhid=5120, ninp=1280, num_decoder_layers=36, seq_len=1025, use_synthetic_data=True, vocab_size=50256)
+--------------------------------------------------------------------------------------------------------------
+| start of epoch 1
+--------------------------------------------------------------------------------------------------------------
+| batch     1 | wps 250.44 | loss 30.05 | ppl 11235466152909.73
+| batch     2 | wps 425.49 | loss 14.49 | ppl 1956695.75
+| batch     3 | wps 435.19 | loss 13.82 | ppl 1000679.44
+| batch     4 | wps 423.76 | loss 13.41 | ppl 665930.95
+--------------------------------------------------------------------------------------------------------------
+| end of epoch 1 | time: 61.85s 
+--------------------------------------------------------------------------------------------------------------
+Throughput(wps) is 429.56.
+Elapsed_time(s) is 61.85.
+Peak allocated bytes on cuda:0: 20.903572GB

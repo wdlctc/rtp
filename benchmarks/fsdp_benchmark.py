@@ -22,6 +22,13 @@ from fairscale.optim import GradScaler
 
 from torch.distributed.fsdp import FullyShardedDataParallel
 
+from torch.distributed.algorithms._checkpoint.checkpoint_wrapper import (
+   checkpoint_wrapper,
+   CheckpointImpl,
+   apply_activation_checkpointing
+)
+import functools 
+
 RPC_PORT = 29501
 
 from config import FSDP
@@ -52,7 +59,7 @@ def get_lm_model(args, device, config):
     nhid = config["nhid"]
     ndecoder = config["num_decoder_layers"]
 
-    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder).to(device)
+    return transformer_lm.TransformerLM(vocab_size, ninp, nhead, nhid, dropout, initrange, ndecoder, half=args.full_fp16).to(device)
 
 def get_synthetic_dataloaders(args, device, benchmark_config, model_specs):
     """Returns dataloader for synthetic data."""
@@ -150,9 +157,9 @@ def train(model_config, model, benchmark_config, model_specs, args):
             epoch_start_time = time.time()
 
         source, target = get_batch(batch)
-        if args.full_fp16:
+        # if args.full_fp16:
             # source = source.half()
-            target = target.half()
+            # target = target.half()
         if args.max_batch and i > args.max_batch:
             break
 
@@ -163,7 +170,7 @@ def train(model_config, model, benchmark_config, model_specs, args):
             input = source.cuda()
             target = target.cuda()
             output = model(input)
-            print(f"output.dtype {output.dtype}, target.dtype {target.dtype}")
+            # print(f"output.dtype {output.dtype}, target.dtype {target.dtype}")
             loss = torch.nn.CrossEntropyLoss()(output.view(-1, vocab_size), target.view(-1))
         else:
             optimizer.zero_grad()
@@ -242,15 +249,12 @@ def benchmark_fsdp(rank, args, world_size):
     model_specs = FSDP.get_model_config(args)
     model_config = create_model_config(args, benchmark_config=benchmark_config, model_specs=model_specs)
     model = model_config["model"]
+    if args.full_fp16:
+        model.half()
     config = {}
 
-    if args.full_fp16:
-        config["compute_dtype"] = torch.float16
-        config["mixed_precision"] = False
 
     fsdp_model = FullyShardedDataParallel(model, **config)
-
-    print(f"param dtype {[p.dtype for p in fsdp_model.parameters()]}")
 
     benchmark_language_model(model_config, fsdp_model, benchmark_config, model_specs, args)
 

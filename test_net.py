@@ -90,7 +90,7 @@ class Net(nn.Module):
         self.dropout1 = nn.Dropout(0.25)
         self.dropout2 = nn.Dropout(0.5)
         self.fc1 = nn.Linear(9216, 128)
-        self.fc2 = nn.Linear(128, 10)
+        self.fc2 = nn.Linear(128, 12)
 
     def forward(self, x):
 
@@ -141,19 +141,59 @@ def benchmark_fsdp(rank, world_size, args):
     torch.cuda.set_device(rank)
     init_random_seed(0)
     model = Net()
+
     ref = copy.deepcopy(model)
+    ref.cuda()
+    ref.eval()
 
     model = RotatedTensorParallel(model)
     model.cuda()
-
     model.eval()
+
+    
+    optimizer1 = torch.optim.Adam(model.parameters(), lr=0.01)
+    optimizer2 = torch.optim.Adam(ref.parameters(), lr=0.01)
+
+    
+    for i in range(3):
+        print(i)
+        optimizer1.zero_grad()
+        optimizer2.zero_grad()
+
+        example = torch.randn(1, 1, 28, 28).cuda()
+        labels = torch.tensor([1]).cuda()
+
+        
+        for param1, param2 in zip(model.parameters(), ref.parameters()):
+            if rank == 0:
+                if param1.shape[0] * world_size == param2.shape[0]:
+                    param2 = split_tensor(param2, num_partitions=world_size, dim=0)[rank]
+                    if not objects_are_equal(param1.data, param2.data):
+                        print(param1.shape, param2.shape)
+                        print(torch.max(torch.abs(param1.data - param2.data)))
+                        print(torch.max(torch.abs(param1.data)))
+                    assert objects_are_equal(param1.data, param2.data)
+
+        output = model(example)
+        output2 = ref(example)
+        assert objects_are_equal(output.data, output2.data)
+
+        loss = F.nll_loss(output2, labels, reduction='sum') #criterion(outputs, labels)
+        loss.backward()
+
+        loss = F.nll_loss(output, labels, reduction='sum').div_(world_size) #criterion(outputs, labels)
+        loss.backward()
+
+        optimizer1.step()
+        optimizer2.step()
+
+    return
+
     example = torch.randn(1, 1, 28, 28).cuda()
     labels = torch.tensor([1]).cuda()
 
     output = model(example)
 
-    ref.cuda()
-    ref.eval()
     output2 = ref(example)
     assert objects_are_equal(output, output2)
     

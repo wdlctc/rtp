@@ -1,0 +1,10 @@
+{
+    "name": "gpt3-20b",
+    "num_layers": 44,
+    "n_head": 32,
+    "hidden_dim": 6144,
+    "vocab_size": 32000,
+    "max_seq_len": 2048,
+    "ffn_embed_dim": 24576,
+    "model_type": "gpt2"
+}
