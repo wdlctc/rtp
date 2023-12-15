@@ -61,6 +61,56 @@ def split_tensor(
 
     return tensor_list
 
+
+def _clock_rotation_buffer_wait(input_, buffer):
+
+    group = torch.distributed.distributed_c10d._get_default_group()
+
+    # Bypass the function if we are using only 1 GPU.
+    if torch.distributed.get_world_size(group=group) == 1:
+        return input_
+
+    # Size and dimension.
+    rank = torch.distributed.get_rank(group=group)
+    world_size = torch.distributed.get_world_size(group=group)
+
+    send_op = torch.distributed.P2POp(torch.distributed.isend, input_, (rank + 1)%world_size)
+    recv_op = torch.distributed.P2POp(torch.distributed.irecv, buffer, (rank - 1 + world_size)%world_size)
+
+    reqs = torch.distributed.batch_isend_irecv([send_op, recv_op])
+
+    for req in reqs:
+        req.wait()
+
+    # torch.distributed.barrier()
+
+    return buffer
+
+def counter_clock_rotation_buffer_wait(input_, buffer):
+
+    group = torch.distributed.distributed_c10d._get_default_group()
+
+    # Bypass the function if we are using only 1 GPU.
+    if torch.distributed.get_world_size(group=group) == 1:
+        return input_
+
+    # Size and dimension.
+    rank = torch.distributed.get_rank(group=group)
+    world_size = torch.distributed.get_world_size(group=group)
+
+    send_op = torch.distributed.P2POp(torch.distributed.isend, input_, (rank - 1 + world_size)%world_size)
+    recv_op = torch.distributed.P2POp(torch.distributed.irecv, buffer, (rank + 1)%world_size)
+
+    reqs = torch.distributed.batch_isend_irecv([send_op, recv_op])
+
+    for req in reqs:
+        req.wait()
+
+    # torch.distributed.barrier()
+
+    return buffer
+
+
 def _clock_rotation_buffer(input_, buffer):
 
     group = torch.distributed.distributed_c10d._get_default_group()
@@ -107,6 +157,12 @@ def hook_fn(sub_module, module, *unused: Any):
         module.grad_reqs = counter_clock_rotation_buffer(module._full_grad.data, module._grad_buffer)
 
 
+def hook_fn_inplace(sub_module, module, *unused: Any):
+    sub_module.count -= 1
+    if sub_module.count == 0:
+        module.grad_reqs = counter_clock_rotation_buffer(module._full_grad.data, module._full_grad.data)
+
+
 def allign_grad(module):
     cur_numel = 0
     for param_name, param in module.named_parameters():
@@ -125,7 +181,8 @@ class ParallelRegion_before(torch.autograd.Function):
             for req in module.reqs:
                 req.wait()
             module.flat_param.data.copy_(module._buffer)
-            module.reqs = _clock_rotation_buffer(module.flat_param.data, module._buffer)
+            if itr != torch.distributed.get_world_size() - 1:
+                module.reqs = _clock_rotation_buffer(module.flat_param.data, module._buffer)
 
         return input_
 
@@ -181,6 +238,39 @@ class ParallelRegion_after(torch.autograd.Function):
         return grad_output, None, None
 
 
+class ParallelRegion_inplace(torch.autograd.Function):
+    """Pass the input to the model parallel region."""
+
+    @staticmethod
+    def forward(ctx, input_, module, itr):  # type: ignore
+        ctx.module = module
+        ctx.itr = itr
+
+        if itr != torch.distributed.get_world_size() - 1:
+            _clock_rotation_buffer_wait(module.flat_param, module.flat_param)
+        return input_
+
+    @staticmethod
+    def backward(ctx, grad_output):  # type: ignore
+        module = ctx.module
+        itr = ctx.itr
+
+        if itr == torch.distributed.get_world_size() - 1:
+            module._full_grad = torch.zeros_like(module.flat_param)
+
+            for sub_module in module.module_list:
+                cur_numel = 0
+                for param in sub_module.parameters():
+                    param.grad = module._full_grad[cur_numel: cur_numel + param.numel()].view(param.shape)
+                    cur_numel += param.numel()
+
+        else:
+            counter_clock_rotation_buffer_wait(module.flat_param.data, module.flat_param.data)
+            counter_clock_rotation_buffer_wait(module._full_grad.data, module._full_grad.data)
+
+        return grad_output, None, None
+
+
 class FlattenParamsWrapper(nn.Module):
     def __init__(
         self,
@@ -215,6 +305,7 @@ class FlyweightWarpper(nn.Module):
         row_partition: bool = False,
         input_partition_dim: int = None,
         cat_output: bool = True,
+        inplace: bool = False
     ):
         super().__init__()
         self.module = module
@@ -230,6 +321,7 @@ class FlyweightWarpper(nn.Module):
         self.input_partition_dim = input_partition_dim
         self.row_partition = row_partition  
         self.cat_output = cat_output
+        self.inplace = inplace
         self.FlyweightList = []
 
         self.group = group if group is not None else dist.group.WORLD
@@ -273,9 +365,17 @@ class FlyweightWarpper(nn.Module):
             for i in range(self.world_size):
                 index = (self.rank -i +self.world_size) % self.world_size
                 input_parallel = input_list[index]
-                ParallelRegion_before.apply(input_parallel, self, i)
+
+                if not self.inplace:
+                    ParallelRegion_before.apply(input_parallel, self, i)
+                
                 output = self.module_list[index](input_parallel)
-                output = ParallelRegion_after.apply(output, self, i)
+
+                if not self.inplace:
+                    output = ParallelRegion_after.apply(output, self, i)
+                else:
+                    output = ParallelRegion_inplace.apply(output, self, i)
+
                 
                 if i == 0:
                     output_parallel = output
@@ -286,9 +386,20 @@ class FlyweightWarpper(nn.Module):
             
             for i in range(self.world_size):
                 index = (self.rank -i +self.world_size) % self.world_size
-                ParallelRegion_before.apply(args[0], self, i)
-                output = self.module_list[index](*args, **kwargs)
-                output = ParallelRegion_after.apply(output, self, i)
+                if not self.inplace:
+                    ParallelRegion_before.apply(args[0], self, i)
+
+                outputs = self.module_list[index](*args, **kwargs)
+                if isinstance(outputs, tuple):
+                    output, *unused = outputs
+                else:
+                    output = outputs
+
+                if not self.inplace:
+                    output = ParallelRegion_after.apply(output, self, i)
+                else:
+                    output = ParallelRegion_inplace.apply(output, self, i)
+
                 if self.cat_output:
                     output_list[index] = output
                 else:
@@ -300,19 +411,24 @@ class FlyweightWarpper(nn.Module):
             if self.cat_output:
                 output_parallel = torch.cat(output_list, dim=self.output_partition_dim).contiguous()
         
-        return output_parallel
+        if 'unused' in locals():
+            return output_parallel, *unused
+        else:
+            return output_parallel
 
 class RotatedTensorParallel(nn.Module):
     def __init__(
         self,
         module,
-        group: Optional[Any] = None,):
+        group: Optional[Any] = None,
+        inplace=False):
         super().__init__()
         
         self.group = group if group is not None else dist.group.WORLD
         self.world_size = dist.get_world_size(self.group)
         self.rank = dist.get_rank(self.group)
         self.module = module
+        self.inplace = inplace
         self.FlyweightModule_list = []
         self.RecursiveVisit('module', self.module, self)
 
@@ -437,7 +553,11 @@ class RotatedTensorParallel(nn.Module):
                         assert p_tmp.grad_fn is not None
                         grad_acc = p_tmp.grad_fn.next_functions[0][0]  # Gets its GradAccumulation object.
                         sub_module.count += 1
-                        handle = grad_acc.register_hook(partial(hook_fn, sub_module, module))
+
+                        if self.inplace:
+                            handle = grad_acc.register_hook(partial(hook_fn_inplace, sub_module, module))
+                        else:
+                            handle = grad_acc.register_hook(partial(hook_fn, sub_module, module))
 
     def cuda(self, device=None):
         self.module.cuda(device)
