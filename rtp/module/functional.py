@@ -300,9 +300,6 @@ def _in_projection_packed(
     E = q.size(-1) // E_div
     if k is v:
         if q is k:
-            # self-attention
-            # print("------------------------")
-            print(q.shape, w.shape, b.shape)
             proj = torch._C._nn.linear(q, w, b)
             
             # print(q.shape, w.shape, b.shape, proj.shape)
